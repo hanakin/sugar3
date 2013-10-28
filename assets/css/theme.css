@@ -70,28 +70,12 @@ section {
   padding: 6px 0px;
   padding: 0.25rem 0rem;
 }
-.hero-unit {
-  padding: 24px 0px;
-  padding: 1rem 0rem;
-}
-.hero-unit .kilo {
-  letter-spacing: -3px;
-}
-.hero-unit .kilo sup {
-  left: -7px;
-}
-.hero-unit .kilo .beta {
-  font-weight: 300;
-  letter-spacing: -1px;
-  line-height: 600px;
-  line-height: 1.92rem;
-}
 .hobo {
   font-family: "Hobo Std";
 }
 footer {
-  padding: 10px 0px;
-  padding: 0.4166666666666667rem 0rem;
+  padding: 24px 0px;
+  padding: 1rem 0rem;
 }
 footer .text-left {
   margin-top: 8px;
@@ -116,5 +100,6 @@ footer .text-left {
   color: #fff;
   /* Layout */
 
-  padding: .5em;
+  padding: 12px;
+  padding: 0.5rem;
 }
