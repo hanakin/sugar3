@@ -78,7 +78,7 @@ section {
 .hobo { font-family: "Hobo Std"; }
 
 footer { 
-    .padding(10, 0);
+    .padding(@base-spacing-unit, 0);
     .text-left { margin-top: 8px; }
 }
 
@@ -95,9 +95,9 @@ footer {
 .grid-paint {
     /* Decoration */
     background-color: #4a8ec2;
-    border-radius: 4px;
+    border-radius: @base-radius;
     color: #fff;
     /* Layout */
-    padding: .5em;
+    .padding(@half-spacing-unit);
 }
 
