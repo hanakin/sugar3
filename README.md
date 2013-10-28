@@ -28,7 +28,7 @@ Consists of Two parts.
 * Elements - This is where we set the look and feel of the type & other html entities
 * Modules - Here we add any useful modules or objects for our fraemwrok to utilize.
 
-We then add on a framework layer.
+**We then add on a framework layer.**
 
 * Tools - contains mixins, default settings, & a blame.less file for quick fixs
 
