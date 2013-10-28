@@ -65,13 +65,18 @@ section {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     /* Layout */
-    .padding(10, 0);
+    .padding(@base-spacing-unit, 0);
 }
 
-.section-head { background-color: @white-dark; }
+.section-head { 
+    /* Decoration */
+    background-color: @white-dark; 
+    /* Layout */
+    .padding(@quarter-spacing-unit, 0);
+}
 
 .hero-unit {
-    .padding(30, 0);
+    .padding(@base-spacing-unit, 0);
     .kilo {
         letter-spacing: -3px;
         sup { left: -7px; }
