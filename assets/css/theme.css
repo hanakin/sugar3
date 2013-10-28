@@ -14,6 +14,18 @@
   font-weight: normal;
   font-style: normal;
 }
+.branding {
+  /* Text */
+
+  font-family: 'midaym';
+  font-size: 30px;
+  /* Decoration */
+
+  color: #999999;
+}
+.branding:hover {
+  color: #666666;
+}
 @font-face {
   font-family: 'sugar';
   src: url('../../assets/fonts/sugar.eot');
@@ -51,6 +63,9 @@
 .logo:before {
   content: "\73";
 }
+.hobo {
+  font-family: "Hobo Std";
+}
 section {
   /* Decoration */
 
@@ -70,36 +85,10 @@ section {
   padding: 6px 0px;
   padding: 0.25rem 0rem;
 }
-.hobo {
-  font-family: "Hobo Std";
-}
 footer {
   padding: 24px 0px;
   padding: 1rem 0rem;
 }
 footer .text-left {
   margin-top: 8px;
-}
-.branding {
-  /* Text */
-
-  font-family: 'midaym';
-  font-size: 30px;
-  /* Decoration */
-
-  color: #999999;
-}
-.branding:hover {
-  color: #666666;
-}
-.grid-paint {
-  /* Decoration */
-
-  background-color: #4a8ec2;
-  border-radius: 4px;
-  color: #fff;
-  /* Layout */
-
-  padding: 12px;
-  padding: 0.5rem;
 }
