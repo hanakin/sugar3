@@ -1,4 +1,3 @@
-![inuit.css](http://inuitcss.com/img/content/logo.png)
 
 # Sugar3 – v1.0
 
