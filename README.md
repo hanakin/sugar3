@@ -14,21 +14,21 @@ found based on what it is and how it used.
 * Global
 * Sugar
 
-#### Global
-**Consists of Three core parts, but you'll not find any design related styles here. Only consistancy and re-base styling as well as some usefull layout classes **
+### Global
+**Consists of Three core parts, but you'll not find any design related styles here. Only consistancy and re-base styling as well as some usefull layout classes.**
 
 * Reset - [normalize.css](http://necolas.github.com/normalize.css/)
 * Base - Styleing some basic defaults for the html. No design based styles on 
 consistancy and rebase styling goes here
 * Layout - Grid system and layout helpers based on [Bootstrap](http://getbootstrap.com/css/#grid)
 
-#### Sugar
-**Consists of three Two parts**
+### Sugar
+**Consists of Two parts.**
 
 * Elements - This is where we set the look and feel of the type & other html entities
 * Modules - Here we add any useful modules or objects for our fraemwrok to utilize.
 
-**We then add on a framework layer**
+**We then add on a framework layer.**
 
 * Tools - contains mixins, default settings, & a blame.less file for quick fixs
 
@@ -42,17 +42,6 @@ Sugar3 is a modern framework for modern browsers. It takes advantage of
 `box-sizing:border-box;` . As such, Sugar3 is intended for **IE8**
 and above only.  
 
-
-## Footprint
-
-Out of the box, inuit.css is very small, however it is **imperative** that you
-only ever deploy a minified version of your compiled stylesheet to your live
-environment. inuit.css compiles stright to minified output by default, but you
-can change this in `watch` if you have a build process in place.
-
-It is also **highly** recommended that you enable gzip compression on any text
-assets being served from your site; doing so will further reduce the footprint
-of inuit.css and greatly help your site’s performance.
 
 ## Credits
 
