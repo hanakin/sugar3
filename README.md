@@ -32,7 +32,7 @@ consistancy and rebase styling goes here
 
 * Tools - contains mixins, default settings, & a blame.less file for quick fixs
 
-**The last piece of the puzzle is a theme.less this acts sort of like a catch all for those few and far between outliers that do not fit into a module or an element on their own.
+**The last piece of the puzzle is a theme.less this acts sort of like a catch all for those few and far between outliers that do not fit into a module or an element on their own.**
 
 
 ## Browser support
@@ -51,7 +51,7 @@ been possible without inspiration and work from an array of other people.
 * **[Nicole Sullivan](https://twitter.com/stubbornella)** for her work on OOCSS
 * **[Jonathan Snook](https://twitter.com/snookca)** for his work on SMACSS
 * **[Nicolas Gallagher](https://twitter.com/necolas)** for his work on numerous
-* **[Brad Frost](http://bradfrostweb.com/blog/post/atomic-web-design/)for his article on Atomic Design
+* **[Brad Frost](http://bradfrostweb.com/blog/post/atomic-web-design/)**for his article on Atomic Design
   CSS things
 * **[Harry Roberts](http://inuitcss.com)** for is work with inuitcss and so much more
 
