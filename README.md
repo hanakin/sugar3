@@ -15,7 +15,7 @@ found based on what it is and how it used.
 * Sugar
 
 ### Global
-**Consists of Three core parts, but you'll not find any design related styles here. Only consistancy and re-base styling as well as some usefull layout classes.**
+Consists of Three core parts, but you'll not find any design related styles here. Only consistancy and re-base styling as well as some usefull layout classes.
 
 * Reset - [normalize.css](http://necolas.github.com/normalize.css/)
 * Base - Styleing some basic defaults for the html. No design based styles on 
@@ -23,16 +23,16 @@ consistancy and rebase styling goes here
 * Layout - Grid system and layout helpers based on [Bootstrap](http://getbootstrap.com/css/#grid)
 
 ### Sugar
-**Consists of Two parts.**
+Consists of Two parts.
 
 * Elements - This is where we set the look and feel of the type & other html entities
 * Modules - Here we add any useful modules or objects for our fraemwrok to utilize.
 
-**We then add on a framework layer.**
+We then add on a framework layer.
 
 * Tools - contains mixins, default settings, & a blame.less file for quick fixs
 
-**The last piece of the puzzle is a theme.less this acts sort of like a catch all for those few and far between outliers that do not fit into a module or an element on their own.**
+The last piece of the puzzle is a theme.less this acts sort of like a catch all for those few and far between outliers that do not fit into a module or an element on their own.
 
 
 ## Browser support
