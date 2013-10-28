@@ -1,0 +1,111 @@
+/*------------------------------------*\
+    THEME.LESS
+\*------------------------------------*/
+// Contains all styles for the theme of the project outside the sugar3 framework...
+
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+
+@import "tools/defaults.less";
+@import "tools/mixins.less";
+
+
+/*------------------------------------*\
+    $USER STYLES
+\*------------------------------------*/
+
+@font-face {
+    font-family: 'midaym';
+    src:url('../../assets/fonts/midaym.eot');
+    src:url('../../assets/fonts/midaym.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/midaym.svg#icomoon') format('svg'),
+        url('../../assets/fonts/midaym.woff') format('woff'),
+        url('../../assets/fonts/midaym.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sugar';
+    src:url('../../assets/fonts/sugar.eot');
+    src:url('../../assets/fonts/sugar.eot?#iefix') format('embedded-opentype'),
+        url('../../assets/fonts/sugar.svg') format('svg'),
+        url('../../assets/fonts/sugar.woff') format('woff'),
+        url('../../assets/fonts/sugar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/** 
+ *  1. Better Font Rendering
+ */
+.logo {
+    /* Text */
+    font-family: 'sugar';
+    speak: none;
+    .font-size(@kilo + 6);
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased; /* [1] */
+    -moz-osx-font-smoothing: grayscale;  /* [1] */
+    /* Layout */
+    float: left;
+    margin-top: -22px;
+    margin-right: 2px;
+}
+
+.logo:before { content: "\73"; }
+
+section { 
+    /* Decoration */
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    /* Layout */
+    .padding(10, 0);
+}
+
+.section-head { background-color: @white-dark; }
+
+.hero-unit {
+    .padding(30, 0);
+    .kilo {
+        letter-spacing: -3px;
+        sup { left: -7px; }
+        .beta { 
+            font-weight: 300;
+            letter-spacing: -1px;
+            .line-height(25);
+        }
+    }
+}
+
+.hobo { font-family: "Hobo Std"; }
+
+footer { 
+    .padding(10, 0);
+    .text-left { margin-top: 8px; }
+}
+
+.branding {
+    /* Text */
+    font-family: 'midaym';
+    font-size: 30px;
+    /* Decoration */
+    color: @gray;
+
+    &:hover { color: @gray-darker; }
+}
+
+.grid-paint {
+    /* Decoration */
+    background-color: #4a8ec2;
+    border-radius: 4px;
+    color: #fff;
+    /* Layout */
+    padding: .5em;
+}
+
