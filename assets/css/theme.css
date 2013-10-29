@@ -14,7 +14,7 @@
   font-weight: normal;
   font-style: normal;
 }
-.branding {
+.brand {
   /* Text */
 
   font-family: 'midaym';
@@ -23,7 +23,7 @@
 
   color: #999999;
 }
-.branding:hover {
+.brand:hover {
   color: #666666;
 }
 @font-face {
@@ -75,15 +75,6 @@ section {
 
   padding: 24px 0px;
   padding: 1rem 0rem;
-}
-.section-head {
-  /* Decoration */
-
-  background-color: #f2f2f2;
-  /* Layout */
-
-  padding: 6px 0px;
-  padding: 0.25rem 0rem;
 }
 footer {
   padding: 24px 0px;
