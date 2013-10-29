@@ -150,13 +150,10 @@ fieldset[disabled] .checkbox-inline {
   margin-bottom: 10px;
 }
 /*------------------------------------*\
-    $MODULES
-\*------------------------------------*/
-/*------------------------------------*\
-    $BUTTONS
+    $ELEMENT-BUTTON
 \*------------------------------------*/
 /**
- * Base button module.
+ * Base button element.
  *
  * 1. Make buttons inherit font styles.
  * 2. Line different sized buttons up a little nicer.
@@ -264,7 +261,10 @@ fieldset[disabled] .checkbox-inline {
   font-size: 0.875rem;
 }
 /*------------------------------------*\
-    $HERO UNIT
+    $MODULES
+\*------------------------------------*/
+/*------------------------------------*\
+    $MODULE-HERO UNIT
 \*------------------------------------*/
 /**
  * Base hero unit module.
