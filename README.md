@@ -24,6 +24,7 @@ Consists of Three core parts, but you'll not find any design related styles here
 ### Sugar
 Consists of Two parts.
 
+* Core - Add some theme specific styling to the base selectors
 * Elements - these are individuals pieces that when combined comprise a module
 * Modules - by cobining elements together we create modules
 
