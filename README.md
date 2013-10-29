@@ -4,8 +4,8 @@
 Sugar3 is a powerful front-end framework based on the [SMACSS](http://smacss.com/) & [Atomic Design](http://bradfrostweb.com/blog/post/atomic-web-design/) principles
 
 It is a Less based, Object Oriented framework that allows for easy abstraction
-of the different aspects that make up the any css project. Its strucured in a
-way that every small aspect of any project regaurdless of scope, can easily be
+of the different aspects that make up any css project. Its strucured in a
+way that every small aspect of a project regaurdless of scope, can easily be
 found based on what it is and how it used.
 
 ## The Approach
@@ -18,15 +18,14 @@ found based on what it is and how it used.
 Consists of Three core parts, but you'll not find any design related styles here. Only consistancy and re-base styling as well as some usefull layout classes.
 
 * Reset - [normalize.css](http://necolas.github.com/normalize.css/)
-* Base - Styleing some basic defaults for the html. No design based styles on 
-consistancy and rebase styling goes here
+* Base - Styleing some basic defaults for the html. 
 * Layout - Grid system and layout helpers based on [Bootstrap](http://getbootstrap.com/css/#grid)
 
 ### Sugar
 Consists of Two parts.
 
-* Elements - This is where we set the look and feel of the type & other html entities
-* Modules - Here we add any useful modules or objects for our fraemwrok to utilize.
+* Elements - these are individuals pieces that when combined comprise a module
+* Modules - by cobining elements together we create modules
 
 **We then add on a framework layer.**
 
