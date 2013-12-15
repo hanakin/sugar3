@@ -1,11 +1,12 @@
 /*------------------------------------*\
-    $ELEMENTS--FORMS
+    $CORE--FORMS
 \*------------------------------------*/
 
-// Checkboxes and radios
-//
-// Indent the labels to position radios/checkboxes as hanging controls.
-
+/**
+ *  Checkboxes and radios
+ *
+ *  Indent the labels to position radios/checkboxes as hanging controls.
+ */
 .radio,
 .checkbox {
 	// ** Text ** \\
@@ -31,11 +32,13 @@
 	float: left;
 	margin-left: -20px;
 }
-// Move up sibling radios or checkboxes for tighter spacing
-.radio + .radio,
-.checkbox + .checkbox { margin-top: -5px; }
 
-// Radios and checkboxes on same line
+.radio + .radio,
+.checkbox + .checkbox { margin-top: -5px; } // Move up sibling radios or checkboxes for tighter spacing
+
+/**
+ *  Radios and checkboxes on same line
+ */
 .radio-inline,
 .checkbox-inline {
 	// ** Text ** \\
@@ -53,9 +56,10 @@
 	margin-left: 10px; // space out consecutive inline controls
 }
 
-// Apply same disabled cursor tweak as for inputs
-//
-// Note: Neither radios nor checkboxes can be readonly.
+/**
+ *  Apply same disabled cursor tweak as for inputs
+ *  Note: Neither radios nor checkboxes can be readonly.
+ */
 input[type="radio"],
 input[type="checkbox"],
 .radio,
@@ -68,11 +72,12 @@ input[type="checkbox"],
 	}
 }
 
-// Help text
-//
-// Apply to any element you wish to create light text for placement immediately
-// below a form control. Use for general help, formatting, or instructional text.
-
+/**
+ *  Help text
+ *
+ * Apply to any element you wish to create light text for placement immediately
+ * below a form control. Use for general help, formatting, or instructional text.
+ */
 .help-block {
 	// ** Decoration ** \\
 	color: lighten(@black, 25%); // lighten the text some for contrast
