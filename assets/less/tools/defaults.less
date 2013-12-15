@@ -32,6 +32,24 @@
 @white-dark:                    lighten(#000, 95%); // #f2f2f2
 @white:                         #fff;
 
+// Accent colors
+@blue-dark:                     #217bb2;
+@blue:                          #3aa8b9;
+@red:                           #c65669;
+@green:                         #34d987;
+@yellow:                        #ffd22e;
+@orange:                        #f79738;
+@pink:                          #c655bb;
+@purple:                        #8855dc;
+
+// Social colors
+@social-pinterest:   			#cb2028;
+@social-linkedin:    			#0072b5;
+@social-stumbleupon: 			#ed4a13;
+@social-google: 	 			#cf4b33;
+@social-facebook:    			#2f4b93;
+@social-twitter:     			#00bdef;
+
 
 //------------------------------------//
 //  $BASE
@@ -47,18 +65,22 @@
 // Base line height
 //
 @base-line-height:              24;
-@base-line-height-ratio:        @base-line-height/@base-font-size;
+@base-line-height-ratio:        (@base-line-height/@base-font-size);
 
 //
 // Base spacing units
 //
-@base-spacing-unit:             @base-line-height;
+@base-spacing-unit:             @base-line-height;          // 24
 //Large units
-@double-spacing-unit:           (@base-spacing-unit * 2);
+@sextuple-spacing-unit:         (@base-spacing-unit * 6);   // 144
+@quintuple-spacing-unit:        (@base-spacing-unit * 5);   // 120
+@quadruple-spacing-unit:        (@base-spacing-unit * 4);   // 96
+@triple-spacing-unit:           (@base-spacing-unit * 3);   // 72
+@double-spacing-unit:           (@base-spacing-unit * 2);   // 48
 // Small units
-@half-spacing-unit:             (@base-spacing-unit / 2);
-@quarter-spacing-unit:          (@base-spacing-unit / 4);
-@eighth-spacing-unit:           (@base-spacing-unit / 8);
+@half-spacing-unit:             (@base-spacing-unit / 2);   // 12
+@quarter-spacing-unit:          (@base-spacing-unit / 4);   // 6
+@eighth-spacing-unit:           (@base-spacing-unit / 8);   // 3
 
 
 //
@@ -74,7 +96,7 @@
 //
 // Base colour for links
 //
-@base-link-color:               #428bca;
+@base-link-color:               #21b5e4;
         
 //
 // How big would you like round corners to be by default?
@@ -84,18 +106,18 @@
 //
 // Font-sizes (in pixels). Refer to relevant sections for their implementations.
 //
-@giga:                          96;
-@mega:                          72;
-@kilo:                          48;
+@giga:                          @quadruple-spacing-unit;
+@mega:                          @triple-spacing-unit;
+@kilo:                          @double-spacing-unit;
         
 @h1-size:                       36; 
 @h2-size:                       30; 
-@h3-size:                       24; 
+@h3-size:                       @base-spacing-unit; 
 @h4-size:                       18; 
 @h5-size:                       16; 
 @h6-size:                       14; 
         
-@milli:                         12;
+@milli:                         @half-spacing-unit;
 @micro:                         10;
         
 @alpha:                         @h1-size;
@@ -137,6 +159,7 @@
 @small-max:                     (@small - 1);
 @medium-max:                    (@medium - 1);
 @large-max:                     (@large - 1);
+@wide-max:                      (@wide - 1);
 
 
 //------------------------------------//

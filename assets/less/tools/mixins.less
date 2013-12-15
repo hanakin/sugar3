@@ -3,17 +3,20 @@
 //------------------------------------\\
 // Mixins ported and trimed from Bootstrap 3.0.1
 
-// Clearfix
-// Source: http://nicolasgallagher.com/micro-clearfix-hack/
 //
-// For modern browsers
+// Contain floats
+//
+// Make an element expand to contain floated children.
+// Uses pseudo-elements (micro clearfix).
+//
 // 1. The space content is one way to avoid an Opera bug when the
-//    contenteditable attribute is included anywhere else in the document.
-//    Otherwise it causes space to appear at the top and bottom of elements
-//    that are clearfixed.
+//    `contenteditable` attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of the
+//    element.
 // 2. The use of `table` rather than `block` is only necessary if using
 //    `:before` to contain the top-margins of child elements.
-.clearfix() {
+//
+.cf() {
     &:before,
     &:after {
         content: " ";   // [1]
@@ -350,19 +353,6 @@
 .responsive-invisibility() { & { display: none !important; } }
 
 
-// Hide content off-screen without resorting to `display:none;`
-.hidden(){
-    border: 0 !important;
-    clip: rect(0 0 0 0) !important;
-    height: 1px !important;
-    margin: -1px !important;
-    overflow: hidden !important;
-    padding: 0 !important;
-    position: absolute !important;
-    width: 1px !important;
-}
-
-
 // Rem Size Mixins
 // generates both px and rem font sizes
 .font-size(@size) {
@@ -374,8 +364,8 @@
 }
 
 .line-height(@size){
-    @px-size: (@base-line-height*@size)*1px;
-    @rem-size: (ceil(@size / @base-line-height) * (@base-line-height / @size))*1rem;
+    @px-size: @size*1px;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     line-height: @px-size;
     line-height: @rem-size;
@@ -383,7 +373,7 @@
 
 .margin(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     margin: @px-size;
     margin: @rem-size;
@@ -392,8 +382,8 @@
 .margin(@vertiacl, @horizontal){
     @v-px-size: @vertiacl*1px;
     @h-px-size: @horizontal*1px;
-    @v-rem-size: (@vertiacl / @base-line-height)*1rem;
-    @h-rem-size: (@horizontal / @base-line-height)*1rem;
+    @v-rem-size: (@vertiacl/@base-rem-multiplier)*1rem;
+    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
 
     margin: @v-px-size @h-px-size;
     margin: @v-rem-size @h-rem-size;
@@ -403,9 +393,9 @@
     @t-px-size: @top*1px;
     @h-px-size: @horizontal*1px;
     @b-px-size: @bottom*1px;
-    @t-rem-size: (@top / @base-line-height)*1rem;
-    @h-rem-size: (@horizontal / @base-line-height)*1rem;
-    @b-rem-size: (@bottom / @base-line-height)*1rem;
+    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
+    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
 
     margin: @t-px-size @h-px-size @b-px-size;
     margin: @t-rem-size @h-rem-size @b-rem-size;
@@ -416,10 +406,10 @@
     @r-px-size: @right*1px;
     @b-px-size: @bottom*1px;
     @l-px-size: @left*1px;
-    @t-rem-size: (@top / @base-line-height)*1rem;
-    @r-rem-size: (@right / @base-line-height)*1rem;
-    @b-rem-size: (@bottom / @base-line-height)*1rem;
-    @l-rem-size: (@left / @base-line-height)*1rem;
+    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
+    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
+    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
 
     margin: @t-px-size @r-px-size @b-px-size @l-px-size;
     margin: @t-rem-size @r-rem-size @b-rem-size @l-rem-size;
@@ -427,7 +417,7 @@
 
 .margin-top(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     margin-top: @px-size;
     margin-top: @rem-size;
@@ -435,7 +425,7 @@
 
 .margin-right(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     margin-right: @px-size;
     margin-right: @rem-size;
@@ -443,7 +433,7 @@
 
 .margin-bottom(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     margin-bottom: @px-size;
     margin-bottom: @rem-size;
@@ -451,15 +441,35 @@
 
 .margin-left(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     margin-left: @px-size;
     margin-left: @rem-size;
 }
 
+.margin-horizontal(@horizontal){
+    @h-px-size: @horizontal*1px;
+    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+
+    margin-left: @h-px-size;
+    margin-right: @h-px-size;
+    margin-left: @h-rem-size;
+    margin-right: @h-rem-size;
+}
+
+.margin-vertical(@vertical){
+    @v-px-size: @vertical*1px;
+    @v-rem-size: (@vertical/@base-rem-multiplier)*1rem;
+
+    margin-top: @v-px-size;
+    margin-bottom: @v-px-size;
+    margin-top: @v-rem-size;
+    margin-bottom: @v-rem-size;
+}
+
 .padding(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     padding: @px-size;
     padding: @rem-size;
@@ -468,8 +478,8 @@
 .padding(@vertiacl, @horizontal){
     @v-px-size: @vertiacl*1px;
     @h-px-size: @horizontal*1px;
-    @v-rem-size: (@vertiacl / @base-line-height)*1rem;
-    @h-rem-size: (@horizontal / @base-line-height)*1rem;
+    @v-rem-size: (@vertiacl/@base-rem-multiplier)*1rem;
+    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
 
     padding: @v-px-size @h-px-size;
     padding: @v-rem-size @h-rem-size;
@@ -479,9 +489,9 @@
     @t-px-size: @top*1px;
     @h-px-size: @horizontal*1px;
     @b-px-size: @bottom*1px;
-    @t-rem-size: (@top / @base-line-height)*1rem;
-    @h-rem-size: (@horizontal / @base-line-height)*1rem;
-    @b-rem-size: (@bottom / @base-line-height)*1rem;
+    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
+    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
 
     padding: @t-px-size @h-px-size @b-px-size;
     padding: @t-rem-size @h-rem-size @b-rem-size;
@@ -492,10 +502,10 @@
     @r-px-size: @right*1px;
     @b-px-size: @bottom*1px;
     @l-px-size: @left*1px;
-    @t-rem-size: (@top / @base-line-height)*1rem;
-    @r-rem-size: (@right / @base-line-height)*1rem;
-    @b-rem-size: (@bottom / @base-line-height)*1rem;
-    @l-rem-size: (@left / @base-line-height)*1rem;
+    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
+    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
+    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
 
     padding: @t-px-size @r-px-size @b-px-size @l-px-size;
     padding: @t-rem-size @r-rem-size @b-rem-size @l-rem-size;
@@ -503,7 +513,7 @@
 
 .padding-top(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     padding-top: @px-size;
     padding-top: @rem-size;
@@ -511,7 +521,7 @@
 
 .padding-right(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     padding-right: @px-size;
     padding-right: @rem-size;
@@ -519,7 +529,7 @@
 
 .padding-bottom(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     padding-bottom: @px-size;
     padding-bottom: @rem-size;
@@ -527,8 +537,28 @@
 
 .padding-left(@size){
     @px-size: @size*1px;
-    @rem-size: (@size / @base-line-height)*1rem;
+    @rem-size: (@size/@base-rem-multiplier)*1rem;
 
     padding-left: @px-size;
     padding-left: @rem-size;
+}
+
+.padding-horizontal(@horizontal){
+    @h-px-size: @horizontal*1px;
+    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+
+    padding-left: @h-px-size;
+    padding-right: @h-px-size;
+    padding-left: @h-rem-size;
+    padding-right: @h-rem-size;
+}
+
+.padding-vertical(@vertical){
+    @v-px-size: @vertical*1px;
+    @v-rem-size: (@vertical/@base-rem-multiplier)*1rem;
+
+    padding-top: @v-px-size;
+    padding-bottom: @v-px-size;
+    padding-top: @v-rem-size;
+    padding-bottom: @v-rem-size;
 }
