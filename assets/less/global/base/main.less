@@ -5,6 +5,12 @@
  *  simple defaults for root level
  */
 
-html { font: e(%("%d / %d", ((@base-font-size/16)*1em), @base-line-height-ratio)) @base-font-family; }
+html { 
+	font: unit(@base-font-size, px) @base-line-height-ratio @base-font-family;
+	font-size: unit(@base-font-size, px);
+	font-family: @base-font-family;
+	line-height: @base-line-height-ratio;
+}
+
 body { color: @black; }
 

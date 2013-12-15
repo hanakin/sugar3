@@ -29,20 +29,12 @@ p,blockquote,pre,
 dl,dd,ol,ul,
 form,fieldset,legend,
 table,th,td,caption,
-hr{
+hr {
     margin: 0;
     padding: 0;
 }
 
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-iframe {
-    border: 0;
-}
+fieldset, iframe { border: 0; }
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -50,12 +42,7 @@ iframe {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
+::-moz-selection, ::selection {
     background: #b3d4fc;
     text-shadow: none;
 }

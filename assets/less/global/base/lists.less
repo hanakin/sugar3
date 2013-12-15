@@ -4,9 +4,9 @@
 
 ul,
 ol {
-	.margin(0, 0, @half-spacing-unit);
+	.margin(0, 0, 0, @base-spacing-unit);
     ul,
-    ol{ .margin(0, 0, 0, @base-spacing-unit); }
+    ol{ .margin(@quarter-spacing-unit, 0, @quarter-spacing-unit, @base-spacing-unit); }
 }
 
 dl { .margin-bottom(@base-spacing-unit); }
