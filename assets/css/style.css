@@ -3079,66 +3079,6 @@ fieldset[disabled] .checkbox-inline {
   margin-bottom: 10px;
 }
 /*------------------------------------*\
-    $CORE--HEADINGS
-\*------------------------------------*/
-/**
- * Detailing code elements
- */
-h2,
-h3,
-h4 {
-  font-weight: 900;
-}
-h2 {
-  font-size: 42px;
-  font-size: 2.625rem;
-  line-height: 48px;
-  line-height: 3rem;
-  letter-spacing: -3px;
-  display: block;
-  margin-bottom: 6px;
-  margin-bottom: 0.375rem;
-}
-h2 small {
-  font-size: 30px;
-  font-size: 1.875rem;
-  font-weight: 300;
-  line-height: 36px;
-  line-height: 2.25rem;
-  letter-spacing: -1px;
-  color: #ffffff;
-  opacity: 0.6;
-  filter: alpha(opacity=60);
-}
-h3,
-h4,
-h5,
-h6 {
-  list-style: -1px;
-}
-h3,
-h4 {
-  font-size: 30px;
-  font-size: 1.875rem;
-  line-height: 36px;
-  line-height: 2.25rem;
-}
-h5 {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 6px;
-  line-height: 0.375rem;
-  margin-top: 24px;
-  margin-top: 1.5rem;
-}
-h6 {
-  font-size: 18px;
-  font-size: 1.125rem;
-  line-height: 0;
-  margin: 24px 0px -12px;
-  margin: 1.5rem 0rem -0.75rem;
-}
-/*------------------------------------*\
     $ELEMENTS
 \*------------------------------------*/
 /*------------------------------------*\
@@ -3168,14 +3108,10 @@ h6 {
   /* [1] */
   line-height: normal;
   /* [1] */
-  letter-spacing: 1px;
-  /* [1] */
   vertical-align: middle;
   /* [2] */
   white-space: nowrap;
   /* [3] */
-  -webkit-font-smoothing: subpixel-antialiased;
-  /* [7] */
   /* Decoration */
   background-color: #21b5e4;
   /* [4] */
@@ -3183,21 +3119,19 @@ h6 {
   /* [5] */
   border: 0;
   /* [4] */
-  border-radius: 4px;
+  border-radius: 5px;
   /* [4] */
   color: #ffffff;
   /* [4] */
   cursor: pointer;
   /* [6] */
-  -webkit-transition: 0.15s linear;
-  transition: 0.15s linear;
   /* Layout */
   display: inline-block;
   /* [7] */
   margin: 0;
   /* [8] */
-  padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
+  padding: 12px 24px;
+  padding: 0.75rem 1.5rem;
   /* [8] */
 }
 .btn:hover {
@@ -3242,340 +3176,8 @@ h6 {
   font-size: 14px;
   font-size: 0.875rem;
 }
-/**
- * Button Icon spacings
- */
-.btn .icon {
-  margin-right: 6px;
-  margin-right: 0.375rem;
-}
-/**
- * Button Wide
- */
-.btn-wide {
-  min-width: 144;
-  padding-left: 24;
-  padding-right: 24;
-}
-/**
- * Social Buttons
- */
-.btn-twitter {
-  background-color: #00bdef !important;
-}
-.btn-twitter:hover {
-  background-color: #009dc6 !important;
-}
-.btn-facebook {
-  background-color: #2f4b93 !important;
-}
-.btn-facebook:hover {
-  background-color: #253b74 !important;
-}
-.btn-google {
-  background-color: #cf4b33 !important;
-}
-.btn-google:hover {
-  background-color: #b03e29 !important;
-}
-.btn-linkedin {
-  background-color: #0072b5 !important;
-}
-.btn-linkedin:hover {
-  background-color: #00588c !important;
-}
-@font-face {
-  font-family: 'midaym';
-  src: url('../fonts/midaym.eot');
-  src: url('../fonts/midaym.eot?#iefix') format('embedded-opentype'), url('../fonts/midaym.ttf') format('truetype'), url('../fonts/midaym.woff') format('woff'), url('../fonts/midaym.svg#midaym') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-.icon {
-  font-family: 'midaym';
-  font-style: inherit;
-  font-weight: inherit;
-  font-variant: normal;
-  line-height: 1;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  margin: 0 1px;
-  position: relative;
-  top: 1px;
-  -moz-osx-font-smoothing: grayscale;
-  speak: none;
-}
-.icon-facebook:before {
-  content: "\60";
-}
-/*  */
-.icon-linkedin:before {
-  content: "\31";
-}
-/* 1 */
-.icon-google:before {
-  content: "\32";
-}
-/* 2 */
-.icon-flickr:before {
-  content: "\33";
-}
-/* 3 */
-.icon-twitter:before {
-  content: "\34";
-}
-/* 4 */
-.icon-github:before {
-  content: "\35";
-}
-/* 5 */
-.icon-facebook2:before {
-  content: "\62";
-}
-/* b */
-.icon-linkedin2:before {
-  content: "\78";
-}
-/* x */
-.icon-google2:before {
-  content: "\6d";
-}
-/* m */
-.icon-flickr2:before {
-  content: "\76";
-}
-/* v */
-.icon-twitter2:before {
-  content: "\6e";
-}
-/* n */
-.icon-github2:before {
-  content: "\63";
-}
-/* c */
-.icon-M:before {
-  content: "\4d";
-}
-/* M */
-.icon-I:before {
-  content: "\49";
-}
-/* I */
-.icon-D:before {
-  content: "\44";
-}
-/* D */
-.icon-A:before {
-  content: "\41";
-}
-/* A */
-.icon-Y:before {
-  content: "\59";
-}
-/* Y */
-.icon-midaym1:before {
-  content: "\36";
-}
-/* 6 */
-.icon-midaym2:before {
-  content: "\37";
-}
-/* 7 */
-.icon-heart:before {
-  content: "\38";
-}
-/* 8 */
-.icon-cloud:before {
-  content: "\39";
-}
-/* 9 */
-.icon-star:before {
-  content: "\30";
-}
-/* 0 */
-.icon-tv:before {
-  content: "\2d";
-}
-/* - */
-.icon-sound:before {
-  content: "\3d";
-}
-/* = */
-.icon-video:before {
-  content: "\7e";
-}
-/* ~ */
-.icon-trash:before {
-  content: "\21";
-}
-/* ! */
-.icon-user:before {
-  content: "\40";
-}
-/* @ */
-.icon-key:before {
-  content: "\23";
-}
-/* # */
-.icon-search:before {
-  content: "\24";
-}
-/* $ */
-.icon-settings:before {
-  content: "\25";
-}
-/* % */
-.icon-camera:before {
-  content: "\5e";
-}
-/* ^ */
-.icon-tag:before {
-  content: "\26";
-}
-/* & */
-.icon-lock:before {
-  content: "\2a";
-}
-/* * */
-.icon-bulb:before {
-  content: "\28";
-}
-/* ( */
-.icon-clock:before {
-  content: "\29";
-}
-/* ) */
-.icon-wallet:before {
-  content: "\5f";
-}
-/* _ */
-.icon-calendar:before {
-  content: "\2b";
-}
-/* + */
-.icon-note:before {
-  content: "\71";
-}
-/* q */
-.icon-photo:before {
-  content: "\77";
-}
-/* w */
-.icon-shop:before {
-  content: "\65";
-}
-/* e */
-.icon-clip:before {
-  content: "\72";
-}
-/* r */
-.icon-like:before {
-  content: "\74";
-}
-/* t */
-.icon-mail:before {
-  content: "\79";
-}
-/* y */
-.icon-fire:before {
-  content: "\75";
-}
-/* u */
-.icon-t-shirt:before {
-  content: "\69";
-}
-/* i */
-.icon-news:before {
-  content: "\6f";
-}
-/* o */
-.icon-phone:before {
-  content: "\70";
-}
-/* p */
-.icon-food:before {
-  content: "\5b";
-}
-/* [ */
-.icon-lab:before {
-  content: "\5d";
-}
-/* ] */
-.icon-cup:before {
-  content: "\5c";
-}
-/* \ */
-.icon-stack:before {
-  content: "\7b";
-}
-/* { */
-.icon-study:before {
-  content: "\7d";
-}
-/* } */
-.icon-megaphone:before {
-  content: "\7c";
-}
-/* | */
-.icon-bubble:before {
-  content: "\61";
-}
-/* a */
-.icon-music:before {
-  content: "\73";
-}
-/* s */
-.icon-eye:before {
-  content: "\64";
-}
-/* d */
-.icon-location:before {
-  content: "\66";
-}
-/* f */
-.icon-data:before {
-  content: "\67";
-}
-/* g */
-.icon-banknote:before {
-  content: "\68";
-}
-/* h */
-.icon-display:before {
-  content: "\6a";
-}
-/* j */
-.icon-diamond:before {
-  content: "\6b";
-}
-/* k */
-.icon-pen:before {
-  content: "\6c";
-}
-/* l */
-.icon-paperplane:before {
-  content: "\3b";
-}
-/* ; */
-.icon-params:before {
-  content: "\27";
-}
-/* ' */
-.icon-truck:before {
-  content: "\3a";
-}
-/* : */
-.icon-world:before {
-  content: "\22";
-}
-/* " */
-.icon-vynil:before {
-  content: "\7a";
-}
-/* z */
 /*------------------------------------*\
-    $OBJECTS
+    $MODULES
 \*------------------------------------*/
 /*------------------------------------*\
     $MODULE-Banner
