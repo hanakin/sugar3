@@ -269,10 +269,14 @@ fieldset[disabled] .checkbox-inline {
   /* [1] */
   line-height: normal;
   /* [1] */
+  letter-spacing: 1px;
+  /* [1] */
   vertical-align: middle;
   /* [2] */
   white-space: nowrap;
   /* [3] */
+  -webkit-font-smoothing: subpixel-antialiased;
+  /* [7] */
   /* Decoration */
   background-color: #21b5e4;
   /* [4] */
@@ -280,19 +284,21 @@ fieldset[disabled] .checkbox-inline {
   /* [5] */
   border: 0;
   /* [4] */
-  border-radius: 5px;
+  border-radius: 4px;
   /* [4] */
   color: #ffffff;
   /* [4] */
   cursor: pointer;
   /* [6] */
+  -webkit-transition: 0.15s linear;
+  transition: 0.15s linear;
   /* Layout */
   display: inline-block;
   /* [7] */
   margin: 0;
   /* [8] */
-  padding: 12px 24px;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
   /* [8] */
 }
 .btn:hover {
@@ -336,6 +342,48 @@ fieldset[disabled] .checkbox-inline {
 .btn-zeta {
   font-size: 14px;
   font-size: 0.875rem;
+}
+/**
+ * Button Icon spacings
+ */
+.btn .icon {
+  margin-right: 6px;
+  margin-right: 0.375rem;
+}
+/**
+ * Button Wide
+ */
+.btn-wide {
+  min-width: 144;
+  padding-left: 24;
+  padding-right: 24;
+}
+/**
+ * Social Buttons
+ */
+.btn-twitter {
+  background-color: #00bdef !important;
+}
+.btn-twitter:hover {
+  background-color: #009dc6 !important;
+}
+.btn-facebook {
+  background-color: #2f4b93 !important;
+}
+.btn-facebook:hover {
+  background-color: #253b74 !important;
+}
+.btn-google {
+  background-color: #cf4b33 !important;
+}
+.btn-google:hover {
+  background-color: #b03e29 !important;
+}
+.btn-linkedin {
+  background-color: #0072b5 !important;
+}
+.btn-linkedin:hover {
+  background-color: #00588c !important;
 }
 /*------------------------------------*\
     $MODULES
