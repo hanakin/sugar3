@@ -16,11 +16,9 @@
 }
 .brand {
   /* Text */
-
   font-family: 'midaym';
   font-size: 30px;
   /* Decoration */
-
   color: #999999;
 }
 .brand:hover {
@@ -38,7 +36,6 @@
  */
 .logo {
   /* Text */
-
   font-family: 'sugar';
   speak: none;
   font-size: 54px;
@@ -50,12 +47,9 @@
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   /* [1] */
-
   -moz-osx-font-smoothing: grayscale;
   /* [1] */
-
   /* Layout */
-
   float: left;
   margin-top: -22px;
   margin-right: 2px;
@@ -68,11 +62,9 @@
 }
 section {
   /* Decoration */
-
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   /* Layout */
-
   padding: 24px 0px;
   padding: 1rem 0rem;
 }

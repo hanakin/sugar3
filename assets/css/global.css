@@ -64,13 +64,10 @@ audio:not([controls]) {
 html {
   font-family: sans-serif;
   /* 1 */
-
   -webkit-text-size-adjust: 100%;
   /* 2 */
-
   -ms-text-size-adjust: 100%;
   /* 2 */
-
 }
 /*
  * Remove default margin.
@@ -225,10 +222,8 @@ fieldset {
 legend {
   border: 0;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /*
  * 1. Correct font family not being inherited in all browsers.
@@ -241,13 +236,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-
   font-size: 100%;
   /* 2 */
-
   margin: 0;
   /* 3 */
-
 }
 /*
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
@@ -280,10 +272,8 @@ input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
-
   cursor: pointer;
   /* 3 */
-
 }
 /*
  * Re-set default cursor for disabled elements.
@@ -300,10 +290,8 @@ input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
   /* 1 */
-
   padding: 0;
   /* 2 */
-
 }
 /*
  * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
@@ -313,11 +301,9 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-
   box-sizing: content-box;
 }
 /*
@@ -343,10 +329,8 @@ input::-moz-focus-inner {
 textarea {
   overflow: auto;
   /* 1 */
-
   vertical-align: top;
   /* 2 */
-
 }
 /* ==========================================================================
    Tables
@@ -794,15 +778,12 @@ table {
   /**
     * Bottom align for column headings
     */
-
   /**
     * Remove top border from thead by default
     */
-
   /**
     * Account for multiple tbody instances
     */
-
 }
 table > thead > tr > th,
 table > tbody > tr > th,
@@ -893,7 +874,6 @@ input[type="checkbox"] {
   margin: 4px 0 0;
   margin-top: 1px \9;
   /* IE8-9 */
-
   position: relative;
   top: -3px;
 }
@@ -1069,7 +1049,6 @@ input[type="color"] {
      *  be disabled if the fieldset is disabled. Due to implementation difficulty,
      *  we don't honor that edge case; we style them as disabled anyway.   
      */
-
 }
 select[disabled],
 textarea[disabled],
@@ -1854,11 +1833,10 @@ blockquote.pull-right small:before {
 @media (min-width: 768px) {
   .list-inline {
     /**
-           * Inline Description Lists
-           * Defaults to being stacked without any of the below styles applied, until the
-           * grid breakpoint is reached (default of ~768px).
-           */
-  
+         * Inline Description Lists
+         * Defaults to being stacked without any of the below styles applied, until the
+         * grid breakpoint is reached (default of ~768px).
+         */
   }
   .list-inline dt {
     text-align: right;
@@ -1988,12 +1966,10 @@ blockquote.pull-right small:before {
  */
 .grid-paint {
   /* Decoration */
-
   background-color: #4a8ec2;
   border-radius: 4px;
   color: #fff;
   /* Layout */
-
   padding: 12px;
   padding: 0.5rem;
 }
