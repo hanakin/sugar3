@@ -16,7 +16,8 @@ samp { font-family: Monaco, Menlo, Consolas, "Courier New", monospace; }
  */
 code {
     // ** Text ** \\
-    font-size: 90%;
+    // ** Text ** \\
+    font-size: 80%;
     white-space: nowrap;
     // ** Layout ** \\
     .padding(@eighth-spacing-unit, @quarter-spacing-unit);
@@ -28,7 +29,7 @@ code {
 pre {
     // ** Text ** \\
     .font-size(@base-font-size - 1);
-    .line-height(@base-font-size - 1);
+    .line-height(@base-spacing-unit);
     word-break: break-all;
     word-wrap: break-word;
     // ** Layout ** \\
