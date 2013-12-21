@@ -10,15 +10,12 @@
     &:hover { color: @base-link-color; }
 }
 
-.brand-logo:extend(.icon) {
-    /* Text */
-    font-family: @brand-logo-font;
-    .font-size(@brand-logo-size);
+.brand-logo {
+    height: 50px;
 
     /* Layout */
     float: left;
-    margin-top: -15px;
-    margin-right: 2px;
+    .margin(-@half-spacing-unit - 3, @base-spacing-unit, 0, 0);
 }
 
 .brand-logo:before { content: "\73"; }

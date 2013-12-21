@@ -371,9 +371,12 @@ fieldset[disabled] .checkbox-inline {
 /*------------------------------------*\
     $MODULES
 \*------------------------------------*/
+/**
+ * Icon Main Class
+ * This sets all the common properties to avoid large css class strings for all icon classes
+ */
 .icon,
-.octicons,
-.brand-logo {
+.octicons {
   font-family: 'font-awsome';
   font-style: inherit;
   font-weight: inherit;
@@ -388,9 +391,17 @@ fieldset[disabled] .checkbox-inline {
   top: 1px;
   speak: none;
 }
+/**
+ * Octicon Class
+ * Same as Icon class just swaps out the font-family
+ */
 .octicons {
   font-family: 'octicons';
 }
+/**
+ * Github Octicon Classes
+ * per disscussion Github Octicons are released as is free to use (https://github.com/octokit/octokit.objc/issues/108#issuecomment-24928525)
+ */
 .octicons-alert:before {
   content: "\f02d";
 }
@@ -952,6 +963,10 @@ fieldset[disabled] .checkbox-inline {
 .octicons-zap:before {
   content: "\26a1";
 }
+/**
+ * Font-Awsome Classes
+ * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome)
+ */
 .icon-IE:before {
   content: "\e76c";
 }
@@ -2327,8 +2342,385 @@ fieldset[disabled] .checkbox-inline {
   color: #ffffff !important;
   background-color: #a0aebd !important;
 }
+.brand {
+  font-family: "Hobo Std";
+  color: #333333;
+}
+.brand:hover {
+  color: #21b5e4;
+}
+.brand-logo {
+  height: 50px;
+  /* Layout */
+  float: left;
+  margin: -15px 24px 0px 0px;
+  margin: -0.9375rem 1.5rem 0rem 0rem;
+}
+.brand-logo:before {
+  content: "\73";
+}
 /*------------------------------------*\
-    $MODULE-FOOTBAR
+    $COMPONENTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $COMPONENT-NAVBAR
+\*------------------------------------*/
+/**
+ * Navbar Wrapper Class
+ * Provide a static navbar from which we expand to create full-width, fixed, an
+ * other navbar variations.
+ */
+.navbar {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  min-height: 50px;
+  position: relative;
+}
+.navbar:before,
+.navbar:after {
+  content: " ";
+  display: table;
+}
+.navbar:after {
+  clear: both;
+}
+@media (min-width: 767px) {
+  .navbar {
+    border-radius: 4px;
+  }
+}
+/**
+ * Navbar Heading
+ * Groups `.navbar-brand` and `.navbar-toggle` into a single component for easy
+ * styling of responsive aspects.
+ */
+.navbar-header:before,
+.navbar-header:after {
+  content: " ";
+  display: table;
+}
+.navbar-header:after {
+  clear: both;
+}
+@media (min-width: 767px) {
+  .navbar-header {
+    float: left;
+  }
+}
+/**
+ *  Navbar collapse (body)
+ * 
+ * Group your navbar content into this for easy collapsing and expanding across
+ * various device sizes. By default, this content is collapsed when <768px, but
+ * will expand past that for a horizontal display.
+ * 
+ * To start (on mobile devices) the navbar links, forms, and buttons are stacked
+ * vertically and include a `max-height` to overflow in case you have too much
+ * content for the user's viewport.
+ */
+.navbar-collapse {
+  max-height: 340px;
+  overflow-x: visible;
+  -webkit-overflow-scrolling: touch;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.navbar-collapse:before,
+.navbar-collapse:after {
+  content: " ";
+  display: table;
+}
+.navbar-collapse:after {
+  clear: both;
+}
+@media (min-width: 767px) {
+  .navbar-collapse {
+    width: auto;
+  }
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+  }
+  .navbar-collapse .navbar-nav.navbar-left:first-child {
+    margin-left: -24px;
+    margin-left: -1.5rem;
+  }
+  .navbar-collapse .navbar-nav.navbar-right:last-child {
+    margin-right: 24px;
+    margin-right: 1.5rem;
+  }
+  .navbar-collapse .navbar-text:last-child {
+    margin-right: 0;
+  }
+}
+/**
+ *  Fix the top/bottom navbars when screen real estate supports it
+ */
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+@media (min-width: 767px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    border-radius: 0;
+  }
+}
+.navbar-fixed-top {
+  top: 0;
+}
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+}
+/**
+ * Brand/project name
+ */
+.navbar-brand {
+  font-size: 36px;
+  font-size: 2.25rem;
+  line-height: 27px;
+  line-height: 1.6875rem;
+  color: #2f4d56;
+  float: left;
+  padding: 24px 12px 0px;
+  padding: 1.5rem 0.75rem 0rem;
+}
+.navbar-brand:hover,
+.navbar-brand:focus {
+  text-decoration: none;
+  backgroun-color: transparent;
+}
+@media (min-width: 767px) {
+  .navbar > .container .navbar-brand {
+    margin-left: -12px;
+    margin-left: -0.75rem;
+  }
+}
+/**
+ *  Navbar toggle
+ * 
+ *  Custom button for toggling the `.navbar-collapse`, powered by the collapse
+ *  JavaScript plugin.
+ */
+.navbar-toggle {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  float: right;
+  margin-right: 12px;
+  margin-right: 0.75rem;
+  margin-top: 36px;
+  margin-bottom: 36px;
+  margin-top: 2.25rem;
+  margin-bottom: 2.25rem;
+  padding: 9px 10px;
+  position: relative;
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+.navbar-toggle .icon-bar + .icon-bar {
+  margin-top: 4px;
+}
+@media (min-width: 767px) {
+  .navbar-toggle {
+    display: none;
+  }
+}
+/**
+ *  Navbar nav links
+ * 
+ *  Builds on top of the `.nav` components with it's own modifier class to make
+ *  the nav the full height of the horizontal nav (above 768px).
+ */
+.navbar-nav {
+  margin: 24px 12px 12px;
+  margin: 1.5rem 0.75rem 0.75rem;
+}
+.navbar-nav > li > a {
+  color: #8d9ca1;
+  padding: 24px;
+  padding: 1.5rem;
+}
+.navbar-nav > li > a:hover {
+  color: #21b5e4;
+  background-color: transparent;
+}
+@media (max-width: 479px) {
+  .navbar-nav .open .dropdown-menu {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    float: none;
+    margin-top: 0;
+    position: static;
+    width: auto;
+  }
+  .navbar-nav .open .dropdown-menu > li > a,
+  .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 6px 12px 6px 24px;
+    padding: 0.375rem 0.75rem 0.375rem 1.5rem;
+  }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 27px;
+    line-height: 1.6875rem;
+  }
+  .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none;
+  }
+}
+@media (min-width: 767px) {
+  .navbar-nav {
+    float: left;
+  }
+  .navbar-nav > li {
+    float: left;
+  }
+  .navbar-nav > li > a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+}
+/**
+ *  Component alignment
+ * 
+ *  Repurpose the pull utilities as their own navbar utilities to avoid specifity
+ *  issues with parents and chaining. Only do this when the navbar is uncollapsed
+ *  though so that navbar contents properly stack and align in mobile.
+ */
+@media (min-width: 767px) {
+  .navbar-left {
+    float: left !important;
+  }
+  .navbar-right {
+    float: right !important;
+  }
+}
+/**
+ *  Navbar form
+ * 
+ *  Extension of the `.form-inline` with some extra flavor for optimum display in
+ *  our navbars.
+ */
+.navbar-form {
+  margin: 12px -12px;
+  margin: 0.75rem -0.75rem;
+  padding: 12px 12px;
+  padding: 0.75rem 0.75rem;
+}
+@media (min-width: 768px) {
+  .navbar-form .form-group {
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .navbar-form .form-group:first-child {
+    margin-left: 0;
+  }
+  .navbar-form .radio,
+  .navbar-form .checkbox {
+    display: inline-block;
+    margin: 0px 3px;
+    margin: 0rem 0.1875rem;
+    padding-left: 0;
+  }
+  .navbar-form .radio input[type="radio"],
+  .navbar-form .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+    top: 0;
+  }
+}
+@media (max-width: 479px) {
+  .navbar-form .form-group {
+    margin-bottom: 6px;
+    margin-bottom: 0.375rem;
+  }
+}
+@media (min-width: 767px) {
+  .navbar-form {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: auto;
+  }
+}
+/**
+ *  Dropdown menus
+ *  Menu position and menu carets
+*/
+.navbar-nav > li > .dropdown-menu {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  margin-top: 0;
+}
+/**
+ *  Menu position and menu caret support for dropups via extra dropup class
+ */
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/**
+ *  Right aligned menus need alt position
+ */
+.navbar-nav.pull-right > li > .dropdown-menu,
+.navbar-nav > li > .dropdown-menu.pull-right {
+  left: auto;
+  right: 0;
+}
+/**
+ *  Buttons in navbars
+ * 
+ *  Vertically center a button within a navbar (when *not* in a form).
+ */
+.navbar-btn {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+/**
+ *  Text in navbars
+ * 
+ *  Add a class to make any element properly align itself vertically within the navbars.
+ */
+.navbar-text {
+  float: left;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 767px) {
+  .navbar-text {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+  }
+}
+/*------------------------------------*\
+    $COMPONENT-FOOTBAR
 \*------------------------------------*/
 /**
  * Footbar
@@ -2336,12 +2728,12 @@ fieldset[disabled] .checkbox-inline {
  */
 .footbar {
   background-color: #e6e6e6;
-  color: #cccccc;
+  color: #bbcace;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar a {
-  color: #b3b3b3;
+  color: #a4b3b7;
 }
 .footbar a:hover {
   color: #21b5e4;
@@ -2357,7 +2749,10 @@ fieldset[disabled] .checkbox-inline {
   line-height: 1.6875rem;
 }
 .footbar-logo .brand {
-  color: #b3b3b3;
+  color: #a4b3b7;
+}
+.footbar-logo .brand:hover {
+  color: #21b5e4;
 }
 /**
  * Footbar Nav
@@ -2380,29 +2775,6 @@ fieldset[disabled] .checkbox-inline {
  * Footbar Copyright
  * Common place to place copyright information is in the footer
  */
-.brand {
-  font-family: "Hobo Std";
-  color: #333333;
-}
-.brand:hover {
-  color: #21b5e4;
-}
-.brand-logo {
-  /* Text */
-  font-family: 'sugar';
-  font-size: 56px;
-  font-size: 3.5rem;
-  /* Layout */
-  float: left;
-  margin-top: -15px;
-  margin-right: 2px;
-}
-.brand-logo:before {
-  content: "\73";
-}
-/*------------------------------------*\
-    $COMPONENTS
-\*------------------------------------*/
 /*------------------------------------*\
     $COMPONENT-BANNER
 \*------------------------------------*/
