@@ -15,13 +15,14 @@
 .form-group { .margin-bottom(@half-spacing-unit); }
 .form-inline {
     @media (min-width: @medium) {
+        fieldset { .padding-horizontal(@half-spacing-unit); }
         // Inline-block all the things for "inline"
         .form-group {
             // ** Text ** \\
             vertical-align: middle;
             // ** Layout ** \\
             display: inline-block;
-            margin-bottom: 0;
+            //margin-bottom: 0;
             .margin-left(@eighth-spacing-unit);
             .margin-right(@eighth-spacing-unit);
 

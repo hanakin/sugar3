@@ -11,7 +11,7 @@
  */
 code {
     background-color: @code-bg;
-    border-radius: @base-radius;
+    border-radius: unit(@code-border-radius, px);
     color: @code-color;
 }
 
@@ -21,8 +21,9 @@ code {
 pre {
     background-color: @pre-bg;
     border: 1px solid @base-ui-color;
-    border-radius: @base-radius;
     color: @black;
+    border-radius: unit(@pre-border-radius, px);
+    color: @pre-color;
 }
 
 /**
