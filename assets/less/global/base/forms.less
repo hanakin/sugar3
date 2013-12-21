@@ -57,21 +57,6 @@ label {
 input[type="search"] { .box-sizing(border-box); }
 
 /**
- *  Override content-box in Normalize (* isn't specific enough)
- */
-// Position radios and checkboxes better
-input[type="radio"],
-input[type="checkbox"] {
-    // ** Text ** \\
-    line-height: normal;
-    // ** Layout ** \\
-    margin: 4px 0 0;
-    margin-top: 1px \9; /* IE8-9 */
-    position: relative;
-    top: -3px;
-}
-
-/**
  *  Set the height of select and file controls to match text inputs
  */
 input[type="file"] { display: block; }
@@ -164,5 +149,35 @@ input {
     .placeholder();
 
     textarea & { height: auto; } // Reset height for `textarea`s
+}
+
+input[type="file"] {
+    height: unit(((@base-font-size+@base-spacing-unit) - 1), px);
+    .padding(@quarter-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);
+}
+
+/**
+ *  Override content-box in Normalize (* isn't specific enough)
+ */
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+    // ** Text ** \\
+    line-height: normal;
+    // ** Layout ** \\
+    margin: 4px 0 0;
+    margin-top: 1px \9; /* IE8-9 */
+    position: relative;
+    top: -3px;
+
+    label & { top: -5px; } // fix alignment when wrapped in a label
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    border: none;
+    border-radius: 0;
+    width: auto;
+    .box-shadow(none);
 }
 
