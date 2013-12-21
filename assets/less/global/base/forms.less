@@ -43,6 +43,7 @@ legend {
 label {
     // ** Text ** \\
     font-weight: bold;
+    .line-height(@base-line-height * 1.1605); // ~20px 
     // ** Layout ** \\
     display: inline-block;
     margin-bottom: 5px;
@@ -180,6 +181,7 @@ input[type="color"] {
     display: block;
     height: @base-font-size*2px;
     .padding(@quarter-spacing-unit, @half-spacing-unit);
+    .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);
     width: 100%;
 
     /**

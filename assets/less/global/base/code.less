@@ -29,14 +29,14 @@ code {
 pre {
     // ** Text ** \\
     .font-size(@base-font-size - 1);
-    .line-height(@base-spacing-unit);
+    .line-height(@base-line-height);
     word-break: break-all;
     word-wrap: break-word;
     // ** Layout ** \\
     display: block;
     margin: 0;
-    .margin-left(@half-spacing-unit);
-    .padding(@half-spacing-unit);
+    .margin(0, 0, (@base-line-height / 2));
+    .padding((@base-line-height - 6) / 3);
 
     // Account for some code outputs that place code tags in pre tags
     code {

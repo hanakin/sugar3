@@ -30,12 +30,12 @@ pre {
  */
 pre.prettyprint, code.prettyprint {
 	display: block;
-	.padding(@half-spacing-unit);
-	.margin-left(@base-spacing-unit);
 	background-color: @black; //darken(@white, 5%)
 	border-radius: 5px;
 	border: solid 1px darken(@white, 15%);
-	.line-height(24);
+    //.line-height(@base-line-height);
+    .padding(@half-spacing-unit);
+    .margin-left(@base-spacing-unit);
 }
 
 .pln { color: @white; }
