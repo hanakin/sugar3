@@ -1,5 +1,5 @@
 /*------------------------------------*\
-    $MODULE-FOOTBAR
+    $COMPONENT-FOOTBAR
 \*------------------------------------*/
 
 /**
@@ -15,7 +15,7 @@
     a { 
         color: @footbar-link-color; 
         
-        &:hover { color: @base-link-color; }
+        &:hover { color: @footbar-link-hover-color; }
     }
 }
 
@@ -26,7 +26,10 @@
 .footbar-logo {
     .font-size(24);
     .line-height(@base-line-height);
-    .brand { color: @footbar-link-color; }
+    .brand { 
+        color: @footbar-link-color; 
+        &:hover { color: @footbar-link-hover-color; }
+    }
 }
 
 /**
