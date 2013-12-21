@@ -5,7 +5,6 @@
 /**
  * Completely remove from the flow and screen readers.
  */
-
 .hidden {
     display: none !important;
     visibility: hidden !important;
@@ -14,16 +13,28 @@
 /**
  * Completely undo hidden.
  */
-
 .display {
     display: block !important;
     visibility: visible !important;
 }
 
 /**
+ * Display content only for screen readers.
+ */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+/**
  * Completely remove from the flow but leave available to screen readers.
  */
-
 .hidden-visually {
     position: absolute !important;
     overflow: hidden !important;
@@ -37,9 +48,7 @@
 /**
  * Control visibility without affecting flow.
  */
-
 .invisible { visibility: hidden !important; }
-
 .visible { visibility: visible !important; }
 
 /**
