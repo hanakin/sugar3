@@ -1,0 +1,54 @@
+/*------------------------------------*\
+    $MODULE-FOOTBAR
+\*------------------------------------*/
+
+/**
+ * Footbar
+ * A section at the bottom of the page that replaces the footer similar to a navbar
+ */
+.footbar {
+    background-color: @footbar-bg;
+    color: @footbar-color;
+
+    .padding(@base-spacing-unit+@half-spacing-unit);
+
+    a { 
+        color: @footbar-link-color; 
+        
+        &:hover { color: @base-link-color; }
+    }
+}
+
+/**
+ * Footbar Logo
+ * Just like with the navbar we may want to include a brad in the footer
+ */
+.footbar-logo {
+    .font-size(24);
+    .line-height(@base-line-height);
+    .brand { color: @footbar-link-color; }
+}
+
+/**
+ * Footbar Nav
+ * sometimes footers need additional textual navigation links
+ */
+.footbar-nav {  }
+
+/**
+ * Footbar Icons
+ * Common to see icons in footes IE Social icons, Logos, Compliance
+ */
+.footbar-icons { 
+    li {
+        padding: 0;
+        .margin-left(@half-spacing-unit);
+    }
+    .icon { .font-size(20); }
+}
+
+/**
+ * Footbar Copyright
+ * Common place to place copyright information is in the footer
+ */
+.footbar-copyright {  }

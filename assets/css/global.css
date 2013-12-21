@@ -554,6 +554,19 @@
   visibility: visible !important;
 }
 /**
+ * Display content only for screen readers.
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+/**
  * Completely remove from the flow but leave available to screen readers.
  */
 .hidden-visually {
@@ -1082,10 +1095,7 @@
   .form-inline .form-group {
     vertical-align: middle;
     display: inline-block;
-    margin-left: 3px;
-    margin-left: 0.1875rem;
-    margin-right: 3px;
-    margin-right: 0.1875rem;
+    margin-bottom: 0;
   }
   .form-inline .form-group:first-child {
     margin-left: 0;
@@ -1102,10 +1112,6 @@
     float: none;
     margin-left: 0;
     top: 0;
-  }
-  .form-inline .btn {
-    margin: -12px 3px 0px;
-    margin: -0.75rem 0.1875rem 0rem;
   }
 }
 /*------------------------------------*\

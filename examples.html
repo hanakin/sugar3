@@ -26,11 +26,10 @@
         <hgroup class="grid">
             <div class="hero-unit">
                 <h1 class="h1">
-                    <i class="logo"></i> <span class="hobo">Sugar <sup>3</sup></span>
+                    <a class="brand" href="example.html" title="Sugar3"><i class="brand-logo"></i> <span>Sugar<sup>3</sup></span></a>
                     <br />
                     <small class="beta">
                         Minimal, structured, extensible, powerfully dynamic, true front-end framework based on SMACSS & Atomic Design principles.
-
                     </small>
                 </h1>
                 <a class="btn btn-clear" href="" title=""><i class="icon icon-cloud-download"></i> <span>Download</span> <!-- <span class="hobo">Sugar<sup>3</sup></span> --></a> 
@@ -662,7 +661,7 @@ $(document).ready(function(){
         <article class="grid">
             <h3 id="forms">Forms</h3>
             <div class="grid-row">
-                <div class="grid-l-5 grid-w-5">
+                <div class="grid-l-3 grid-w-5">
                     <h4>Form Basic</h4>
                     <form>
                         <fieldset>
@@ -688,7 +687,7 @@ $(document).ready(function(){
                         </fieldset>
                     </form>
                 </div>
-                <div class="grid-l-7 grid-w-7">
+                <div class="grid-l-9 grid-w-7">
                     <div class="grid-row">
                         <div class="grid-l-12 grid-w-12">
                             <h4>Form Inline <small><code>.form-inline</code></small></h4>
@@ -826,18 +825,21 @@ $(document).ready(function(){
         </article>
     </section>
 
-    <footer>
+    <footer class="footbar">
         <article class="grid">
             <div class="grid-row">
-                <div class="grid-l-6 grid-w-6">
-                    <p class="text-left">
-                        <span class="hobo">Sugar<sup>3</sup></span> &copy; 2013 midaym</a>
-                    </p>
+                <div class="footbar-logo grid-m-2">
+                    <a href="example.html" title="Sugar3"><span class="brand">Sugar<sup>3</sup></span></a>
                 </div>
-                <div class="grid-l-6 grid-w-6">
-                    <p class="text-right">
-                        <a class="brand" href="http://www.midaym.com" title="MIDAYM">6</a>
-                    </p>
+                <div class="footbar-copyright grid-m-7 text-center">
+                    Licensed under <a href="http://opensource.org/licenses/MIT" title="MIT License">MIT</a> Copyright &copy; 2013 midaym.
+                </div>
+                <div class="grid-m-3">
+                    <ul class="footbar-icons list-inline pull-right">
+                        <li><a href=""><i class="icon icon-facebook-sign"></i><span class="sr-only">Twitter</span></a></li>
+                        <li><a href=""><i class="icon icon-twitter"></i><span class="sr-only">Twitter</span></a></li>
+                        <li><a href=""><i class="icon icon-google-plus-sign"></i><span class="sr-only">Google +</span></a></li>
+                    </ul>
                 </div>
             </div>
             
