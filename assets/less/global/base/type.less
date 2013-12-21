@@ -10,13 +10,14 @@
 a {
     color: @base-link-color; // [1]
     text-decoration: none;
+    .transition(.25s);
 
     &:hover,
     &:focus {
         // ** Text ** \\
         text-decoration: none;  // [2]
         // ** Decoration ** \\
-        color: darken(@base-link-color, 15%);  // [2]
+        color: @base-link-hover-color;  // [2]
     }
     &:focus { outline: none; }  // [3]
 }
