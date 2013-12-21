@@ -50,7 +50,7 @@
 }
 
 // Placeholder text
-.placeholder(@color: @input-color-placeholder) {
+.placeholder(@color: @base-ui-color) {
     &:-moz-placeholder            { color: @color; } // Firefox 4-18
     &::-moz-placeholder           { color: @color; } // Firefox 19+
     &:-ms-input-placeholder       { color: @color; } // Internet Explorer 10+
@@ -351,6 +351,28 @@
 // More easily include all the states for responsive-utilities.less.
 .responsive-visibility() { display: block !important; }
 .responsive-invisibility() { & { display: none !important; } }
+
+// Form control focus state
+//
+// Generate a customized focus state and for any input with the specified color,
+// which defaults to the `@input-focus-border` variable.
+//
+// We highly encourage you to not customize the default value, but instead use
+// this to tweak colors on an as-needed basis. This aesthetic change is based on
+// WebKit's default styles, but applicable to a wider range of browsers. Its
+// usability and accessibility should be taken into account with any change.
+//
+// Example usage: change the default blue border and shadow to white for better
+// contrast against a dark gray background.
+
+.form-control-focus(@color: @base-link-color) {
+    .form-group.focus &,
+  &:focus {
+    border-color: @color;
+    outline: 0;
+    .box-shadow(none);
+  }
+}
 
 //Color Variantes
 .btn-color(@btn-color, @text-color: @white) {
