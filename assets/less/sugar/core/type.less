@@ -50,4 +50,16 @@ blockquote {
         
         &:before { content: '\2014 \00A0'; } // EM DASH, NBSP
     }
+
+    &.pull-right {
+        // ** Decoration ** \\
+        border-left: 0;
+        border-right: unit(@base-quote-border-size, px) solid @base-quote-border-color;
+        // ** Layout ** \\
+        .padding-right(16);
+        padding-left: 0;
+
+        p, small { text-align: right; }
+        small { &:before { content: ''; } }
+    }
 }
