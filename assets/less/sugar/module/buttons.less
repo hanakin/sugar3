@@ -37,7 +37,7 @@
     .transition(.25s linear);
     /* Layout */                
     display: inline-block;                                                          /* [7] */
-    margin: 0;                                                                      /* [8] */
+    .margin(@quarter-spacing-unit);                                                 /* [8] */
     .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);         /* [8] */
             
     &:hover {           
