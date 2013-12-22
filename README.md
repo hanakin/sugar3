@@ -58,6 +58,7 @@ been possible without inspiration and work from an array of other people.
 * **[Nicolas Gallagher](https://twitter.com/necolas)** for his work on Normalize and SUIT
 * **[Brad Frost](http://bradfrostweb.com/blog/post/atomic-web-design/)**for his article on Atomic Design
 * **[Harry Roberts](http://inuitcss.com)** for is work with inuitcss and so much more
+* **[Sergey Shmidt & Sergii Iurevych](http://designmodo.github.io/Flat-UI/)** for their work on a truely amazing UI kit and Responsive elements
 
 And probably more…
 
