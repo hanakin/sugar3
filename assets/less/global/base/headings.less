@@ -63,14 +63,22 @@ h1, .h1, .alpha,
 h2, .h2, .beta,
 h3, .h3, .gamma {
     .margin(@base-line-height, 0, @base-line-height / 2);
-    small { font-size: 65%; }
+    small { 
+        font-size: 65%; 
+
+        .margin-top(@half-spacing-unit);
+    }
 }
 
 h4, .h4, .delta,
 h5, .h5, .epsilon,
 h6, .h6, .zeta {
     .margin(@base-line-height / 2, 0, @base-line-height / 2);
-    small { font-size: 75%; }
+    small { 
+        font-size: 75%;
+
+        .margin-top(@half-spacing-unit); 
+    }
 }
 
 h6 { font-weight: normal; }

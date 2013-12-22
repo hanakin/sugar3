@@ -182,11 +182,11 @@ code.prettyprint {
 }
 @media screen {
   .str {
-    color: #c65669;
+    color: #e74c3c;
   }
   /* string content */
   .kwd {
-    color: #217bb2;
+    color: #2980b9;
   }
   /* a keyword */
   .com {
@@ -198,12 +198,12 @@ code.prettyprint {
   }
   /* a type name */
   .lit {
-    color: #c65669;
+    color: #e74c3c;
   }
   /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
   .pun {
-    color: #3aa8b9;
+    color: #3498db;
   }
   .opn {
     color: #ffffff;
@@ -212,24 +212,24 @@ code.prettyprint {
     color: #ffffff;
   }
   .tag {
-    color: #217bb2;
+    color: #2980b9;
   }
   /* a markup tag name */
   .atn {
-    color: #3aa8b9;
+    color: #3498db;
   }
   /* a markup attribute name */
   .atv {
-    color: #c65669;
+    color: #e74c3c;
   }
   /* a markup attribute value */
   .dec,
   .var {
-    color: #217bb2;
+    color: #2980b9;
   }
   /* a declaration; a variable name */
   .fun {
-    color: #c65669;
+    color: #e74c3c;
   }
   /* a function name */
 }
@@ -2139,7 +2139,7 @@ fieldset[disabled] .checkbox-inline {
  * 6. Force all elements using buttons to appear clickable.
  * 7. Allow us to better style box model properties.
  * 7. Normalise box model styles.
- * 8. Apply consistent spacing baed on font size.
+ * 8. Apply consistent spacing based on font size.
  * 9. Don’t allow buttons to have underlines; it kinda ruins the illusion.
  */
 .btn {
@@ -2178,7 +2178,8 @@ fieldset[disabled] .checkbox-inline {
   /* Layout */
   display: inline-block;
   /* [7] */
-  margin: 0;
+  margin: 6px;
+  margin: 0.375rem;
   /* [8] */
   padding: 12px 18px;
   padding: 0.75rem 1.125rem;
@@ -2264,6 +2265,317 @@ fieldset[disabled] .checkbox-inline {
   min-width: 144;
   padding-left: 24;
   padding-right: 24;
+}
+/**
+ * Button Colors
+ */
+.btn-red {
+  background-color: #e74c3c;
+  color: #ffffff;
+}
+.btn-red:hover {
+  background-color: #c0392b;
+  color: #ffffff;
+}
+.btn-red.btn-clear {
+  border: 2px solid #e74c3c;
+  color: #e74c3c;
+}
+.btn-red.btn-clear:hover,
+.btn-red.btn-clear:focus {
+  background: #e74c3c;
+  color: #ffffff;
+}
+.btn-red.btn-clear:active,
+.btn-red.btn-clear.active {
+  border-color: #c44133;
+  background: #c44133;
+}
+.btn-pink {
+  background-color: #e05281;
+  color: #ffffff;
+}
+.btn-pink:hover {
+  background-color: #db346b;
+  color: #ffffff;
+}
+.btn-pink.btn-clear {
+  border: 2px solid #e05281;
+  color: #e05281;
+}
+.btn-pink.btn-clear:hover,
+.btn-pink.btn-clear:focus {
+  background: #e05281;
+  color: #ffffff;
+}
+.btn-pink.btn-clear:active,
+.btn-pink.btn-clear.active {
+  border-color: #be466e;
+  background: #be466e;
+}
+.btn-blue {
+  background-color: #3498db;
+  color: #ffffff;
+}
+.btn-blue:hover {
+  background-color: #2980b9;
+  color: #ffffff;
+}
+.btn-blue.btn-clear {
+  border: 2px solid #3498db;
+  color: #3498db;
+}
+.btn-blue.btn-clear:hover,
+.btn-blue.btn-clear:focus {
+  background: #3498db;
+  color: #ffffff;
+}
+.btn-blue.btn-clear:active,
+.btn-blue.btn-clear.active {
+  border-color: #2c81ba;
+  background: #2c81ba;
+}
+.btn-green {
+  background-color: #2ecc71;
+  color: #ffffff;
+}
+.btn-green:hover {
+  background-color: #27ae60;
+  color: #ffffff;
+}
+.btn-green.btn-clear {
+  border: 2px solid #2ecc71;
+  color: #2ecc71;
+}
+.btn-green.btn-clear:hover,
+.btn-green.btn-clear:focus {
+  background: #2ecc71;
+  color: #ffffff;
+}
+.btn-green.btn-clear:active,
+.btn-green.btn-clear.active {
+  border-color: #27ad60;
+  background: #27ad60;
+}
+.btn-yellow {
+  background-color: #f1c40f;
+  color: #ffffff;
+}
+.btn-yellow:hover {
+  background-color: #f39c12;
+  color: #ffffff;
+}
+.btn-yellow.btn-clear {
+  border: 2px solid #f1c40f;
+  color: #f1c40f;
+}
+.btn-yellow.btn-clear:hover,
+.btn-yellow.btn-clear:focus {
+  background: #f1c40f;
+  color: #ffffff;
+}
+.btn-yellow.btn-clear:active,
+.btn-yellow.btn-clear.active {
+  border-color: #cda70d;
+  background: #cda70d;
+}
+.btn-orange {
+  background-color: #e67e22;
+  color: #ffffff;
+}
+.btn-orange:hover {
+  background-color: #d35400;
+  color: #ffffff;
+}
+.btn-orange.btn-clear {
+  border: 2px solid #e67e22;
+  color: #e67e22;
+}
+.btn-orange.btn-clear:hover,
+.btn-orange.btn-clear:focus {
+  background: #e67e22;
+  color: #ffffff;
+}
+.btn-orange.btn-clear:active,
+.btn-orange.btn-clear.active {
+  border-color: #c46b1d;
+  background: #c46b1d;
+}
+.btn-purple {
+  background-color: #9b59b6;
+  color: #ffffff;
+}
+.btn-purple:hover {
+  background-color: #8e44ad;
+  color: #ffffff;
+}
+.btn-purple.btn-clear {
+  border: 2px solid #9b59b6;
+  color: #9b59b6;
+}
+.btn-purple.btn-clear:hover,
+.btn-purple.btn-clear:focus {
+  background: #9b59b6;
+  color: #ffffff;
+}
+.btn-purple.btn-clear:active,
+.btn-purple.btn-clear.active {
+  border-color: #844c9b;
+  background: #844c9b;
+}
+.btn-pink {
+  background-color: #e05281;
+  color: #ffffff;
+}
+.btn-pink:hover {
+  background-color: #da2f68;
+  color: #ffffff;
+}
+.btn-pink.btn-clear {
+  border: 2px solid #e05281;
+  color: #e05281;
+}
+.btn-pink.btn-clear:hover,
+.btn-pink.btn-clear:focus {
+  background: #e05281;
+  color: #ffffff;
+}
+.btn-pink.btn-clear:active,
+.btn-pink.btn-clear.active {
+  border-color: #be466e;
+  background: #be466e;
+}
+.btn-gray {
+  background-color: #999999;
+  color: #333333;
+}
+.btn-gray:hover {
+  background-color: #858585;
+  color: #333333;
+}
+.btn-gray.btn-clear {
+  border: 2px solid #999999;
+  color: #999999;
+}
+.btn-gray.btn-clear:hover,
+.btn-gray.btn-clear:focus {
+  background: #999999;
+  color: #333333;
+}
+.btn-gray.btn-clear:active,
+.btn-gray.btn-clear.active {
+  border-color: #828282;
+  background: #828282;
+}
+.btn-black {
+  background-color: #333333;
+  color: #ffffff;
+}
+.btn-black:hover {
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+.btn-black.btn-clear {
+  border: 2px solid #333333;
+  color: #333333;
+}
+.btn-black.btn-clear:hover,
+.btn-black.btn-clear:focus {
+  background: #333333;
+  color: #ffffff;
+}
+.btn-black.btn-clear:active,
+.btn-black.btn-clear.active {
+  border-color: #2b2b2b;
+  background: #2b2b2b;
+}
+.btn-darkblue {
+  background-color: #34495e;
+  color: #ffffff;
+}
+.btn-darkblue:hover {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+.btn-darkblue.btn-clear {
+  border: 2px solid #34495e;
+  color: #34495e;
+}
+.btn-darkblue.btn-clear:hover,
+.btn-darkblue.btn-clear:focus {
+  background: #34495e;
+  color: #ffffff;
+}
+.btn-darkblue.btn-clear:active,
+.btn-darkblue.btn-clear.active {
+  border-color: #2c3e50;
+  background: #2c3e50;
+}
+.btn-teal {
+  background-color: #1abc9c;
+  color: #ffffff;
+}
+.btn-teal:hover {
+  background-color: #16a085;
+  color: #ffffff;
+}
+.btn-teal.btn-clear {
+  border: 2px solid #1abc9c;
+  color: #1abc9c;
+}
+.btn-teal.btn-clear:hover,
+.btn-teal.btn-clear:focus {
+  background: #1abc9c;
+  color: #ffffff;
+}
+.btn-teal.btn-clear:active,
+.btn-teal.btn-clear.active {
+  border-color: #16a085;
+  background: #16a085;
+}
+.btn-silver {
+  background-color: #ecf0f1;
+  color: #333333;
+}
+.btn-silver:hover {
+  background-color: #bdc3c7;
+  color: #333333;
+}
+.btn-silver.btn-clear {
+  border: 2px solid #ecf0f1;
+  color: #ecf0f1;
+}
+.btn-silver.btn-clear:hover,
+.btn-silver.btn-clear:focus {
+  background: #ecf0f1;
+  color: #333333;
+}
+.btn-silver.btn-clear:active,
+.btn-silver.btn-clear.active {
+  border-color: #c9cccd;
+  background: #c9cccd;
+}
+.btn-bluegray {
+  background-color: #95a5a6;
+  color: #ffffff;
+}
+.btn-bluegray:hover {
+  background-color: #7f8c8d;
+  color: #ffffff;
+}
+.btn-bluegray.btn-clear {
+  border: 2px solid #95a5a6;
+  color: #95a5a6;
+}
+.btn-bluegray.btn-clear:hover,
+.btn-bluegray.btn-clear:focus {
+  background: #95a5a6;
+  color: #ffffff;
+}
+.btn-bluegray.btn-clear:active,
+.btn-bluegray.btn-clear.active {
+  border-color: #7f8c8d;
+  background: #7f8c8d;
 }
 /**
  * Social Buttons
@@ -2550,7 +2862,7 @@ fieldset[disabled] .checkbox-inline {
   margin: 1.5rem 0.75rem 0.75rem;
 }
 .navbar-nav > li > a {
-  color: #8d9ca1;
+  color: #95a5a6;
   padding: 24px;
   padding: 1.5rem;
 }
@@ -2797,18 +3109,41 @@ fieldset[disabled] .checkbox-inline {
  *
  */
 .hero-unit {
-  padding: 48px 0px;
-  padding: 3rem 0rem;
+  background-color: #2c3e50;
+  padding: 72px 0px;
+  padding: 4.5rem 0rem;
 }
-.hero-unit .kilo {
-  letter-spacing: -3px;
+.hero-unit .lead {
+  font-size: 42px;
+  font-size: 2.625rem;
+  line-height: 54px;
+  line-height: 3.375rem;
+  color: #ffffff;
+  margin-top: 0px;
+  margin-top: 0rem;
 }
-.hero-unit .kilo sup {
-  left: -7px;
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-unit .lead {
+    font-size: 36px;
+    font-size: 2.25rem;
+  }
 }
-.hero-unit .kilo .beta {
+.hero-unit .lead sup {
+  left: 7px;
+}
+.hero-unit .lead .beta {
   font-weight: 300;
-  letter-spacing: -1px;
-  line-height: 36px;
-  line-height: 2.25rem;
+  font-size: 21px;
+  font-size: 1.3125rem;
+  color: #ffffff;
+  opacity: 0.6;
+  filter: alpha(opacity=60);
+  margin-top: 12px;
+  margin-top: 0.75rem;
+}
+@media (max-width: 767px) {
+  .hero-unit-featured {
+    margin-top: 48px;
+    margin-top: 3rem;
+  }
 }
