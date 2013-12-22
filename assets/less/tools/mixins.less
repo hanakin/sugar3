@@ -375,12 +375,12 @@
 }
 
 //Color Variantes
-.btn-color(@btn-color, @text-color: @white) {
+.btn-color(@btn-color, @text-color: @white, @btn-hover-color: darken(@btn-color, 8%), @btn-active-color: mix(@btn-color, black, 85%)) {
     background-color: @btn-color;
     color: @text-color;
 
     &:hover {
-        background-color: darken(@btn-color, 8%);
+        background-color: @btn-hover-color;
         color: @text-color;
     }
 
@@ -393,8 +393,8 @@
             color: @text-color;
         }
         &:active, &.active {
-            border-color: mix(@btn-color, black, 85%);
-            background: mix(@btn-color, black, 85%);
+            border-color: @btn-active-color;
+            background: @btn-active-color;
         }
     }
 }
