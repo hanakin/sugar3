@@ -15,7 +15,7 @@
     // Prevent floats from breaking the navbar
     .cf();
     
-    @media (min-width: @medium-max) { border-radius: unit(@navbar-border-radius, px); }
+    @media (min-width: @screen-m-min) { border-radius: unit(@navbar-border-radius, px); }
 }
 
 /**
@@ -26,7 +26,7 @@
 .navbar-header {
     .cf();
 
-    @media (min-width: @medium-max) { float: left; }
+    @media (min-width: @screen-m-min) { float: left; }
 }
 
 /**
@@ -48,7 +48,7 @@
     
     .cf();
 
-    @media (min-width: @medium-max) {
+    @media (min-width: @screen-m-min) {
         width: auto;
         
         &.collapse {
@@ -74,7 +74,7 @@
     right: 0;
     
     // Undo the rounded corners
-    @media (min-width: @medium-max) { border-radius: 0; }
+    @media (min-width: @screen-m-min) { border-radius: 0; }
 }
 
 .navbar-fixed-top { top: 0; }
@@ -102,7 +102,7 @@
         backgroun-color: @navbar-default-brand-hover-bg;
     }
 
-    @media (min-width: @medium-max) { .navbar > .container & { .margin-left(-@half-spacing-unit); } }
+    @media (min-width: @screen-m-min) { .navbar > .container & { .margin-left(-@half-spacing-unit); } }
 }
 
 /**
@@ -131,7 +131,7 @@
     }
     
     .icon-bar + .icon-bar { margin-top: 4px; }
-    @media (min-width: @medium-max) { display: none; }
+    @media (min-width: @screen-m-min) { display: none; }
 }
 
 /**
@@ -153,7 +153,7 @@
         .padding(@base-spacing-unit);
     }
 
-    @media (max-width: @small-max) {
+    @media (max-width: @screen-s-min) {
         // Dropdowns get custom display when collapsed
         .open .dropdown-menu {
             background-color: transparent;
@@ -176,7 +176,7 @@
     }
 
     // Uncollapse the nav
-    @media (min-width: @medium-max) {
+    @media (min-width: @screen-m-min) {
         float: left;
 
         > li {
@@ -194,7 +194,7 @@
  *  issues with parents and chaining. Only do this when the navbar is uncollapsed
  *  though so that navbar contents properly stack and align in mobile.
  */
-@media (min-width: @medium-max) {
+@media (min-width: @screen-m-min) {
     .navbar-left  { float: left !important; }
     .navbar-right { float: right !important; }
 }
@@ -212,7 +212,7 @@
     .padding(@half-spacing-unit, @half-spacing-unit);
     
     // Mixin behavior for optimum display
-    @media (min-width: @medium) {
+    @media (min-width: @screen-m-min) {
         // Inline-block all the things for "inline"
         .form-group {
             // ** Text ** \\
@@ -242,11 +242,11 @@
     }
 
     .form-group {
-        @media (max-width: @small-max) { .margin-bottom(@quarter-spacing-unit); }
+        @media (max-width: @screen-s-min) { .margin-bottom(@quarter-spacing-unit); }
     }
 
     // Undo 100% width for pull classes
-    @media (min-width: @medium-max) {
+    @media (min-width: @screen-m-min) {
         .box-shadow(none);
 
         border: 0;
@@ -298,6 +298,6 @@
     float: left;
     .margin-vertical(@half-spacing-unit);
 
-    @media (min-width: @medium-max) { .margin-horizontal(@half-spacing-unit); }
+    @media (min-width: @screen-m-min) { .margin-horizontal(@half-spacing-unit); }
 }
 

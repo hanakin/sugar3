@@ -10,12 +10,12 @@
     background-color: @darkblue-dark;
 
     //min-height: unit(@sextuple-spacing-unit * 3, px);
-    .padding(@triple-spacing-unit, 0);
+    .padding(@quadruple-spacing-unit, 0);
     
     .lead {
         .font-size(@beta);
         .line-height (@base-line-height*2);
-        @media (min-width: @medium) and (max-width: @large-max) { .font-size(@gamma); } 
+        @media (min-width: @screen-m-min) and (max-width: @screen-l-max) { .font-size(@gamma); } 
         
         color: @white;
 
@@ -37,6 +37,6 @@
 }
 
 .hero-unit-featured {
-    @media (max-width: @medium-max) { .margin-top(@double-spacing-unit); }
+    @media (max-width: @screen-m-min) { .margin-top(@double-spacing-unit); }
 }
 

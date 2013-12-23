@@ -301,24 +301,28 @@
 //------------------------------------//
 
 // Different breakpoints for the project.
-@small:                                     480px;
-@medium:                                    768px;
-@large:                                     992px;
-@wide:                                      1200px;
+@screen-s-min:                                 480px;   // Small screen / phone
+@screen-m-min:                                 768px;   // Medium screen / tablet
+@screen-l-min:                                 992px;   // Large screen / desktop
+@screen-w-min:                                 1200px;  // Wide screen / wide desktop
 
 // So media queries don't overlap when required, provide a maximum
-@small-max:                                 (@small - 1);
-@medium-max:                                (@medium - 1);
-@large-max:                                 (@large - 1);
-@wide-max:                                  (@wide - 1);
+@screen-s-max:                                 (@screen-m-min - 1);
+@screen-m-max:                                 (@screen-l-min - 1);
+@screen-l-max:                                 (@screen-w-min - 1);
 
 
 //------------------------------------//
 //  $GRIDS
 //------------------------------------//
 
+// Number of columns in the grid system
+@grid-columns:                                 12;
+// Padding, to be divided by two and applied to the left and right of all columns
+
 // Different Grid sizes for the project.
-@container-m:                               720px + (@base-spacing-unit * 1px);
-@container-l:                               940px + (@base-spacing-unit * 1px);
-@container-w:                               1140px + (@base-spacing-unit * 1px);
+@container-s:                                   100%;                                   // Small screen / Phone
+@container-m:                                   unit((720 + @grid-gutter-width), px);   // Medium screen / tablet
+@container-l:                                   unit((940 + @grid-gutter-width), px);   // Large screen / desktop
+@container-w:                                   unit((1140 + @grid-gutter-width), px);  // Wide screen / wide desktop
 
