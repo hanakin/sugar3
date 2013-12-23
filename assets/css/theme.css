@@ -7,18 +7,3 @@
 /*------------------------------------*\
     $USER STYLES
 \*------------------------------------*/
-section {
-  /* Decoration */
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  /* Layout */
-  padding: 24px 0px;
-  padding: 1.5rem 0rem;
-}
-footer {
-  padding: 24px 0px;
-  padding: 1.5rem 0rem;
-}
-footer .text-left {
-  margin-top: 8px;
-}

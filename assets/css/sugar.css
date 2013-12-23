@@ -5,370 +5,6 @@
     $IMPORTS
 \*------------------------------------*/
 /*------------------------------------*\
-    $CORE
-\*------------------------------------*/
-/*------------------------------------*\
-    $CORE--FONTS
-\*------------------------------------*/
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-black-webfont.eot');
-  src: url('../fonts/lato/lato-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-black-webfont.woff') format('woff'), url('../fonts/lato/lato-black-webfont.ttf') format('truetype'), url('../fonts/lato/lato-black-webfont.svg#latoblack') format('svg');
-  font-weight: 900;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-bold-webfont.eot');
-  src: url('../fonts/lato/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-bold-webfont.woff') format('woff'), url('../fonts/lato/lato-bold-webfont.ttf') format('truetype'), url('../fonts/lato/lato-bold-webfont.svg#latobold') format('svg');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-bolditalic-webfont.eot');
-  src: url('../fonts/lato/lato-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-bolditalic-webfont.woff') format('woff'), url('../fonts/lato/lato-bolditalic-webfont.ttf') format('truetype'), url('../fonts/lato/lato-bolditalic-webfont.svg#latobold_italic') format('svg');
-  font-weight: bold;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-italic-webfont.eot');
-  src: url('../fonts/lato/lato-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-italic-webfont.woff') format('woff'), url('../fonts/lato/lato-italic-webfont.ttf') format('truetype'), url('../fonts/lato/lato-italic-webfont.svg#latoitalic') format('svg');
-  font-weight: normal;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-light-webfont.eot');
-  src: url('../fonts/lato/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-light-webfont.woff') format('woff'), url('../fonts/lato/lato-light-webfont.ttf') format('truetype'), url('../fonts/lato/lato-light-webfont.svg#latolight') format('svg');
-  font-weight: 300;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Lato';
-  src: url('../fonts/lato/lato-regular-webfont.eot');
-  src: url('../fonts/lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato/lato-regular-webfont.woff') format('woff'), url('../fonts/lato/lato-regular-webfont.ttf') format('truetype'), url('../fonts/lato/lato-regular-webfont.svg#latoregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'font-awsome';
-  src: url('../fonts/font-awsome.eot');
-  src: url('../fonts/font-awsome.eot?#iefix') format('embedded-opentype'), url('../fonts/font-awsome.ttf') format('truetype'), url('../fonts/font-awsome.woff') format('woff'), url('../fonts/font-awsome.svg#font-awsome') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'octicons';
-  src: url('../fonts/octicons.eot');
-  src: url('../fonts/octicons.eot?#iefix') format('embedded-opentype'), url('../fonts/octicons.ttf') format('truetype'), url('../fonts/octicons.woff') format('woff'), url('../fonts/octicons.svg#octicons') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'sugar';
-  src: url('../fonts/sugar.eot');
-  src: url('../fonts/sugar.eot?#iefix') format('embedded-opentype'), url('../fonts/sugar.svg') format('svg'), url('../fonts/sugar.woff') format('woff'), url('../fonts/sugar.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-/*------------------------------------*\
-    $CORE--TYPE
-\*------------------------------------*/
-/**
- * Detailing type elements
- */
-abbr.initialism {
-  font-size: 90%;
-  text-transform: uppercase;
-}
-/**
- * Strong default styling
- */
-strong {
-  color: #333333;
-}
-/**
- * Better looking blockquotes
- */
-blockquote {
-  border-left: 3px solid #f2f2f2;
-  padding: 0px 0px 0px 16px;
-  padding: 0rem 0rem 0rem 1rem;
-  margin: 0px 0px 27px;
-  margin: 0rem 0rem 1.6875rem;
-}
-blockquote p {
-  font-size: 16px;
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 27px;
-  line-height: 1.6875rem;
-  margin-bottom: 6.4px;
-  margin-bottom: 0.4rem;
-}
-blockquote p:last-child {
-  margin-bottom: 0;
-}
-blockquote small {
-  font-size: 16px;
-  font-size: 1rem;
-  font-style: italic;
-  line-height: 27px;
-  line-height: 1.6875rem;
-  color: #e6e6e6;
-  display: block;
-}
-blockquote small:before {
-  content: '\2014 \00A0';
-}
-blockquote.pull-right {
-  border-left: 0;
-  border-right: 3px solid #f2f2f2;
-  padding-right: 16px;
-  padding-right: 1rem;
-  padding-left: 0;
-}
-blockquote.pull-right p,
-blockquote.pull-right small {
-  text-align: right;
-}
-blockquote.pull-right small:before {
-  content: '';
-}
-/*------------------------------------*\
-    $CORE--CODE
-\*------------------------------------*/
-/**
- * Detailing code elements
- */
-/**
- * Inline Code
- */
-code {
-  background-color: #f9f2f4;
-  border-radius: 4px;
-  color: #c7254e;
-}
-/**
- * Code Blocks
- */
-pre {
-  background-color: #f5f5f5;
-  border: 2px solid #e6e6e6;
-  border-radius: 4px;
-  color: #333333;
-}
-/**
- * Prettify
- */
-pre.prettyprint,
-code.prettyprint {
-  background-color: #333333;
-  border-radius: 5px;
-  border: 1px solid #d9d9d9;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  color: #ffffff;
-  display: block;
-  padding: 12px;
-  padding: 0.75rem;
-  margin-left: 24px;
-  margin-left: 1.5rem;
-}
-.pln {
-  color: #ffffff;
-}
-@media screen {
-  .str {
-    color: #e74c3c;
-  }
-  /* string content */
-  .kwd {
-    color: #2980b9;
-  }
-  /* a keyword */
-  .com {
-    color: #b3b3b3;
-  }
-  /* a comment */
-  .typ {
-    color: #ffffff;
-  }
-  /* a type name */
-  .lit {
-    color: #e74c3c;
-  }
-  /* a literal value */
-  /* punctuation, lisp open bracket, lisp close bracket */
-  .pun {
-    color: #3498db;
-  }
-  .opn {
-    color: #ffffff;
-  }
-  .clo {
-    color: #ffffff;
-  }
-  .tag {
-    color: #2980b9;
-  }
-  /* a markup tag name */
-  .atn {
-    color: #3498db;
-  }
-  /* a markup attribute name */
-  .atv {
-    color: #e74c3c;
-  }
-  /* a markup attribute value */
-  .dec,
-  .var {
-    color: #2980b9;
-  }
-  /* a declaration; a variable name */
-  .fun {
-    color: #e74c3c;
-  }
-  /* a function name */
-}
-/*------------------------------------*\
-    $CORE--TABLES
-\*------------------------------------*/
-table {
-  border-radius: 4px;
-}
-table > thead th:first-child {
-  border-top-left-radius: 4px;
-}
-table > thead th:last-child {
-  border-top-right-radius: 4px;
-}
-th {
-  text-align: center;
-  background-color: #f2f2f2;
-  color: #333333;
-}
-/*------------------------------------*\
-    $CORE--FORMS
-\*------------------------------------*/
-label {
-  color: #333333;
-}
-.form-control,
-input[type="file"].form-control {
-  color: #e6e6e6;
-  background-color: #ffffff;
-  border: 2px solid #e6e6e6;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-transition: border .25s linear, color .25s linear, background-color .25s linear;
-  transition: border .25s linear, color .25s linear, background-color .25s linear;
-  -webkit-appearance: none;
-  padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
-  height: 42px;
-}
-.form-control[disabled],
-input[type="file"].form-control[disabled],
-.form-control[readonly],
-input[type="file"].form-control[readonly],
-fieldset[disabled] .form-control,
-fieldset[disabled] input[type="file"].form-control {
-  background-color: #b3b3b3;
-  border-color: #f5f5f5;
-  color: #f5f5f5;
-  cursor: default;
-}
-textarea.form-control,
-textareainput[type="file"].form-control {
-  height: auto;
-}
-input[type="file"].form-control {
-  padding-top: 9px;
-  padding-top: 0.5625rem;
-}
-/**
- *  Checkboxes and radios
- *
- *  Indent the labels to position radios/checkboxes as hanging controls.
- */
-.radio,
-.checkbox {
-  vertical-align: middle;
-  display: block;
-  min-height: 27px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 20px;
-}
-.radio label,
-.checkbox label {
-  font-weight: normal;
-  cursor: pointer;
-  display: inline;
-  margin-bottom: 0;
-}
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  float: left;
-  margin-left: -20px;
-}
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: -5px;
-}
-/**
- *  Radios and checkboxes on same line
- */
-.radio-inline,
-.checkbox-inline {
-  font-weight: normal;
-  cursor: pointer;
-  vertical-align: middle;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-}
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px;
-}
-/**
- *  Apply same disabled cursor tweak as for inputs
- *  Note: Neither radios nor checkboxes can be readonly.
- */
-input[type="radio"][disabled],
-input[type="checkbox"][disabled],
-.radio[disabled],
-.radio-inline[disabled],
-.checkbox[disabled],
-.checkbox-inline[disabled],
-fieldset[disabled] input[type="radio"],
-fieldset[disabled] input[type="checkbox"],
-fieldset[disabled] .radio,
-fieldset[disabled] .radio-inline,
-fieldset[disabled] .checkbox,
-fieldset[disabled] .checkbox-inline {
-  cursor: not-allowed;
-}
-/**
- *  Help text
- *
- * Apply to any element you wish to create light text for placement immediately
- * below a form control. Use for general help, formatting, or instructional text.
- */
-.help-block {
-  color: #737373;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 10px;
-}
-/*------------------------------------*\
     $MODULES
 \*------------------------------------*/
 /**
@@ -2698,7 +2334,7 @@ fieldset[disabled] .checkbox-inline {
 .navbar:after {
   clear: both;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar {
     border-radius: 4px;
   }
@@ -2716,7 +2352,7 @@ fieldset[disabled] .checkbox-inline {
 .navbar-header:after {
   clear: both;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-header {
     float: left;
   }
@@ -2749,7 +2385,7 @@ fieldset[disabled] .checkbox-inline {
 .navbar-collapse:after {
   clear: both;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-collapse {
     width: auto;
   }
@@ -2780,7 +2416,7 @@ fieldset[disabled] .checkbox-inline {
   position: fixed;
   right: 0;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -2801,7 +2437,7 @@ fieldset[disabled] .checkbox-inline {
   font-size: 2.25rem;
   line-height: 27px;
   line-height: 1.6875rem;
-  color: #2f4d56;
+  color: #2c3e50;
   float: left;
   padding: 24px 12px 0px;
   padding: 1.5rem 0.75rem 0rem;
@@ -2811,7 +2447,7 @@ fieldset[disabled] .checkbox-inline {
   text-decoration: none;
   backgroun-color: transparent;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar > .container .navbar-brand {
     margin-left: -12px;
     margin-left: -0.75rem;
@@ -2846,7 +2482,7 @@ fieldset[disabled] .checkbox-inline {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-toggle {
     display: none;
   }
@@ -2870,7 +2506,7 @@ fieldset[disabled] .checkbox-inline {
   color: #21b5e4;
   background-color: transparent;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .navbar-nav .open .dropdown-menu {
     background-color: transparent;
     border: 0;
@@ -2894,7 +2530,7 @@ fieldset[disabled] .checkbox-inline {
     background-image: none;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-nav {
     float: left;
   }
@@ -2915,7 +2551,7 @@ fieldset[disabled] .checkbox-inline {
  *  issues with parents and chaining. Only do this when the navbar is uncollapsed
  *  though so that navbar contents properly stack and align in mobile.
  */
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-left {
     float: left !important;
   }
@@ -2958,13 +2594,13 @@ fieldset[disabled] .checkbox-inline {
     top: 0;
   }
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .navbar-form .form-group {
     margin-bottom: 6px;
     margin-bottom: 0.375rem;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-form {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -3023,7 +2659,7 @@ fieldset[disabled] .checkbox-inline {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-text {
     margin-left: 12px;
     margin-right: 12px;
@@ -3039,13 +2675,13 @@ fieldset[disabled] .checkbox-inline {
  * A section at the bottom of the page that replaces the footer similar to a navbar
  */
 .footbar {
-  background-color: #e6e6e6;
-  color: #bbcace;
+  background-color: #ecf0f1;
+  color: #bdc3c7;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar a {
-  color: #a4b3b7;
+  color: #95a5a6;
 }
 .footbar a:hover {
   color: #21b5e4;
@@ -3061,7 +2697,7 @@ fieldset[disabled] .checkbox-inline {
   line-height: 1.6875rem;
 }
 .footbar-logo .brand {
-  color: #a4b3b7;
+  color: #95a5a6;
 }
 .footbar-logo .brand:hover {
   color: #21b5e4;
@@ -3110,8 +2746,8 @@ fieldset[disabled] .checkbox-inline {
  */
 .hero-unit {
   background-color: #2c3e50;
-  padding: 72px 0px;
-  padding: 4.5rem 0rem;
+  padding: 96px 0px;
+  padding: 6rem 0rem;
 }
 .hero-unit .lead {
   font-size: 42px;
@@ -3122,7 +2758,7 @@ fieldset[disabled] .checkbox-inline {
   margin-top: 0px;
   margin-top: 0rem;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .hero-unit .lead {
     font-size: 36px;
     font-size: 2.25rem;
@@ -3141,9 +2777,155 @@ fieldset[disabled] .checkbox-inline {
   margin-top: 12px;
   margin-top: 0.75rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hero-unit-featured {
     margin-top: 48px;
     margin-top: 3rem;
   }
+}
+/*------------------------------------*\
+    $COMPONENT-MEDIA
+\*------------------------------------*/
+/**
+ * Media Grid wrapper
+ * Displays a grid of individual itemized topics with media elements.
+ * Based on bootstraps media component
+ */
+.media-grid {
+  background-color: #ffffff;
+  margin: 60px 0px 0px;
+  margin: 3.75rem 0rem 0rem;
+  overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+  .media-grid {
+    margin: 96px 0px 0px;
+    margin: 6rem 0rem 0rem;
+  }
+}
+/**
+ * Media list
+ * make UL/OL act like we want it too
+ */
+.media-list {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+  .media-list {
+    margin: 0px 0px 0px 0px;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .media-list {
+    margin: 0px 0px 0px -36px;
+    margin: 0rem 0rem 0rem -2.25rem;
+  }
+}
+.media-list:before,
+.media-list:after {
+  content: " ";
+  display: table;
+}
+.media-list:after {
+  clear: both;
+}
+/**
+ * Media Item
+ * Float and align the individual elements based on the container width
+ */
+.media {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 48px 0px;
+  margin: 0rem 0rem 3rem 0rem;
+}
+@media only screen and (min-width: 992px) {
+  .media {
+    margin: 0px 0px 72px 48px;
+    margin: 0rem 0rem 4.5rem 3rem;
+    width: 41.666%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .media {
+    margin: 0px 0px 72px 72px;
+    margin: 0rem 0rem 4.5rem 4.5rem;
+  }
+}
+/**
+ * Media Object
+ * This is the properties for the media object IE img
+ */
+.media-object {
+  display: block;
+}
+.media-object.pull-left {
+  margin-right: 12px;
+  margin-right: 0.75rem;
+}
+.media-object.pull-right {
+  margin-left: 12px;
+  margin-left: 0.75rem;
+}
+.media-object img {
+  width: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .media-object.pull-left {
+    margin-right: 24px;
+    margin-right: 1.5rem;
+  }
+  .media-object.pull-right {
+    margin-left: 24px;
+    margin-left: 1.5rem;
+  }
+  .media-object img {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .media-object.pull-left {
+    margin-right: 48px;
+    margin-right: 3rem;
+  }
+  .media-object.pull-right {
+    margin-left: 48px;
+    margin-left: 3rem;
+  }
+}
+/**
+ * Media Body wrapper
+ * This allows us to keep the body of the media eleement on the same line as the media object
+ */
+.media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+/**
+ * Media Body Heading
+ * We use a standard H3 tag for the heading but we may not wnat to use the default H3 styling
+ */
+.media-heading {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #e74c3c;
+  margin: 0px 0px 6px;
+  margin: 0rem 0rem 0.375rem;
+}
+@media only screen and (min-width: 768px) {
+  .media-heading {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
+}
+/**
+ * Media Body Text
+ * Sometimes e ned to change or modify the text to compensate the heading
+ */
+.media-text {
+  color: #95a5a6;
 }

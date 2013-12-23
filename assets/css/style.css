@@ -20,1206 +20,6 @@
     $IMPORTS
 \*------------------------------------*/
 /*------------------------------------*\
-    $ATOMS
-\*------------------------------------*/
-/*------------------------------------*\
-    $ATOM-MARGINS
-\*------------------------------------*/
-/**
- * Used to adjust the default spacing between components
- *
- * t = top
- * r = right
- * b = bottom
- * l = left
- * h = horizontal
- * v = vertical
- *
- */
-/**
- * All
- */
-.m {
-  margin: 24;
-}
-.m-2x {
-  margin: 48;
-}
-.m-3x {
-  margin: 72;
-}
-.m-4x {
-  margin: 96;
-}
-.m-5x {
-  margin: 120;
-}
-.m-6x {
-  margin: 144;
-}
-.m-half {
-  margin: 12;
-}
-.m-quarter {
-  margin: 6;
-}
-.m-eighth {
-  margin: 3;
-}
-.p {
-  padding: 24;
-}
-.p-2x {
-  padding: 48;
-}
-.p-3x {
-  padding: 72;
-}
-.p-4x {
-  padding: 96;
-}
-.p-5x {
-  padding: 120;
-}
-.p-6x {
-  padding: 144;
-}
-.p-half {
-  padding: 12;
-}
-.p-quarter {
-  padding: 6;
-}
-.p-eighth {
-  padding: 3;
-}
-/**
- * Top
- */
-.mt {
-  margin-top: 24;
-}
-.mt-2x {
-  margin-top: 48;
-}
-.mt-3x {
-  margin-top: 72;
-}
-.mt-4x {
-  margin-top: 96;
-}
-.mt-5x {
-  margin-top: 120;
-}
-.mt-6x {
-  margin-top: 144;
-}
-.mt-half {
-  margin-top: 12;
-}
-.mt-quarter {
-  margin-top: 6;
-}
-.mt-eighth {
-  margin-top: 3;
-}
-.pt {
-  padding-top: 24;
-}
-.pt-2x {
-  padding-top: 48;
-}
-.pt-3x {
-  padding-top: 72;
-}
-.pt-4x {
-  padding-top: 96;
-}
-.pt-5x {
-  padding-top: 120;
-}
-.pt-6x {
-  padding-top: 144;
-}
-.pt-half {
-  padding-top: 12;
-}
-.pt-quarter {
-  padding-top: 6;
-}
-.pt-eighth {
-  padding-top: 3;
-}
-/**
- * Right
- */
-.mr {
-  margin-right: 24;
-}
-.mr-2x {
-  margin-right: 48;
-}
-.mr-3x {
-  margin-right: 72;
-}
-.mr-4x {
-  margin-right: 96;
-}
-.mr-5x {
-  margin-right: 120;
-}
-.mr-6x {
-  margin-right: 144;
-}
-.mr-half {
-  margin-right: 12;
-}
-.mr-quarter {
-  margin-right: 6;
-}
-.mr-eighth {
-  margin-right: 3;
-}
-.pr {
-  padding-right: 24;
-}
-.pr-2x {
-  padding-right: 48;
-}
-.pr-3x {
-  padding-right: 72;
-}
-.pr-4x {
-  padding-right: 96;
-}
-.pr-5x {
-  padding-right: 120;
-}
-.pr-6x {
-  padding-right: 144;
-}
-.pr-half {
-  padding-right: 12;
-}
-.pr-quarter {
-  padding-right: 6;
-}
-.pr-eighth {
-  padding-right: 3;
-}
-/**
- * Bottom
- */
-.mb {
-  margin-bottom: 24;
-}
-.mb-2x {
-  margin-bottom: 48;
-}
-.mb-3x {
-  margin-bottom: 72;
-}
-.mb-4x {
-  margin-bottom: 96;
-}
-.mb-5x {
-  margin-bottom: 120;
-}
-.mb-6x {
-  margin-bottom: 144;
-}
-.mb-half {
-  margin-bottom: 12;
-}
-.mb-quarter {
-  margin-bottom: 6;
-}
-.mb-eighth {
-  margin-bottom: 3;
-}
-.pb {
-  padding-bottom: 24;
-}
-.pb-2x {
-  padding-bottom: 48;
-}
-.pb-3x {
-  padding-bottom: 72;
-}
-.pb-4x {
-  padding-bottom: 96;
-}
-.pb-5x {
-  padding-bottom: 120;
-}
-.pb-6x {
-  padding-bottom: 144;
-}
-.pb-half {
-  padding-bottom: 12;
-}
-.pb-quarter {
-  padding-bottom: 6;
-}
-.pb-eighth {
-  padding-bottom: 3;
-}
-/**
- * Left
- */
-.ml {
-  margin-left: 24;
-}
-.ml-2x {
-  margin-left: 48;
-}
-.ml-3x {
-  margin-left: 72;
-}
-.ml-4x {
-  margin-left: 96;
-}
-.ml-5x {
-  margin-left: 120;
-}
-.ml-6x {
-  margin-left: 144;
-}
-.ml-half {
-  margin-left: 12;
-}
-.ml-quarter {
-  margin-left: 6;
-}
-.ml-eighth {
-  margin-left: 3;
-}
-.pl {
-  padding-left: 24;
-}
-.pl-2x {
-  padding-left: 48;
-}
-.pl-3x {
-  padding-left: 72;
-}
-.pl-4x {
-  padding-left: 96;
-}
-.pl-5x {
-  padding-left: 120;
-}
-.pl-6x {
-  padding-left: 144;
-}
-.pl-half {
-  padding-left: 12;
-}
-.pl-quarter {
-  padding-left: 6;
-}
-.pl-eighth {
-  padding-left: 3;
-}
-/**
- * Horizontal
- */
-.mh {
-  margin-left: 24;
-  margin-right: 24;
-}
-.mh-2x {
-  margin-left: 48;
-  margin-right: 48;
-}
-.mh-3x {
-  margin-left: 72;
-  margin-right: 72;
-}
-.mh-4x {
-  margin-left: 96;
-  margin-right: 96;
-}
-.mh-5x {
-  margin-left: 120;
-  margin-right: 120;
-}
-.mh-6x {
-  margin-left: 144;
-  margin-right: 144;
-}
-.mh-half {
-  margin-left: 12;
-  margin-right: 12;
-}
-.mh-quarter {
-  margin-left: 6;
-  margin-right: 6;
-}
-.mh-eighth {
-  margin-left: 3;
-  margin-right: 3;
-}
-.ph {
-  padding-left: 24;
-  padding-right: 24;
-}
-.ph-2x {
-  padding-left: 48;
-  padding-right: 48;
-}
-.ph-3x {
-  padding-left: 72;
-  padding-right: 72;
-}
-.ph-4x {
-  padding-left: 96;
-  padding-right: 96;
-}
-.ph-5x {
-  padding-left: 120;
-  padding-right: 120;
-}
-.ph-6x {
-  padding-left: 144;
-  padding-right: 144;
-}
-.ph-half {
-  padding-left: 12;
-  padding-right: 12;
-}
-.ph-quarter {
-  padding-left: 6;
-  padding-right: 6;
-}
-.ph-eighth {
-  padding-left: 3;
-  padding-right: 3;
-}
-/**
- * Vertical
- */
-.mv {
-  margin-top: 24;
-  margin-bottom: 24;
-}
-.mv-2x {
-  margin-top: 48;
-  margin-bottom: 48;
-}
-.mv-3x {
-  margin-top: 72;
-  margin-bottom: 72;
-}
-.mv-4x {
-  margin-top: 96;
-  margin-bottom: 96;
-}
-.mv-5x {
-  margin-top: 120;
-  margin-bottom: 120;
-}
-.mv-6x {
-  margin-top: 144;
-  margin-bottom: 144;
-}
-.mv-half {
-  margin-top: 12;
-  margin-bottom: 12;
-}
-.mv-quarter {
-  margin-top: 6;
-  margin-bottom: 6;
-}
-.mv-eighth {
-  margin-top: 3;
-  margin-bottom: 3;
-}
-.pv {
-  padding-top: 24;
-  padding-bottom: 24;
-}
-.pv-2x {
-  padding-top: 48;
-  padding-bottom: 48;
-}
-.pv-3x {
-  padding-top: 72;
-  padding-bottom: 72;
-}
-.pv-4x {
-  padding-top: 96;
-  padding-bottom: 96;
-}
-.pv-5x {
-  padding-top: 120;
-  padding-bottom: 120;
-}
-.pv-6x {
-  padding-top: 144;
-  padding-bottom: 144;
-}
-.pv-half {
-  padding-top: 12;
-  padding-bottom: 12;
-}
-.pv-quarter {
-  padding-top: 6;
-  padding-bottom: 6;
-}
-.pv-eighth {
-  padding-top: 3;
-  padding-bottom: 3;
-}
-/*------------------------------------*\
-    $ATOM-TEXT
-\*------------------------------------*/
-/**
- * Horizontal text alignment
- */
-.text-center {
-  text-align: center !important;
-}
-.text-left {
-  text-align: left !important;
-}
-.text-right {
-  text-align: right !important;
-}
-/**
- * Text truncation
- *
- * Prevent text from wrapping onto multiple lines, and truncate with an
- * ellipsis.
- *
- * 1. Ensure that the node has a maximum width after which truncation can
- *    occur.
- * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
- *    nodes.
- */
-.text-truncate {
-  max-width: 100%;
-  /* 1 */
-  overflow: hidden !important;
-  text-overflow: ellipsis !important;
-  white-space: nowrap !important;
-  word-wrap: normal !important;
-  /* 2 */
-}
-/**
- * Word breaking
- *
- * Break strings when their length exceeds the width of their container.
- */
-.text-break {
-  word-wrap: break-word !important;
-}
-/**
- * Bold Text
- *
- * Sometimes you need make blocks of text bold but wrapping in strong tags breaks semantics
- */
-.text-bold {
-  font-weight: 700;
-}
-/*------------------------------------*\
-    $ATOM-IMAGES
-\*------------------------------------*/
-/**
- * Image Classes
- */
-.img-rounded {
-  border-radius: 6;
-}
-.img-circle {
-  border-radius: 50%;
-}
-.img-responsive {
-  display: block;
-  height: auto;
-  max-width: 100%;
-}
-.img-thumbnail {
-  line-height: 16px;
-  line-height: 1rem;
-  background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  display: inline-block;
-  height: auto;
-  max-width: 100%;
-  padding: 4px;
-  padding: 0.25rem;
-}
-/*------------------------------------*\
-    $ATOM-VISABILITY
-\*------------------------------------*/
-/**
- * Completely remove from the flow and screen readers.
- */
-.hidden {
-  display: none !important;
-  visibility: hidden !important;
-}
-/**
- * Completely undo hidden.
- */
-.display {
-  display: block !important;
-  visibility: visible !important;
-}
-/**
- * Display content only for screen readers.
- */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-/**
- * Completely remove from the flow but leave available to screen readers.
- */
-.hidden-visually {
-  position: absolute !important;
-  overflow: hidden !important;
-  width: 1px !important;
-  height: 1px !important;
-  padding: 0 !important;
-  border: 0 !important;
-  clip: rect(1px, 1px, 1px, 1px) !important;
-}
-/**
- * Control visibility without affecting flow.
- */
-.invisible {
-  visibility: hidden !important;
-}
-.visible {
-  visibility: visible !important;
-}
-/**
- * Responsive Visibility Classes
- */
-.visible-s {
-  display: none !important;
-  visibility: hidden !important;
-}
-@media (max-width: 767px) {
-  .visible-s {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-s.visible-m {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .visible-s.visible-l {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 1200px) {
-  .visible-s.visible-w {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-.visible-m {
-  display: none !important;
-  visibility: hidden !important;
-}
-@media (max-width: 767px) {
-  .visible-m.visible-s {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-m {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .visible-m.visible-l {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 1200px) {
-  .visible-m.visible-w {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-.visible-l {
-  display: none !important;
-  visibility: hidden !important;
-}
-@media (max-width: 767px) {
-  .visible-l.visible-s {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-l.visible-m {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .visible-l {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 1200px) {
-  .visible-l.visible-w {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-.visible-w {
-  display: none !important;
-  visibility: hidden !important;
-}
-@media (max-width: 767px) {
-  .visible-w.visible-s {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .visible-w.visible-m {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .visible-w.visible-l {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-@media (min-width: 1200px) {
-  .visible-w {
-    display: block !important;
-    visibility: visible !important;
-  }
-}
-/**
- * Responsive Hidden Classes
- */
-.hidden-s {
-  display: block !important;
-  visibility: visible !important;
-}
-@media (max-width: 767px) {
-  .hidden-s {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-s.hidden-m {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hidden-s.hidden-l {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 1200px) {
-  .hidden-s.hidden-w {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-.hidden-m {
-  display: block !important;
-  visibility: visible !important;
-}
-@media (max-width: 767px) {
-  .hidden-m.hidden-s {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-m {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hidden-m.hidden-l {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 1200px) {
-  .hidden-m.hidden-w {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-.hidden-l {
-  display: block !important;
-  visibility: visible !important;
-}
-@media (max-width: 767px) {
-  .hidden-l.hidden-s {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-l.hidden-m {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hidden-l {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 1200px) {
-  .hidden-l.hidden-w {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-.hidden-w {
-  display: block !important;
-  visibility: visible !important;
-}
-@media (max-width: 767px) {
-  .hidden-w.hidden-s {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .hidden-w.hidden-m {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 992px) and (max-width: 1199px) {
-  .hidden-w.hidden-l {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-@media (min-width: 1200px) {
-  .hidden-w {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-/**
- * Print Classes
- */
-.visible-print {
-  display: none !important;
-  visibility: hidden !important;
-}
-@media print {
-  .visible-print {
-    display: block !important;
-    visibility: visible !important;
-  }
-  .hidden-print {
-    display: none !important;
-    visibility: hidden !important;
-  }
-}
-/*------------------------------------*\
-    $ATOM-LAYOUT
-\*------------------------------------*/
-/**
- * Clearfix
- */
-/**
- * Vertical alignment utilities
- * Depends on an appropriate `display` value.
- */
-.align-top {
-  vertical-align: top !important;
-}
-.align-middle {
-  vertical-align: middle !important;
-}
-.align-baseline {
-  vertical-align: baseline !important;
-}
-.align-bottom {
-  vertical-align: bottom !important;
-}
-/**
- * New block formatting context
- *
- * This affords some useful properties to the element. It won't wrap under
- * floats. Will also contain any floated children.
-
- * N.B. This will clip overflow. Use the alternative method below if this is
- * problematic.
- */
-.nbfc {
-  overflow: hidden !important;
-}
-/**
- * New block formatting context (alternative)
- *
- * Alternative method when overflow must not be clipped.
- *
- * 1. Create a new block formatting context (NBFC).
- * 2. Avoid shrink-wrap behaviour of table-cell.
- *
- * N.B. This breaks down in some browsers when elements within this element
- * exceed its width.
- */
-.nbfcAlt {
-  display: table-cell !important;
-  /* 1 */
-  width: 10000px !important;
-  /* 2 */
-}
-/**
- * Floats
- */
-.pull-left {
-  float: left !important;
-}
-.pull-right {
-  float: right !important;
-}
-/**
- * Object position helpers.
- *
- * Float an object left or right, and include some space between the object and
- * proceeding objects.
- */
-.objLeft {
-  float: left !important;
-  margin-right: 10px;
-}
-.objRight {
-  float: right !important;
-  margin-left: 10px;
-}
-/**
- * 1. Remove excess space below images
- * 2. Guard against `img {max-width:100%}` hiding this utility's images in
- *    IE 8.
- */
-.objLeft img,
-.objRight img {
-  display: block;
-  /* 1 */
-  max-width: none;
-  /* 2 */
-}
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-/*------------------------------------*\
-    $ATOM-COLORS
-\*------------------------------------*/
-/**
- * Used for comon clour changes to text
- */
-.black-pure {
-  background-color: #000000;
-}
-.black-dark {
-  background-color: #1a1a1a;
-}
-.black {
-  background-color: #333333;
-}
-.black-light {
-  background-color: #4d4d4d;
-}
-.gray-darker {
-  background-color: #666666;
-}
-.gray-dark {
-  background-color: #808080;
-}
-.gray {
-  background-color: #999999;
-}
-.gray-light {
-  background-color: #b3b3b3;
-}
-.gray-lighter {
-  background-color: #cccccc;
-}
-.white-darkest {
-  background-color: #dddddd;
-}
-.white-darker {
-  background-color: #e6e6e6;
-}
-.white-dark {
-  background-color: #f2f2f2;
-}
-.white {
-  background-color: #ffffff;
-}
-.teal {
-  background-color: #1abc9c;
-}
-.teal-dark {
-  background-color: #16a085;
-}
-.green {
-  background-color: #2ecc71;
-}
-.green-dark {
-  background-color: #27ae60;
-}
-.blue-bright {
-  background-color: #5fccff;
-}
-.blue {
-  background-color: #3498db;
-}
-.blue-dark {
-  background-color: #2980b9;
-}
-.purple {
-  background-color: #9b59b6;
-}
-.purple-dark {
-  background-color: #8e44ad;
-}
-.darkblue {
-  background-color: #34495e;
-}
-.darkblue-dark {
-  background-color: #2c3e50;
-}
-.yellow-bright {
-  background-color: #fff55b;
-}
-.yellow {
-  background-color: #f1c40f;
-}
-.yellow-dark {
-  background-color: #f39c12;
-}
-.orange {
-  background-color: #e67e22;
-}
-.orange-dark {
-  background-color: #d35400;
-}
-.red {
-  background-color: #e74c3c;
-}
-.red-dark {
-  background-color: #c0392b;
-}
-.silver {
-  background-color: #ecf0f1;
-}
-.silver-dark {
-  background-color: #bdc3c7;
-}
-.bluegray {
-  background-color: #95a5a6;
-}
-.bluegray-dark {
-  background-color: #7f8c8d;
-}
-.pink {
-  background-color: #e05281;
-}
-.pink-dark {
-  background-color: #db346b;
-}
-.white,
-.white-dark,
-.white-darker,
-.white-darkest,
-.silver,
-.silver-dark {
-  color: #333333 !important;
-}
-.text-black {
-  color: #333333;
-}
-/*------------------------------------*\
-    $ATOM-LISTS
-\*------------------------------------*/
-/**
- * List Type Classes
- */
-.list-unstyled,
-.list-unstyled ul,
-.list-unstyled ol {
-  list-style: none;
-}
-.list-inline {
-  list-style: none;
-}
-.list-inline > li {
-  display: inline-block;
-  padding-left: 6px;
-  padding-left: 0.375rem;
-  padding-right: 6px;
-  padding-right: 0.375rem;
-}
-@media (min-width: 768px) {
-  .list-inline {
-    /**
-         * Inline Description Lists
-         * Defaults to being stacked without any of the below styles applied, until the
-         * grid breakpoint is reached (default of ~768px).
-         */
-  }
-  .list-inline dt {
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    clear: left;
-    float: left;
-    margin-top: 0;
-    width: 160px;
-  }
-  .list-inline dd {
-    margin-bottom: 12px;
-    margin-bottom: 0.75rem;
-    margin-left: 180px;
-  }
-  .list-inline dd:before,
-  .list-inline dd:after {
-    content: " ";
-    display: table;
-  }
-  .list-inline dd:after {
-    clear: both;
-  }
-}
-/*------------------------------------*\
-    $ATOM-TABLES
-\*------------------------------------*/
-/**
- * Table Type Classes
- */
-.table-striped > tbody > tr:nth-child(even) > td,
-.table-striped > tbody > tr:nth-child(even) > th {
-  background-color: #f9f9f9;
-}
-.table-hover > tbody > tr:hover > td,
-.table-hover > tbody > tr:hover > th {
-  background-color: #f4fbfe;
-}
-.table-condensed > thead > tr > th,
-.table-condensed > tbody > tr > th,
-.table-condensed > tfoot > tr > th,
-.table-condensed > thead > tr > td,
-.table-condensed > tbody > tr > td,
-.table-condensed > tfoot > tr > td {
-  padding: 6px;
-  padding: 0.375rem;
-}
-.table-bordered {
-  border: 2px solid #dddddd;
-  font-size: 14px;
-  font-size: 0.875rem;
-  border-radius: 0;
-}
-.table-bordered > thead > tr th,
-.table-bordered > tbody > tr th,
-.table-bordered > tfoot > tr th,
-.table-bordered > thead > tr td,
-.table-bordered > tbody > tr td,
-.table-bordered > tfoot > tr td {
-  border: 2px solid #dddddd;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  vertical-align: middle;
-}
-.table-bordered > thead > tr > th,
-.table-bordered > thead > tr > td {
-  border-bottom-width: 2px;
-}
-.table-bordered > thead th:first-child {
-  border-top-left-radius: 0;
-}
-.table-bordered > thead th:last-child {
-  border-top-right-radius: 0;
-}
-/*------------------------------------*\
-    $ATOM-INLLINE-FORMS
-\*------------------------------------*/
-/**
- * Form Inline Class
- * 
- * Make forms appear inline(-block) by adding the `.form-inline` class. Inline
- * forms begin stacked on extra small (mobile) devices and then go inline when
- * viewports reach <768px.
- * 
- * Requires wrapping inputs and labels with `.form-group` for proper display of
- * default HTML form controls.
- */
-.form-group {
-  margin-bottom: 12px;
-  margin-bottom: 0.75rem;
-}
-@media (min-width: 768px) {
-  .form-inline fieldset {
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-  }
-  .form-inline .form-group {
-    vertical-align: middle;
-    display: inline-block;
-    margin-bottom: 0;
-  }
-  .form-inline .form-group:first-child {
-    margin-left: 0;
-  }
-  .form-inline .radio,
-  .form-inline .checkbox {
-    display: inline-block;
-    margin: 0px 3px;
-    margin: 0rem 0.1875rem;
-    padding-left: 0;
-  }
-  .form-inline .radio input[type="radio"],
-  .form-inline .checkbox input[type="checkbox"] {
-    float: none;
-    margin-left: 0;
-    top: 0;
-  }
-}
-/*------------------------------------*\
     $NORMALIZE
 \*------------------------------------*/
 /*! normalize.css v2.1.0 | MIT License | git.io/normalize */
@@ -1943,8 +743,8 @@ p {
   font-size: 1rem;
   line-height: 27px;
   line-height: 1.6875rem;
-  margin: 0px 0px 13.5px;
-  margin: 0rem 0rem 0.84375rem;
+  margin: 0px 0px 12px;
+  margin: 0rem 0rem 0.75rem;
 }
 /**
  * Set default consistent size
@@ -1990,8 +790,8 @@ address {
   font-style: normal;
   line-height: 27px;
   line-height: 1.6875rem;
-  margin-bottom: 27px;
-  margin-bottom: 1.6875rem;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
 }
 /**
  * Ensure no content before or after blockquotes
@@ -2285,6 +1085,1242 @@ input[type="checkbox"] {
   box-shadow: none;
 }
 /*------------------------------------*\
+    $CORE
+\*------------------------------------*/
+/*------------------------------------*\
+    CORE.LESS
+\*------------------------------------*/
+/**
+ * Contains all contents from the core directory - This consists of standard layout 
+ * and utility classes also atoms and core refactors of common selectors
+ */
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ATOMS
+\*------------------------------------*/
+/*------------------------------------*\
+    $ATOM-MARGINS
+\*------------------------------------*/
+/**
+ * Used to adjust the default spacing between components
+ *
+ * t = top
+ * r = right
+ * b = bottom
+ * l = left
+ * h = horizontal
+ * v = vertical
+ *
+ */
+/**
+ * All
+ */
+.m {
+  margin: 24;
+}
+.m-2x {
+  margin: 48;
+}
+.m-3x {
+  margin: 72;
+}
+.m-4x {
+  margin: 96;
+}
+.m-5x {
+  margin: 120;
+}
+.m-6x {
+  margin: 144;
+}
+.m-half {
+  margin: 12;
+}
+.m-quarter {
+  margin: 6;
+}
+.m-eighth {
+  margin: 3;
+}
+.p {
+  padding: 24;
+}
+.p-2x {
+  padding: 48;
+}
+.p-3x {
+  padding: 72;
+}
+.p-4x {
+  padding: 96;
+}
+.p-5x {
+  padding: 120;
+}
+.p-6x {
+  padding: 144;
+}
+.p-half {
+  padding: 12;
+}
+.p-quarter {
+  padding: 6;
+}
+.p-eighth {
+  padding: 3;
+}
+/**
+ * Top
+ */
+.mt {
+  margin-top: 24;
+}
+.mt-2x {
+  margin-top: 48;
+}
+.mt-3x {
+  margin-top: 72;
+}
+.mt-4x {
+  margin-top: 96;
+}
+.mt-5x {
+  margin-top: 120;
+}
+.mt-6x {
+  margin-top: 144;
+}
+.mt-half {
+  margin-top: 12;
+}
+.mt-quarter {
+  margin-top: 6;
+}
+.mt-eighth {
+  margin-top: 3;
+}
+.pt {
+  padding-top: 24;
+}
+.pt-2x {
+  padding-top: 48;
+}
+.pt-3x {
+  padding-top: 72;
+}
+.pt-4x {
+  padding-top: 96;
+}
+.pt-5x {
+  padding-top: 120;
+}
+.pt-6x {
+  padding-top: 144;
+}
+.pt-half {
+  padding-top: 12;
+}
+.pt-quarter {
+  padding-top: 6;
+}
+.pt-eighth {
+  padding-top: 3;
+}
+/**
+ * Right
+ */
+.mr {
+  margin-right: 24;
+}
+.mr-2x {
+  margin-right: 48;
+}
+.mr-3x {
+  margin-right: 72;
+}
+.mr-4x {
+  margin-right: 96;
+}
+.mr-5x {
+  margin-right: 120;
+}
+.mr-6x {
+  margin-right: 144;
+}
+.mr-half {
+  margin-right: 12;
+}
+.mr-quarter {
+  margin-right: 6;
+}
+.mr-eighth {
+  margin-right: 3;
+}
+.pr {
+  padding-right: 24;
+}
+.pr-2x {
+  padding-right: 48;
+}
+.pr-3x {
+  padding-right: 72;
+}
+.pr-4x {
+  padding-right: 96;
+}
+.pr-5x {
+  padding-right: 120;
+}
+.pr-6x {
+  padding-right: 144;
+}
+.pr-half {
+  padding-right: 12;
+}
+.pr-quarter {
+  padding-right: 6;
+}
+.pr-eighth {
+  padding-right: 3;
+}
+/**
+ * Bottom
+ */
+.mb {
+  margin-bottom: 24;
+}
+.mb-2x {
+  margin-bottom: 48;
+}
+.mb-3x {
+  margin-bottom: 72;
+}
+.mb-4x {
+  margin-bottom: 96;
+}
+.mb-5x {
+  margin-bottom: 120;
+}
+.mb-6x {
+  margin-bottom: 144;
+}
+.mb-half {
+  margin-bottom: 12;
+}
+.mb-quarter {
+  margin-bottom: 6;
+}
+.mb-eighth {
+  margin-bottom: 3;
+}
+.pb {
+  padding-bottom: 24;
+}
+.pb-2x {
+  padding-bottom: 48;
+}
+.pb-3x {
+  padding-bottom: 72;
+}
+.pb-4x {
+  padding-bottom: 96;
+}
+.pb-5x {
+  padding-bottom: 120;
+}
+.pb-6x {
+  padding-bottom: 144;
+}
+.pb-half {
+  padding-bottom: 12;
+}
+.pb-quarter {
+  padding-bottom: 6;
+}
+.pb-eighth {
+  padding-bottom: 3;
+}
+/**
+ * Left
+ */
+.ml {
+  margin-left: 24;
+}
+.ml-2x {
+  margin-left: 48;
+}
+.ml-3x {
+  margin-left: 72;
+}
+.ml-4x {
+  margin-left: 96;
+}
+.ml-5x {
+  margin-left: 120;
+}
+.ml-6x {
+  margin-left: 144;
+}
+.ml-half {
+  margin-left: 12;
+}
+.ml-quarter {
+  margin-left: 6;
+}
+.ml-eighth {
+  margin-left: 3;
+}
+.pl {
+  padding-left: 24;
+}
+.pl-2x {
+  padding-left: 48;
+}
+.pl-3x {
+  padding-left: 72;
+}
+.pl-4x {
+  padding-left: 96;
+}
+.pl-5x {
+  padding-left: 120;
+}
+.pl-6x {
+  padding-left: 144;
+}
+.pl-half {
+  padding-left: 12;
+}
+.pl-quarter {
+  padding-left: 6;
+}
+.pl-eighth {
+  padding-left: 3;
+}
+/**
+ * Horizontal
+ */
+.mh {
+  margin-left: 24;
+  margin-right: 24;
+}
+.mh-2x {
+  margin-left: 48;
+  margin-right: 48;
+}
+.mh-3x {
+  margin-left: 72;
+  margin-right: 72;
+}
+.mh-4x {
+  margin-left: 96;
+  margin-right: 96;
+}
+.mh-5x {
+  margin-left: 120;
+  margin-right: 120;
+}
+.mh-6x {
+  margin-left: 144;
+  margin-right: 144;
+}
+.mh-half {
+  margin-left: 12;
+  margin-right: 12;
+}
+.mh-quarter {
+  margin-left: 6;
+  margin-right: 6;
+}
+.mh-eighth {
+  margin-left: 3;
+  margin-right: 3;
+}
+.ph {
+  padding-left: 24;
+  padding-right: 24;
+}
+.ph-2x {
+  padding-left: 48;
+  padding-right: 48;
+}
+.ph-3x {
+  padding-left: 72;
+  padding-right: 72;
+}
+.ph-4x {
+  padding-left: 96;
+  padding-right: 96;
+}
+.ph-5x {
+  padding-left: 120;
+  padding-right: 120;
+}
+.ph-6x {
+  padding-left: 144;
+  padding-right: 144;
+}
+.ph-half {
+  padding-left: 12;
+  padding-right: 12;
+}
+.ph-quarter {
+  padding-left: 6;
+  padding-right: 6;
+}
+.ph-eighth {
+  padding-left: 3;
+  padding-right: 3;
+}
+/**
+ * Vertical
+ */
+.mv {
+  margin-top: 24;
+  margin-bottom: 24;
+}
+.mv-2x {
+  margin-top: 48;
+  margin-bottom: 48;
+}
+.mv-3x {
+  margin-top: 72;
+  margin-bottom: 72;
+}
+.mv-4x {
+  margin-top: 96;
+  margin-bottom: 96;
+}
+.mv-5x {
+  margin-top: 120;
+  margin-bottom: 120;
+}
+.mv-6x {
+  margin-top: 144;
+  margin-bottom: 144;
+}
+.mv-half {
+  margin-top: 12;
+  margin-bottom: 12;
+}
+.mv-quarter {
+  margin-top: 6;
+  margin-bottom: 6;
+}
+.mv-eighth {
+  margin-top: 3;
+  margin-bottom: 3;
+}
+.pv {
+  padding-top: 24;
+  padding-bottom: 24;
+}
+.pv-2x {
+  padding-top: 48;
+  padding-bottom: 48;
+}
+.pv-3x {
+  padding-top: 72;
+  padding-bottom: 72;
+}
+.pv-4x {
+  padding-top: 96;
+  padding-bottom: 96;
+}
+.pv-5x {
+  padding-top: 120;
+  padding-bottom: 120;
+}
+.pv-6x {
+  padding-top: 144;
+  padding-bottom: 144;
+}
+.pv-half {
+  padding-top: 12;
+  padding-bottom: 12;
+}
+.pv-quarter {
+  padding-top: 6;
+  padding-bottom: 6;
+}
+.pv-eighth {
+  padding-top: 3;
+  padding-bottom: 3;
+}
+/*------------------------------------*\
+    $ATOM-TEXT
+\*------------------------------------*/
+/**
+ * Horizontal text alignment
+ */
+.text-center {
+  text-align: center !important;
+}
+.text-left {
+  text-align: left !important;
+}
+.text-right {
+  text-align: right !important;
+}
+/**
+ * Text truncation
+ *
+ * Prevent text from wrapping onto multiple lines, and truncate with an
+ * ellipsis.
+ *
+ * 1. Ensure that the node has a maximum width after which truncation can
+ *    occur.
+ * 2. Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+ *    nodes.
+ */
+.text-truncate {
+  max-width: 100%;
+  /* 1 */
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  word-wrap: normal !important;
+  /* 2 */
+}
+/**
+ * Word breaking
+ *
+ * Break strings when their length exceeds the width of their container.
+ */
+.text-break {
+  word-wrap: break-word !important;
+}
+/**
+ * Bold Text
+ *
+ * Sometimes you need make blocks of text bold but wrapping in strong tags breaks semantics
+ */
+.text-bold {
+  font-weight: 700;
+}
+/*------------------------------------*\
+    $ATOM-IMAGES
+\*------------------------------------*/
+/**
+ * Image Classes
+ */
+.img-rounded {
+  border-radius: 6;
+}
+.img-circle {
+  border-radius: 50%;
+}
+.img-responsive {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.img-thumbnail {
+  line-height: 16px;
+  line-height: 1rem;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  padding: 4px;
+  padding: 0.25rem;
+}
+/*------------------------------------*\
+    $ATOM-VISABILITY
+\*------------------------------------*/
+/**
+ * Completely remove from the flow and screen readers.
+ */
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+/**
+ * Completely undo hidden.
+ */
+.display {
+  display: block !important;
+  visibility: visible !important;
+}
+/**
+ * Display content only for screen readers.
+ */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+.hidden-visually {
+  position: absolute !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+}
+/**
+ * Control visibility without affecting flow.
+ */
+.invisible {
+  visibility: hidden !important;
+}
+.visible {
+  visibility: visible !important;
+}
+/**
+*  IE10 in Windows (Phone) 8
+*  
+*  Support for responsive views via media queries is kind of borked in IE10, for
+*  Surface/desktop in split view and for Windows Phone 8. This particular fix
+*  must be accompanied by a snippet of JavaScript to sniff the user agent and
+*  apply some conditional CSS to *only* the Surface/desktop Windows 8. Look at
+*  our Getting Started page for more information on this bug.
+*  
+*  For more information, see the following:
+*  
+*  Issue: https://github.com/twbs/bootstrap/issues/10497
+*  Docs: http://getbootstrap.com/getting-started/#browsers
+*  Source: http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
+*/
+@-ms-viewport {
+  width: device-width;
+}
+/**
+ * Responsive Visibility Classes
+ */
+.visible-s {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 767px) {
+  .visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-s.visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-s.visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-s.visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.visible-m {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 767px) {
+  .visible-m.visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-m.visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-m.visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.visible-l {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 767px) {
+  .visible-l.visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-l.visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-l.visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.visible-w {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media (max-width: 767px) {
+  .visible-w.visible-s {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .visible-w.visible-m {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .visible-w.visible-l {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-w {
+    display: block !important;
+    visibility: visible !important;
+  }
+}
+.hidden-s {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 767px) {
+  .hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-s.hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-s.hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-s.hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+.hidden-m {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 767px) {
+  .hidden-m.hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-m.hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-m.hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+.hidden-l {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 767px) {
+  .hidden-l.hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-l.hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-l.hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+.hidden-w {
+  display: block !important;
+  visibility: visible !important;
+}
+@media (max-width: 767px) {
+  .hidden-w.hidden-s {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .hidden-w.hidden-m {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hidden-w.hidden-l {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+@media (min-width: 1200px) {
+  .hidden-w {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+/**
+ * Print Utility
+ */
+.visible-print {
+  display: none !important;
+  visibility: hidden !important;
+}
+@media print {
+  .visible-print {
+    display: block !important;
+    visibility: visible !important;
+  }
+  .hidden-print {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+/*------------------------------------*\
+    $ATOM-LAYOUT
+\*------------------------------------*/
+/**
+ * Clearfix
+ */
+/**
+ * Vertical alignment utilities
+ * Depends on an appropriate `display` value.
+ */
+.align-top {
+  vertical-align: top !important;
+}
+.align-middle {
+  vertical-align: middle !important;
+}
+.align-baseline {
+  vertical-align: baseline !important;
+}
+.align-bottom {
+  vertical-align: bottom !important;
+}
+/**
+ * Horizontal Center Utility
+ */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/**
+ * New block formatting context
+ *
+ * This affords some useful properties to the element. It won't wrap under
+ * floats. Will also contain any floated children.
+
+ * N.B. This will clip overflow. Use the alternative method below if this is
+ * problematic.
+ */
+.nbfc {
+  overflow: hidden !important;
+}
+/**
+ * New block formatting context (alternative)
+ *
+ * Alternative method when overflow must not be clipped.
+ *
+ * 1. Create a new block formatting context (NBFC).
+ * 2. Avoid shrink-wrap behaviour of table-cell.
+ *
+ * N.B. This breaks down in some browsers when elements within this element
+ * exceed its width.
+ */
+.nbfcAlt {
+  display: table-cell !important;
+  /* 1 */
+  width: 10000px !important;
+  /* 2 */
+}
+/**
+ * Floats
+ */
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+/**
+ * Object position helpers.
+ *
+ * Float an object left or right, and include some space between the object and
+ * proceeding objects.
+ */
+.objLeft {
+  float: left !important;
+  margin-right: 10px;
+}
+.objRight {
+  float: right !important;
+  margin-left: 10px;
+}
+/**
+ * 1. Remove excess space below images
+ * 2. Guard against `img {max-width:100%}` hiding this utility's images in
+ *    IE 8.
+ */
+.objLeft img,
+.objRight img {
+  display: block;
+  /* 1 */
+  max-width: none;
+  /* 2 */
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*------------------------------------*\
+    $ATOM-COLORS
+\*------------------------------------*/
+/**
+ * Used for comon clour changes to text
+ */
+.black-pure {
+  background-color: #000000;
+}
+.black-dark {
+  background-color: #1a1a1a;
+}
+.black {
+  background-color: #333333;
+}
+.black-light {
+  background-color: #4d4d4d;
+}
+.gray-darker {
+  background-color: #666666;
+}
+.gray-dark {
+  background-color: #808080;
+}
+.gray {
+  background-color: #999999;
+}
+.gray-light {
+  background-color: #b3b3b3;
+}
+.gray-lighter {
+  background-color: #cccccc;
+}
+.white-darkest {
+  background-color: #dddddd;
+}
+.white-darker {
+  background-color: #e6e6e6;
+}
+.white-dark {
+  background-color: #f2f2f2;
+}
+.white {
+  background-color: #ffffff;
+}
+.teal {
+  background-color: #1abc9c;
+}
+.teal-dark {
+  background-color: #16a085;
+}
+.green {
+  background-color: #2ecc71;
+}
+.green-dark {
+  background-color: #27ae60;
+}
+.blue-bright {
+  background-color: #5fccff;
+}
+.blue {
+  background-color: #3498db;
+}
+.blue-dark {
+  background-color: #2980b9;
+}
+.purple {
+  background-color: #9b59b6;
+}
+.purple-dark {
+  background-color: #8e44ad;
+}
+.darkblue {
+  background-color: #34495e;
+}
+.darkblue-dark {
+  background-color: #2c3e50;
+}
+.yellow-bright {
+  background-color: #fff55b;
+}
+.yellow {
+  background-color: #f1c40f;
+}
+.yellow-dark {
+  background-color: #f39c12;
+}
+.orange {
+  background-color: #e67e22;
+}
+.orange-dark {
+  background-color: #d35400;
+}
+.red {
+  background-color: #e74c3c;
+}
+.red-dark {
+  background-color: #c0392b;
+}
+.silver {
+  background-color: #ecf0f1;
+}
+.silver-dark {
+  background-color: #bdc3c7;
+}
+.bluegray {
+  background-color: #95a5a6;
+}
+.bluegray-dark {
+  background-color: #7f8c8d;
+}
+.pink {
+  background-color: #e05281;
+}
+.pink-dark {
+  background-color: #db346b;
+}
+.white,
+.white-dark,
+.white-darker,
+.white-darkest,
+.silver,
+.silver-dark {
+  color: #333333 !important;
+}
+.text-black {
+  color: #333333;
+}
+/*------------------------------------*\
+    $ATOM-LISTS
+\*------------------------------------*/
+/**
+ * List Type Classes
+ */
+.list-unstyled,
+.list-unstyled ul,
+.list-unstyled ol {
+  list-style: none;
+}
+.list-inline {
+  list-style: none;
+}
+.list-inline > li {
+  display: inline-block;
+  padding-left: 6px;
+  padding-left: 0.375rem;
+  padding-right: 6px;
+  padding-right: 0.375rem;
+}
+@media (min-width: 768px) {
+  .list-inline {
+    /**
+         * Inline Description Lists
+         * Defaults to being stacked without any of the below styles applied, until the
+         * grid breakpoint is reached (default of ~768px).
+         */
+  }
+  .list-inline dt {
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    clear: left;
+    float: left;
+    margin-top: 0;
+    width: 160px;
+  }
+  .list-inline dd {
+    margin-bottom: 12px;
+    margin-bottom: 0.75rem;
+    margin-left: 180px;
+  }
+  .list-inline dd:before,
+  .list-inline dd:after {
+    content: " ";
+    display: table;
+  }
+  .list-inline dd:after {
+    clear: both;
+  }
+}
+/*------------------------------------*\
+    $ATOM-TABLES
+\*------------------------------------*/
+/**
+ * Table Type Classes
+ */
+.table-striped > tbody > tr:nth-child(even) > td,
+.table-striped > tbody > tr:nth-child(even) > th {
+  background-color: #f9f9f9;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+  background-color: #f4fbfe;
+}
+.table-condensed > thead > tr > th,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > tbody > tr > td,
+.table-condensed > tfoot > tr > td {
+  padding: 6px;
+  padding: 0.375rem;
+}
+.table-bordered {
+  border: 2px solid #dddddd;
+  font-size: 14px;
+  font-size: 0.875rem;
+  border-radius: 0;
+}
+.table-bordered > thead > tr th,
+.table-bordered > tbody > tr th,
+.table-bordered > tfoot > tr th,
+.table-bordered > thead > tr td,
+.table-bordered > tbody > tr td,
+.table-bordered > tfoot > tr td {
+  border: 2px solid #dddddd;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  vertical-align: middle;
+}
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+  border-bottom-width: 2px;
+}
+.table-bordered > thead th:first-child {
+  border-top-left-radius: 0;
+}
+.table-bordered > thead th:last-child {
+  border-top-right-radius: 0;
+}
+/*------------------------------------*\
+    $ATOM-INLLINE-FORMS
+\*------------------------------------*/
+/**
+ * Form Inline Class
+ * 
+ * Make forms appear inline(-block) by adding the `.form-inline` class. Inline
+ * forms begin stacked on extra small (mobile) devices and then go inline when
+ * viewports reach <768px.
+ * 
+ * Requires wrapping inputs and labels with `.form-group` for proper display of
+ * default HTML form controls.
+ */
+.form-group {
+  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 768px) {
+  .form-inline fieldset {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .form-inline .form-group {
+    vertical-align: middle;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .form-inline .form-group:first-child {
+    margin-left: 0;
+  }
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin: 0px 3px;
+    margin: 0rem 0.1875rem;
+    padding-left: 0;
+  }
+  .form-inline .radio input[type="radio"],
+  .form-inline .checkbox input[type="checkbox"] {
+    float: none;
+    margin-left: 0;
+    top: 0;
+  }
+}
+/*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
 /*------------------------------------*\
@@ -2295,6 +2331,10 @@ input[type="checkbox"] {
  */
 /**
  *  Decalre a grid
+ *
+ *  margin: 0 auto;
+ *  .padding(0, @half-spacing-unit);
+ *  .cf();
  */
 .grid {
   margin: 0 auto;
@@ -2309,12 +2349,35 @@ input[type="checkbox"] {
 .grid:after {
   clear: both;
 }
+@media (min-width: 480px) {
+  .grid {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .grid {
+    width: 744px;
+  }
+}
+@media (min-width: 992px) {
+  .grid {
+    width: 964px;
+  }
+}
+@media (min-width: 1200px) {
+  .grid {
+    width: 1164px;
+  }
+}
 /**
  *  Declare Grid Row
+ *
+ *  .margin(0, (@gutter / -2));
+ *  .cf();
  */
 .grid-row {
-  margin: 0px 12px;
-  margin: 0rem 0.75rem;
+  margin: 0px -12px;
+  margin: 0rem -0.75rem;
 }
 .grid-row:before,
 .grid-row:after {
@@ -2326,527 +2389,573 @@ input[type="checkbox"] {
 }
 /**
  *  Common styles for small and large grid columns
+ *
+ *  float: left;
+ *  position: relative;
+ *  min-height: 1px;
+ *  .padding(0, (@grid-gutter-width / 2));
  */
-.grid-s-1,
-.grid-s-2,
-.grid-s-3,
-.grid-s-4,
-.grid-s-5,
-.grid-s-6,
-.grid-s-7,
-.grid-s-8,
-.grid-s-9,
-.grid-s-10,
-.grid-s-11,
-.grid-s-12,
-.grid-m-1,
-.grid-m-2,
-.grid-m-3,
-.grid-m-4,
-.grid-m-5,
-.grid-m-6,
-.grid-m-7,
-.grid-m-8,
-.grid-m-9,
-.grid-m-10,
-.grid-m-11,
-.grid-m-12,
-.grid-l-1,
-.grid-l-2,
-.grid-l-3,
-.grid-l-4,
-.grid-l-5,
-.grid-l-6,
-.grid-l-7,
-.grid-l-8,
-.grid-l-9,
-.grid-l-10,
-.grid-l-11,
-.grid-l-12,
-.grid-w-1,
-.grid-w-2,
-.grid-w-3,
-.grid-w-4,
-.grid-w-5,
-.grid-w-6,
-.grid-w-7,
-.grid-w-8,
-.grid-w-9,
-.grid-w-10,
-.grid-w-11,
-.grid-w-12 {
+.grid-s-1, .grid-m-1, .grid-l-1, .grid-w-1, .grid-s-2, .grid-m-2, .grid-l-2, .grid-w-2, .grid-s-3, .grid-m-3, .grid-l-3, .grid-w-3, .grid-s-4, .grid-m-4, .grid-l-4, .grid-w-4, .grid-s-5, .grid-m-5, .grid-l-5, .grid-w-5, .grid-s-6, .grid-m-6, .grid-l-6, .grid-w-6, .grid-s-7, .grid-m-7, .grid-l-7, .grid-w-7, .grid-s-8, .grid-m-8, .grid-l-8, .grid-w-8, .grid-s-9, .grid-m-9, .grid-l-9, .grid-w-9, .grid-s-10, .grid-m-10, .grid-l-10, .grid-w-10, .grid-s-11, .grid-m-11, .grid-l-11, .grid-w-11, .grid-s-12, .grid-m-12, .grid-l-12, .grid-w-12 {
   float: left;
+  position: relative;
   min-height: 1px;
   padding: 0px 12px;
   padding: 0rem 0.75rem;
-  position: relative;
 }
 /**
- *  Small - this is a mboile first grid approach...
+ *  Small Grid
+ *
+ *  Columns, offsets, pushes, and pulls for extra small devices like
+ *  smartphones.
  */
 .grid-s-1 {
-  width: 8.333%;
+  width: 8.333333333333332%;
 }
 .grid-s-2 {
-  width: 16.666%;
+  width: 16.666666666666664%;
 }
 .grid-s-3 {
   width: 25%;
 }
 .grid-s-4 {
-  width: 33.333%;
+  width: 33.33333333333333%;
 }
 .grid-s-5 {
-  width: 41.666%;
+  width: 41.66666666666667%;
 }
 .grid-s-6 {
   width: 50%;
 }
 .grid-s-7 {
-  width: 58.333%;
+  width: 58.333333333333336%;
 }
 .grid-s-8 {
-  width: 66.666%;
+  width: 66.66666666666666%;
 }
 .grid-s-9 {
   width: 75%;
 }
 .grid-s-10 {
-  width: 83.333%;
+  width: 83.33333333333334%;
 }
 .grid-s-11 {
-  width: 91.666%;
+  width: 91.66666666666666%;
 }
-.grid-s-12 {
-  width: 100%;
+.grid-s-pull-1 {
+  right: 8.333333333333332%;
+}
+.grid-s-pull-2 {
+  right: 16.666666666666664%;
+}
+.grid-s-pull-3 {
+  right: 25%;
+}
+.grid-s-pull-4 {
+  right: 33.33333333333333%;
+}
+.grid-s-pull-5 {
+  right: 41.66666666666667%;
+}
+.grid-s-pull-6 {
+  right: 50%;
+}
+.grid-s-pull-7 {
+  right: 58.333333333333336%;
+}
+.grid-s-pull-8 {
+  right: 66.66666666666666%;
+}
+.grid-s-pull-9 {
+  right: 75%;
+}
+.grid-s-pull-10 {
+  right: 83.33333333333334%;
+}
+.grid-s-pull-11 {
+  right: 91.66666666666666%;
+}
+.grid-s-push-1 {
+  left: 8.333333333333332%;
+}
+.grid-s-push-2 {
+  left: 16.666666666666664%;
+}
+.grid-s-push-3 {
+  left: 25%;
+}
+.grid-s-push-4 {
+  left: 33.33333333333333%;
+}
+.grid-s-push-5 {
+  left: 41.66666666666667%;
+}
+.grid-s-push-6 {
+  left: 50%;
+}
+.grid-s-push-7 {
+  left: 58.333333333333336%;
+}
+.grid-s-push-8 {
+  left: 66.66666666666666%;
+}
+.grid-s-push-9 {
+  left: 75%;
+}
+.grid-s-push-10 {
+  left: 83.33333333333334%;
+}
+.grid-s-push-11 {
+  left: 91.66666666666666%;
+}
+.grid-s-offset-1 {
+  margin-left: 8.333333333333332%;
+}
+.grid-s-offset-2 {
+  margin-left: 16.666666666666664%;
+}
+.grid-s-offset-3 {
+  margin-left: 25%;
+}
+.grid-s-offset-4 {
+  margin-left: 33.33333333333333%;
+}
+.grid-s-offset-5 {
+  margin-left: 41.66666666666667%;
+}
+.grid-s-offset-6 {
+  margin-left: 50%;
+}
+.grid-s-offset-7 {
+  margin-left: 58.333333333333336%;
+}
+.grid-s-offset-8 {
+  margin-left: 66.66666666666666%;
+}
+.grid-s-offset-9 {
+  margin-left: 75%;
+}
+.grid-s-offset-10 {
+  margin-left: 83.33333333333334%;
+}
+.grid-s-offset-11 {
+  margin-left: 91.66666666666666%;
 }
 /**
- *  Medium
+ *  Medium grid
+ *
+ *  Columns, offsets, pushes, and pulls for the small device range, from phones
+ *  to tablets.
  */
-@media only screen and (min-width: 768px) {
-  .grid {
-    width: 744px;
-  }
+@media (min-width: 768px) {
   .grid-m-1 {
-    width: 8.333%;
+    width: 8.333333333333332%;
   }
   .grid-m-2 {
-    width: 16.666%;
+    width: 16.666666666666664%;
   }
   .grid-m-3 {
     width: 25%;
   }
   .grid-m-4 {
-    width: 33.333%;
+    width: 33.33333333333333%;
   }
   .grid-m-5 {
-    width: 41.666%;
+    width: 41.66666666666667%;
   }
   .grid-m-6 {
     width: 50%;
   }
   .grid-m-7 {
-    width: 58.333%;
+    width: 58.333333333333336%;
   }
   .grid-m-8 {
-    width: 66.666%;
+    width: 66.66666666666666%;
   }
   .grid-m-9 {
     width: 75%;
   }
   .grid-m-10 {
-    width: 83.333%;
+    width: 83.33333333333334%;
   }
   .grid-m-11 {
-    width: 91.666%;
-  }
-  .grid-m-12 {
-    width: 100%;
-  }
-  .grid-m-push-1 {
-    left: 8.333%;
-  }
-  .grid-m-push-2 {
-    left: 16.666%;
-  }
-  .grid-m-push-3 {
-    left: 25%;
-  }
-  .grid-m-push-4 {
-    left: 33.333%;
-  }
-  .grid-m-push-5 {
-    left: 41.666%;
-  }
-  .grid-m-push-6 {
-    left: 50%;
-  }
-  .grid-m-push-7 {
-    left: 58.333%;
-  }
-  .grid-m-push-8 {
-    left: 66.666%;
-  }
-  .grid-m-push-9 {
-    left: 75%;
-  }
-  .grid-m-push-10 {
-    left: 83.333%;
-  }
-  .grid-m-push-11 {
-    left: 91.666%;
+    width: 91.66666666666666%;
   }
   .grid-m-pull-1 {
-    right: 8.333%;
+    right: 8.333333333333332%;
   }
   .grid-m-pull-2 {
-    right: 16.666%;
+    right: 16.666666666666664%;
   }
   .grid-m-pull-3 {
     right: 25%;
   }
   .grid-m-pull-4 {
-    right: 33.333%;
+    right: 33.33333333333333%;
   }
   .grid-m-pull-5 {
-    right: 41.666%;
+    right: 41.66666666666667%;
   }
   .grid-m-pull-6 {
     right: 50%;
   }
   .grid-m-pull-7 {
-    right: 58.333%;
+    right: 58.333333333333336%;
   }
   .grid-m-pull-8 {
-    right: 66.666%;
+    right: 66.66666666666666%;
   }
   .grid-m-pull-9 {
     right: 75%;
   }
   .grid-m-pull-10 {
-    right: 83.333%;
+    right: 83.33333333333334%;
   }
   .grid-m-pull-11 {
-    right: 91.666%;
+    right: 91.66666666666666%;
+  }
+  .grid-m-push-1 {
+    left: 8.333333333333332%;
+  }
+  .grid-m-push-2 {
+    left: 16.666666666666664%;
+  }
+  .grid-m-push-3 {
+    left: 25%;
+  }
+  .grid-m-push-4 {
+    left: 33.33333333333333%;
+  }
+  .grid-m-push-5 {
+    left: 41.66666666666667%;
+  }
+  .grid-m-push-6 {
+    left: 50%;
+  }
+  .grid-m-push-7 {
+    left: 58.333333333333336%;
+  }
+  .grid-m-push-8 {
+    left: 66.66666666666666%;
+  }
+  .grid-m-push-9 {
+    left: 75%;
+  }
+  .grid-m-push-10 {
+    left: 83.33333333333334%;
+  }
+  .grid-m-push-11 {
+    left: 91.66666666666666%;
   }
   .grid-m-offset-1 {
-    margin-left: 8.333%;
+    margin-left: 8.333333333333332%;
   }
   .grid-m-offset-2 {
-    margin-left: 16.666%;
+    margin-left: 16.666666666666664%;
   }
   .grid-m-offset-3 {
     margin-left: 25%;
   }
   .grid-m-offset-4 {
-    margin-left: 33.333%;
+    margin-left: 33.33333333333333%;
   }
   .grid-m-offset-5 {
-    margin-left: 41.666%;
+    margin-left: 41.66666666666667%;
   }
   .grid-m-offset-6 {
     margin-left: 50%;
   }
   .grid-m-offset-7 {
-    margin-left: 58.333%;
+    margin-left: 58.333333333333336%;
   }
   .grid-m-offset-8 {
-    margin-left: 66.666%;
+    margin-left: 66.66666666666666%;
   }
   .grid-m-offset-9 {
     margin-left: 75%;
   }
   .grid-m-offset-10 {
-    margin-left: 83.333%;
+    margin-left: 83.33333333333334%;
   }
   .grid-m-offset-11 {
-    margin-left: 91.666%;
+    margin-left: 91.66666666666666%;
   }
 }
 /**
- *  Large
+ *  Large grid
+ *
+ *  Columns, offsets, pushes, and pulls for the desktop device range.
  */
-@media only screen and (min-width: 992px) {
-  .grid {
-    width: 964px;
-  }
+@media (min-width: 992px) {
   .grid-l-1 {
-    width: 8.333%;
+    width: 8.333333333333332%;
   }
   .grid-l-2 {
-    width: 16.666%;
+    width: 16.666666666666664%;
   }
   .grid-l-3 {
     width: 25%;
   }
   .grid-l-4 {
-    width: 33.333%;
+    width: 33.33333333333333%;
   }
   .grid-l-5 {
-    width: 41.666%;
+    width: 41.66666666666667%;
   }
   .grid-l-6 {
     width: 50%;
   }
   .grid-l-7 {
-    width: 58.333%;
+    width: 58.333333333333336%;
   }
   .grid-l-8 {
-    width: 66.666%;
+    width: 66.66666666666666%;
   }
   .grid-l-9 {
     width: 75%;
   }
   .grid-l-10 {
-    width: 83.333%;
+    width: 83.33333333333334%;
   }
   .grid-l-11 {
-    width: 91.666%;
-  }
-  .grid-l-12 {
-    width: 100%;
-  }
-  .grid-l-push-1 {
-    left: 8.333%;
-  }
-  .grid-l-push-2 {
-    left: 16.666%;
-  }
-  .grid-l-push-3 {
-    left: 25%;
-  }
-  .grid-l-push-4 {
-    left: 33.333%;
-  }
-  .grid-l-push-5 {
-    left: 41.666%;
-  }
-  .grid-l-push-6 {
-    left: 50%;
-  }
-  .grid-l-push-7 {
-    left: 58.333%;
-  }
-  .grid-l-push-8 {
-    left: 66.666%;
-  }
-  .grid-l-push-9 {
-    left: 75%;
-  }
-  .grid-l-push-10 {
-    left: 83.333%;
-  }
-  .grid-l-push-11 {
-    left: 91.666%;
+    width: 91.66666666666666%;
   }
   .grid-l-pull-1 {
-    right: 8.333%;
+    right: 8.333333333333332%;
   }
   .grid-l-pull-2 {
-    right: 16.666%;
+    right: 16.666666666666664%;
   }
   .grid-l-pull-3 {
     right: 25%;
   }
   .grid-l-pull-4 {
-    right: 33.333%;
+    right: 33.33333333333333%;
   }
   .grid-l-pull-5 {
-    right: 41.666%;
+    right: 41.66666666666667%;
   }
   .grid-l-pull-6 {
     right: 50%;
   }
   .grid-l-pull-7 {
-    right: 58.333%;
+    right: 58.333333333333336%;
   }
   .grid-l-pull-8 {
-    right: 66.666%;
+    right: 66.66666666666666%;
   }
   .grid-l-pull-9 {
     right: 75%;
   }
   .grid-l-pull-10 {
-    right: 83.333%;
+    right: 83.33333333333334%;
   }
   .grid-l-pull-11 {
-    right: 91.666%;
+    right: 91.66666666666666%;
+  }
+  .grid-l-push-1 {
+    left: 8.333333333333332%;
+  }
+  .grid-l-push-2 {
+    left: 16.666666666666664%;
+  }
+  .grid-l-push-3 {
+    left: 25%;
+  }
+  .grid-l-push-4 {
+    left: 33.33333333333333%;
+  }
+  .grid-l-push-5 {
+    left: 41.66666666666667%;
+  }
+  .grid-l-push-6 {
+    left: 50%;
+  }
+  .grid-l-push-7 {
+    left: 58.333333333333336%;
+  }
+  .grid-l-push-8 {
+    left: 66.66666666666666%;
+  }
+  .grid-l-push-9 {
+    left: 75%;
+  }
+  .grid-l-push-10 {
+    left: 83.33333333333334%;
+  }
+  .grid-l-push-11 {
+    left: 91.66666666666666%;
   }
   .grid-l-offset-1 {
-    margin-left: 8.333%;
+    margin-left: 8.333333333333332%;
   }
   .grid-l-offset-2 {
-    margin-left: 16.666%;
+    margin-left: 16.666666666666664%;
   }
   .grid-l-offset-3 {
     margin-left: 25%;
   }
   .grid-l-offset-4 {
-    margin-left: 33.333%;
+    margin-left: 33.33333333333333%;
   }
   .grid-l-offset-5 {
-    margin-left: 41.666%;
+    margin-left: 41.66666666666667%;
   }
   .grid-l-offset-6 {
     margin-left: 50%;
   }
   .grid-l-offset-7 {
-    margin-left: 58.333%;
+    margin-left: 58.333333333333336%;
   }
   .grid-l-offset-8 {
-    margin-left: 66.666%;
+    margin-left: 66.66666666666666%;
   }
   .grid-l-offset-9 {
     margin-left: 75%;
   }
   .grid-l-offset-10 {
-    margin-left: 83.333%;
+    margin-left: 83.33333333333334%;
   }
   .grid-l-offset-11 {
-    margin-left: 91.666%;
+    margin-left: 91.66666666666666%;
   }
 }
 /**
- *  Wide
+ *  Wide grid
+ *
+ *  Columns, offsets, pushes, and pulls for the large desktop device range.
  */
-@media only screen and (min-width: 1200px) {
-  .grid {
-    width: 1164px;
-  }
+@media (min-width: 1200px) {
   .grid-w-1 {
-    width: 8.333%;
+    width: 8.333333333333332%;
   }
   .grid-w-2 {
-    width: 16.666%;
+    width: 16.666666666666664%;
   }
   .grid-w-3 {
     width: 25%;
   }
   .grid-w-4 {
-    width: 33.333%;
+    width: 33.33333333333333%;
   }
   .grid-w-5 {
-    width: 41.666%;
+    width: 41.66666666666667%;
   }
   .grid-w-6 {
     width: 50%;
   }
   .grid-w-7 {
-    width: 58.333%;
+    width: 58.333333333333336%;
   }
   .grid-w-8 {
-    width: 66.666%;
+    width: 66.66666666666666%;
   }
   .grid-w-9 {
     width: 75%;
   }
   .grid-w-10 {
-    width: 83.333%;
+    width: 83.33333333333334%;
   }
   .grid-w-11 {
-    width: 91.666%;
-  }
-  .grid-w-12 {
-    width: 100%;
-  }
-  .grid-w-push-1 {
-    left: 8.333%;
-  }
-  .grid-w-push-2 {
-    left: 16.666%;
-  }
-  .grid-w-push-3 {
-    left: 25%;
-  }
-  .grid-w-push-4 {
-    left: 33.333%;
-  }
-  .grid-w-push-5 {
-    left: 41.666%;
-  }
-  .grid-w-push-6 {
-    left: 50%;
-  }
-  .grid-w-push-7 {
-    left: 58.333%;
-  }
-  .grid-w-push-8 {
-    left: 66.666%;
-  }
-  .grid-w-push-9 {
-    left: 75%;
-  }
-  .grid-w-push-10 {
-    left: 83.333%;
-  }
-  .grid-w-push-11 {
-    left: 91.666%;
+    width: 91.66666666666666%;
   }
   .grid-w-pull-1 {
-    right: 8.333%;
+    right: 8.333333333333332%;
   }
   .grid-w-pull-2 {
-    right: 16.666%;
+    right: 16.666666666666664%;
   }
   .grid-w-pull-3 {
     right: 25%;
   }
   .grid-w-pull-4 {
-    right: 33.333%;
+    right: 33.33333333333333%;
   }
   .grid-w-pull-5 {
-    right: 41.666%;
+    right: 41.66666666666667%;
   }
   .grid-w-pull-6 {
     right: 50%;
   }
   .grid-w-pull-7 {
-    right: 58.333%;
+    right: 58.333333333333336%;
   }
   .grid-w-pull-8 {
-    right: 66.666%;
+    right: 66.66666666666666%;
   }
   .grid-w-pull-9 {
     right: 75%;
   }
   .grid-w-pull-10 {
-    right: 83.333%;
+    right: 83.33333333333334%;
   }
   .grid-w-pull-11 {
-    right: 91.666%;
+    right: 91.66666666666666%;
+  }
+  .grid-w-push-1 {
+    left: 8.333333333333332%;
+  }
+  .grid-w-push-2 {
+    left: 16.666666666666664%;
+  }
+  .grid-w-push-3 {
+    left: 25%;
+  }
+  .grid-w-push-4 {
+    left: 33.33333333333333%;
+  }
+  .grid-w-push-5 {
+    left: 41.66666666666667%;
+  }
+  .grid-w-push-6 {
+    left: 50%;
+  }
+  .grid-w-push-7 {
+    left: 58.333333333333336%;
+  }
+  .grid-w-push-8 {
+    left: 66.66666666666666%;
+  }
+  .grid-w-push-9 {
+    left: 75%;
+  }
+  .grid-w-push-10 {
+    left: 83.33333333333334%;
+  }
+  .grid-w-push-11 {
+    left: 91.66666666666666%;
   }
   .grid-w-offset-1 {
-    margin-left: 8.333%;
+    margin-left: 8.333333333333332%;
   }
   .grid-w-offset-2 {
-    margin-left: 16.666%;
+    margin-left: 16.666666666666664%;
   }
   .grid-w-offset-3 {
     margin-left: 25%;
   }
   .grid-w-offset-4 {
-    margin-left: 33.333%;
+    margin-left: 33.33333333333333%;
   }
   .grid-w-offset-5 {
-    margin-left: 41.666%;
+    margin-left: 41.66666666666667%;
   }
   .grid-w-offset-6 {
     margin-left: 50%;
   }
   .grid-w-offset-7 {
-    margin-left: 58.333%;
+    margin-left: 58.333333333333336%;
   }
   .grid-w-offset-8 {
-    margin-left: 66.666%;
+    margin-left: 66.66666666666666%;
   }
   .grid-w-offset-9 {
     margin-left: 75%;
   }
   .grid-w-offset-10 {
-    margin-left: 83.333%;
+    margin-left: 83.33333333333334%;
   }
   .grid-w-offset-11 {
-    margin-left: 91.666%;
+    margin-left: 91.66666666666666%;
   }
 }
 /*------------------------------------*\
@@ -2869,15 +2978,6 @@ input[type="checkbox"] {
   padding: 12px;
   padding: 0.75rem;
 }
-/*------------------------------------*\
-    $SUGAR
-\*------------------------------------*/
-/*------------------------------------*\
-    SUGAR.LESS
-\*------------------------------------*/
-/*------------------------------------*\
-    $IMPORTS
-\*------------------------------------*/
 /*------------------------------------*\
     $CORE
 \*------------------------------------*/
@@ -2979,8 +3079,6 @@ blockquote p {
   font-weight: normal;
   line-height: 27px;
   line-height: 1.6875rem;
-  margin-bottom: 6.4px;
-  margin-bottom: 0.4rem;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -3242,6 +3340,15 @@ fieldset[disabled] .checkbox-inline {
   margin-top: 5px;
   margin-bottom: 10px;
 }
+/*------------------------------------*\
+    $SUGAR
+\*------------------------------------*/
+/*------------------------------------*\
+    SUGAR.LESS
+\*------------------------------------*/
+/*------------------------------------*\
+    $IMPORTS
+\*------------------------------------*/
 /*------------------------------------*\
     $MODULES
 \*------------------------------------*/
@@ -5572,7 +5679,7 @@ fieldset[disabled] .checkbox-inline {
 .navbar:after {
   clear: both;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar {
     border-radius: 4px;
   }
@@ -5590,7 +5697,7 @@ fieldset[disabled] .checkbox-inline {
 .navbar-header:after {
   clear: both;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-header {
     float: left;
   }
@@ -5623,7 +5730,7 @@ fieldset[disabled] .checkbox-inline {
 .navbar-collapse:after {
   clear: both;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-collapse {
     width: auto;
   }
@@ -5654,7 +5761,7 @@ fieldset[disabled] .checkbox-inline {
   position: fixed;
   right: 0;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -5675,7 +5782,7 @@ fieldset[disabled] .checkbox-inline {
   font-size: 2.25rem;
   line-height: 27px;
   line-height: 1.6875rem;
-  color: #2f4d56;
+  color: #2c3e50;
   float: left;
   padding: 24px 12px 0px;
   padding: 1.5rem 0.75rem 0rem;
@@ -5685,7 +5792,7 @@ fieldset[disabled] .checkbox-inline {
   text-decoration: none;
   backgroun-color: transparent;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar > .container .navbar-brand {
     margin-left: -12px;
     margin-left: -0.75rem;
@@ -5720,7 +5827,7 @@ fieldset[disabled] .checkbox-inline {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-toggle {
     display: none;
   }
@@ -5744,7 +5851,7 @@ fieldset[disabled] .checkbox-inline {
   color: #21b5e4;
   background-color: transparent;
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .navbar-nav .open .dropdown-menu {
     background-color: transparent;
     border: 0;
@@ -5768,7 +5875,7 @@ fieldset[disabled] .checkbox-inline {
     background-image: none;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-nav {
     float: left;
   }
@@ -5789,7 +5896,7 @@ fieldset[disabled] .checkbox-inline {
  *  issues with parents and chaining. Only do this when the navbar is uncollapsed
  *  though so that navbar contents properly stack and align in mobile.
  */
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-left {
     float: left !important;
   }
@@ -5832,13 +5939,13 @@ fieldset[disabled] .checkbox-inline {
     top: 0;
   }
 }
-@media (max-width: 479px) {
+@media (max-width: 480px) {
   .navbar-form .form-group {
     margin-bottom: 6px;
     margin-bottom: 0.375rem;
   }
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-form {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -5897,7 +6004,7 @@ fieldset[disabled] .checkbox-inline {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .navbar-text {
     margin-left: 12px;
     margin-right: 12px;
@@ -5913,13 +6020,13 @@ fieldset[disabled] .checkbox-inline {
  * A section at the bottom of the page that replaces the footer similar to a navbar
  */
 .footbar {
-  background-color: #e6e6e6;
-  color: #bbcace;
+  background-color: #ecf0f1;
+  color: #bdc3c7;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar a {
-  color: #a4b3b7;
+  color: #95a5a6;
 }
 .footbar a:hover {
   color: #21b5e4;
@@ -5935,7 +6042,7 @@ fieldset[disabled] .checkbox-inline {
   line-height: 1.6875rem;
 }
 .footbar-logo .brand {
-  color: #a4b3b7;
+  color: #95a5a6;
 }
 .footbar-logo .brand:hover {
   color: #21b5e4;
@@ -5984,8 +6091,8 @@ fieldset[disabled] .checkbox-inline {
  */
 .hero-unit {
   background-color: #2c3e50;
-  padding: 72px 0px;
-  padding: 4.5rem 0rem;
+  padding: 96px 0px;
+  padding: 6rem 0rem;
 }
 .hero-unit .lead {
   font-size: 42px;
@@ -5996,7 +6103,7 @@ fieldset[disabled] .checkbox-inline {
   margin-top: 0px;
   margin-top: 0rem;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .hero-unit .lead {
     font-size: 36px;
     font-size: 2.25rem;
@@ -6015,11 +6122,157 @@ fieldset[disabled] .checkbox-inline {
   margin-top: 12px;
   margin-top: 0.75rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .hero-unit-featured {
     margin-top: 48px;
     margin-top: 3rem;
   }
+}
+/*------------------------------------*\
+    $COMPONENT-MEDIA
+\*------------------------------------*/
+/**
+ * Media Grid wrapper
+ * Displays a grid of individual itemized topics with media elements.
+ * Based on bootstraps media component
+ */
+.media-grid {
+  background-color: #ffffff;
+  margin: 60px 0px 0px;
+  margin: 3.75rem 0rem 0rem;
+  overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+  .media-grid {
+    margin: 96px 0px 0px;
+    margin: 6rem 0rem 0rem;
+  }
+}
+/**
+ * Media list
+ * make UL/OL act like we want it too
+ */
+.media-list {
+  list-style: none;
+  margin: 0;
+  overflow: hidden;
+}
+@media only screen and (min-width: 992px) {
+  .media-list {
+    margin: 0px 0px 0px 0px;
+    margin: 0rem 0rem 0rem 0rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .media-list {
+    margin: 0px 0px 0px -36px;
+    margin: 0rem 0rem 0rem -2.25rem;
+  }
+}
+.media-list:before,
+.media-list:after {
+  content: " ";
+  display: table;
+}
+.media-list:after {
+  clear: both;
+}
+/**
+ * Media Item
+ * Float and align the individual elements based on the container width
+ */
+.media {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  margin: 0px 0px 48px 0px;
+  margin: 0rem 0rem 3rem 0rem;
+}
+@media only screen and (min-width: 992px) {
+  .media {
+    margin: 0px 0px 72px 48px;
+    margin: 0rem 0rem 4.5rem 3rem;
+    width: 41.666%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .media {
+    margin: 0px 0px 72px 72px;
+    margin: 0rem 0rem 4.5rem 4.5rem;
+  }
+}
+/**
+ * Media Object
+ * This is the properties for the media object IE img
+ */
+.media-object {
+  display: block;
+}
+.media-object.pull-left {
+  margin-right: 12px;
+  margin-right: 0.75rem;
+}
+.media-object.pull-right {
+  margin-left: 12px;
+  margin-left: 0.75rem;
+}
+.media-object img {
+  width: 50px;
+}
+@media only screen and (min-width: 768px) {
+  .media-object.pull-left {
+    margin-right: 24px;
+    margin-right: 1.5rem;
+  }
+  .media-object.pull-right {
+    margin-left: 24px;
+    margin-left: 1.5rem;
+  }
+  .media-object img {
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .media-object.pull-left {
+    margin-right: 48px;
+    margin-right: 3rem;
+  }
+  .media-object.pull-right {
+    margin-left: 48px;
+    margin-left: 3rem;
+  }
+}
+/**
+ * Media Body wrapper
+ * This allows us to keep the body of the media eleement on the same line as the media object
+ */
+.media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+/**
+ * Media Body Heading
+ * We use a standard H3 tag for the heading but we may not wnat to use the default H3 styling
+ */
+.media-heading {
+  font-size: 18px;
+  font-size: 1.125rem;
+  color: #e74c3c;
+  margin: 0px 0px 6px;
+  margin: 0rem 0rem 0.375rem;
+}
+@media only screen and (min-width: 768px) {
+  .media-heading {
+    font-size: 21px;
+    font-size: 1.3125rem;
+  }
+}
+/**
+ * Media Body Text
+ * Sometimes e ned to change or modify the text to compensate the heading
+ */
+.media-text {
+  color: #95a5a6;
 }
 /*------------------------------------*\
     $THEME
@@ -6033,21 +6286,6 @@ fieldset[disabled] .checkbox-inline {
 /*------------------------------------*\
     $USER STYLES
 \*------------------------------------*/
-section {
-  /* Decoration */
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  /* Layout */
-  padding: 24px 0px;
-  padding: 1.5rem 0rem;
-}
-footer {
-  padding: 24px 0px;
-  padding: 1.5rem 0rem;
-}
-footer .text-left {
-  margin-top: 8px;
-}
 /*------------------------------------*\
     $BLAME
 \*------------------------------------*/

@@ -352,6 +352,82 @@
 .responsive-visibility() { display: block !important; }
 .responsive-invisibility() { & { display: none !important; } }
 
+
+// Grid System
+// -----------
+
+// Centered container element
+.container-fixed() {
+    margin: 0 auto;
+    .padding(0, @half-spacing-unit);
+    .cf();
+}
+
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+    .margin(0, (@gutter / -2));
+    .cf();
+}
+
+// Framework grid generation
+//
+// Used only by Bootstrap to generate the correct number of grid classes given
+// any value of `@grid-columns`.
+.grid-make-columns() {
+    // Common styles for all sizes of grid columns, widths 1-12
+    .grid(@index) when (@index = 1) { // initial
+        @item: ~".grid-s-@{index}, .grid-m-@{index}, .grid-l-@{index}, .grid-w-@{index}";
+        .grid(@index + 1, @item);
+    }
+    .grid(@index, @list) when (@index =< @grid-columns) { // general; "=<" isn't a typo
+        @item: ~".grid-s-@{index}, .grid-m-@{index}, .grid-l-@{index}, .grid-w-@{index}";
+        .grid(@index + 1, ~"@{list}, @{item}");
+    }
+    .grid(@index, @list) when (@index > @grid-columns) { // terminal
+        @{list} {
+            float: left;
+            position: relative;
+            // Prevent columns from collapsing when empty
+            min-height: 1px;
+            // Inner gutter via padding
+            .padding(0, (@grid-gutter-width / 2));
+        }
+    }
+    .grid(1); // kickstart it
+}
+
+.grid-make(@index, @class, @type) when (@type = width) and (@index > 0) {
+    .grid-@{class}-@{index} {
+        width: percentage((@index / @grid-columns));
+    }
+}
+
+.grid-make(@index, @class, @type) when (@type = push) {
+    .grid-@{class}-push-@{index} {
+        left: percentage((@index / @grid-columns));
+    }
+}
+
+.grid-make(@index, @class, @type) when (@type = pull) {
+    .grid-@{class}-pull-@{index} {
+        right: percentage((@index / @grid-columns));
+    }
+}
+
+.grid-make(@index, @class, @type) when (@type = offset) {
+    .grid-@{class}-offset-@{index} {
+        margin-left: percentage((@index / @grid-columns));
+    }
+}
+
+// Basic looping in LESS
+.grid-build(@cols, @class, @type, @i: 1) when (@i < @cols) {
+    .grid-make(@i, @class, @type);
+    // next iteration
+    .grid-build(@cols, @class, @type, @i + 1);
+}
+
+
 // Form control focus state
 //
 // Generate a customized focus state and for any input with the specified color,
