@@ -1,0 +1,101 @@
+/*------------------------------------*\
+    $COMPONENT-MEDIA
+\*------------------------------------*/
+
+/**
+ * Media Grid wrapper
+ * Displays a grid of individual itemized topics with media elements.
+ * Based on bootstraps media component
+ */
+.media-grid {
+    background-color: @item-grid-bg;
+    
+    .margin(@double-spacing-unit + @half-spacing-unit, 0, 0);
+    overflow: hidden;
+    
+    @media only screen and (min-width: @screen-l-min) { .margin(@quadruple-spacing-unit, 0, 0); }
+}
+
+/**
+ * Media list
+ * make UL/OL act like we want it too
+ */
+.media-list { 
+    list-style: none;
+    margin: 0;
+    @media only screen and (min-width: @screen-l-min) { .margin(0, 0, 0, 0); }
+    @media only screen and (min-width: @screen-w-min) { .margin(0, 0, 0, -@base-spacing-unit - @half-spacing-unit); }
+    overflow: hidden;
+
+    .cf();
+}
+
+/**
+ * Media Item
+ * Float and align the individual elements based on the container width
+ */
+.media {
+    vertical-align: top;
+
+    display: inline-block;
+    width: 100%;
+    .margin(0, 0, @double-spacing-unit, 0);
+    @media only screen and (min-width: @screen-l-min) { 
+        .margin(0, 0, @triple-spacing-unit, @double-spacing-unit); 
+        width: 41.666%;
+    }
+    @media only screen and (min-width: @screen-w-min) { .margin(0, 0, @triple-spacing-unit, @triple-spacing-unit); }
+}
+
+/**
+ * Media Object
+ * This is the properties for the media object IE img
+ */
+.media-object {
+    display: block;
+    
+    &.pull-left { .margin-right(@half-spacing-unit); }
+    &.pull-right { .margin-left(@half-spacing-unit); }
+
+    img { width: unit(@item-object-size, px); }
+
+    @media only screen and (min-width: @screen-m-min) {
+        &.pull-left { .margin-right(@base-spacing-unit); }
+        &.pull-right { .margin-left(@base-spacing-unit); } 
+        img { width: unit(@item-object-size*2, px); } 
+    }
+
+     @media only screen and (min-width: @screen-w-min) {
+        &.pull-left { .margin-right(@double-spacing-unit); }
+        &.pull-right { .margin-left(@double-spacing-unit); }
+    }
+}
+
+/**
+ * Media Body wrapper
+ * This allows us to keep the body of the media eleement on the same line as the media object
+ */
+.media-body { 
+    overflow: hidden;
+    zoom: 1;
+}
+
+/**
+ * Media Body Heading
+ * We use a standard H3 tag for the heading but we may not wnat to use the default H3 styling
+ */
+.media-heading {
+    .font-size(@item-heading-size-small);
+    @media only screen and (min-width: @screen-m-min) { .font-size(@item-heading-size-medium); }
+
+    color: @item-heading-color;
+
+    .margin(0, 0, @item-heading-spacing);
+}
+
+/**
+ * Media Body Text
+ * Sometimes e ned to change or modify the text to compensate the heading
+ */
+.media-text { color: @item-text-color; }
+
