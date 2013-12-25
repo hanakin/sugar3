@@ -9,25 +9,34 @@ robust and complex applications. Built leveraging best practices and commonly us
 as [Normalize](http://necolas.github.com/normalize.css/) to handle your reset, [Bootstrap](http://getbootstrap.com/css/#grid) grid system, [SMACSS](http://smacss.com/) & [Atomic Design](http://bradfrostweb.com/blog/post/atomic-web-design/) principles.
 
 ## The Approach
-**Sugar3 starts by breaking down the css into Three categories.**
+**Sugar3 starts by breaking down the css into four layers.**
 
 * Global
+* Core
 * Sugar
 * Theme
 
 ### Global
-Consists of Four core parts, but you'll not find any design related styles here. Only consistancy and re-base styling as well as some usefull layout classes.
+Consists of Two core parts, but you'll not find any design related styles here.
 
-* Reset - [Normalize](http://necolas.github.com/normalize.css/)
-* Base - Styling some basic defaults for the html as well as fixing some consistancy to lay the ground work. 
-* Layout - Grid system and layout helpers based on [Bootstrap](http://getbootstrap.com/css/#grid)
+* Reset - Standardize all of the inconsistancies we see across the different browsers utilizing [Normalize](http://necolas.github.com/normalize.css/).
+* Base - Establish a set of global styles for all the HTML components across all projects.
+
+### Core
+Consists of Three parts, laying the ground work for your projects.
+
+* Common - Set some project specific styling for all the HTML components per project.
+* Layout - A responsive forward think grid system used alongside powerful utilities to align and position elements for all devices based on [Bootstrap](http://getbootstrap.com/css/#grid).
+* Atoms - Small useful classes on their own, equally effective at extending functionality to modules or components.
 
 ### Sugar
-Consists of Three parts.
+Consists of Two parts, build your library of objects in your web arsenal.
 
-* Core - Add some theme specific styling to the base selectors
-* Modules - these are individual reuseable objects commonly used acrossed multiple projects
-* Components - by cobining elements together we create components. Think odf these as indvidual sections of a page or a page itself.
+* Modules - Series of dynamically accessible commonly used elements that you might use in various projects.
+* Components - Series of dynamically accessible commonly used blocks or sections of modules layed out in various ways.
+
+### Theme
+The last piece of the puzzle is a theme.less file which acts sort of like a catch all. Individualize everything in your custom built framework via the theme layer.   Set basic styles for each individual section.
 
 **We then add on a framework layer.**
 
@@ -35,10 +44,6 @@ Consists of Three parts.
 
 * Mixins - A series of useful reuseable blocks of code most of which are based on [Bootstrap](http://getbootstrap.com/)
 * Defaults - The true flexability of a framework comes in the form of variables. This sets the default values for all the variables in the framework that can be overidden in the vars.less file
-* Atoms - Individual bits of css that can be added directly to you HTML as standalone classes or used to extend modules.
-
-The last piece of the puzzle is a theme.less file which acts sort of like a catch all for those few and far between outliers that do not fit into an atom, module or component on their own. As well as provide a place to overide any part of the framework during development
-
 
 ## Browser support
 
