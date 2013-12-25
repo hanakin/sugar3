@@ -12,27 +12,23 @@
     //min-height: unit(@sextuple-spacing-unit * 3, px);
     .padding(@quadruple-spacing-unit, 0);
     
-    .lead {
-        .font-size(@beta);
-        .line-height (@base-line-height*2);
-        @media (min-width: @screen-m-min) and (max-width: @screen-l-max) { .font-size(@gamma); } 
-        
-        color: @white;
-
-        .margin-top(0);
-
-        sup { left: 7px; }
-
-        .beta { 
-            font-weight: 300;
-            //letter-spacing: -1px;
-            .font-size(@epsilon);
-            .line-height(@gamma);
+    .lead {        
+        .alpha,
+        .beta,
+        .gamma, 
+        .delta,
+        .epsilon,
+        .zeta {
 
             color: @white;
-            .opacity(.6);
 
-            .margin-top(@half-spacing-unit);
+            sup { left: 3px; }
+
+            small { 
+                font-weight: 100;
+                color: @white;
+                .opacity(.6);
+            }
         }
     }
 }
