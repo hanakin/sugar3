@@ -1994,7 +1994,7 @@
   background: #2bad62;
 }
 .btn-yellow {
-  background-color: #f1c40f;
+  background-color: #ffcd1a;
   color: #ffffff;
 }
 .btn-yellow:hover {
@@ -2002,18 +2002,18 @@
   color: #ffffff;
 }
 .btn-yellow.btn-clear {
-  border: 2px solid #f1c40f;
-  color: #f1c40f;
+  border: 2px solid #ffcd1a;
+  color: #ffcd1a;
 }
 .btn-yellow.btn-clear:hover,
 .btn-yellow.btn-clear:focus {
-  background: #f1c40f;
+  background: #ffcd1a;
   color: #ffffff;
 }
 .btn-yellow.btn-clear:active,
 .btn-yellow.btn-clear.active {
-  border-color: #cda70d;
-  background: #cda70d;
+  border-color: #d9ae16;
+  background: #d9ae16;
 }
 .btn-orange {
   background-color: #e67e22;
@@ -2334,8 +2334,8 @@
 .media {
   vertical-align: top;
   display: inline-block;
-  margin-bottom: 24px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 @media only screen and (min-width: 768px) {
   .media {
@@ -2399,17 +2399,9 @@
  * We use a standard H3 tag for the heading but we may not wnat to use the default H3 styling
  */
 .media-heading {
-  font-size: 18px;
-  font-size: 1.125rem;
   color: #d94636;
   margin: 0px 0px 6px;
   margin: 0rem 0rem 0.375rem;
-}
-@media only screen and (min-width: 768px) {
-  .media-heading {
-    font-size: 21px;
-    font-size: 1.3125rem;
-  }
 }
 /**
  * Media Body Text
@@ -2418,6 +2410,206 @@
 .media-text {
   color: #8d9ea6;
   margin: 0;
+}
+.lead {
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+}
+@media (min-width: 768px) {
+  .lead {
+    margin-bottom: 48px;
+    margin-bottom: 3rem;
+  }
+}
+.lead > p,
+.lead .alpha small,
+.lead .beta small,
+.lead .gamma small,
+.lead .delta small,
+.lead .epsilon small,
+.lead .zeta small {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 40.5px;
+  line-height: 2.53125rem;
+  margin-top: 24px;
+  margin-top: 1.5rem;
+}
+@media (min-width: 768px) {
+  .lead > p,
+  .lead .alpha small,
+  .lead .beta small,
+  .lead .gamma small,
+  .lead .delta small,
+  .lead .epsilon small,
+  .lead .zeta small {
+    margin-top: 48px;
+    margin-top: 3rem;
+  }
+}
+/**
+ * Slider Class
+ * Wrapper for the slide container and indicators
+ */
+.slider {
+  position: relative;
+}
+.slider-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.slider-inner > .item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.slider-inner > .item > img,
+.slider-inner > .item > a > img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  line-height: 1;
+}
+.slider-inner > .active,
+.slider-inner > .next,
+.slider-inner > .prev {
+  display: block;
+}
+.slider-inner > .active {
+  left: 0;
+}
+.slider-inner > .next,
+.slider-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.slider-inner > .next {
+  left: 100%;
+}
+.slider-inner > .prev {
+  left: -100%;
+}
+.slider-inner > .next.left,
+.slider-inner > .prev.right {
+  left: 0;
+}
+.slider-inner > .active.left {
+  left: -100%;
+}
+.slider-inner > .active.right {
+  left: 100%;
+}
+/**
+ * Left/right controls for nav
+ */
+.slider-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: %);
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.slider-control.left {
+  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.slider-control.right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.slider-control:hover,
+.slider-control:focus {
+  outline: none;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.slider-control .icon-prev,
+.slider-control .icon-next,
+.slider-control .icon-chevron-left,
+.slider-control .icon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.slider-control .icon-prev,
+.slider-control .icon-chevron-left {
+  left: 50%;
+}
+.slider-control .icon-next,
+.slider-control .icon-chevron-right {
+  right: 50%;
+}
+.slider-control .icon-prev,
+.slider-control .icon-next {
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  font-family: serif;
+}
+.slider-control .icon-prev:before {
+  content: '\2039';
+}
+.slider-control .icon-next:before {
+  content: '\203a';
+}
+/**
+ * Optional indicator pips
+ *
+ * Add an unordered list with the following class and add a list item for each
+ * slide your slider holds.
+ */
+.slider-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.slider-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+}
+.slider-indicators .active {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
 }
 /*------------------------------------*\
     $COMPONENTS
@@ -2888,35 +3080,32 @@
   padding: 96px 0px;
   padding: 6rem 0rem;
 }
-.hero-unit .lead {
-  font-size: 42px;
-  font-size: 2.625rem;
-  line-height: 54px;
-  line-height: 3.375rem;
+.hero-unit .lead .alpha,
+.hero-unit .lead .beta,
+.hero-unit .lead .gamma,
+.hero-unit .lead .delta,
+.hero-unit .lead .epsilon,
+.hero-unit .lead .zeta {
   color: #ffffff;
-  margin-top: 0px;
-  margin-top: 0rem;
 }
-@media (min-width: 768px) and (max-width: 1199px) {
-  .hero-unit .lead {
-    font-size: 36px;
-    font-size: 2.25rem;
-  }
+.hero-unit .lead .alpha sup,
+.hero-unit .lead .beta sup,
+.hero-unit .lead .gamma sup,
+.hero-unit .lead .delta sup,
+.hero-unit .lead .epsilon sup,
+.hero-unit .lead .zeta sup {
+  left: 3px;
 }
-.hero-unit .lead sup {
-  left: 7px;
-}
-.hero-unit .lead .beta {
-  font-weight: 300;
-  font-size: 21px;
-  font-size: 1.3125rem;
-  line-height: 36px;
-  line-height: 2.25rem;
+.hero-unit .lead .alpha small,
+.hero-unit .lead .beta small,
+.hero-unit .lead .gamma small,
+.hero-unit .lead .delta small,
+.hero-unit .lead .epsilon small,
+.hero-unit .lead .zeta small {
+  font-weight: 100;
   color: #ffffff;
   opacity: 0.6;
   filter: alpha(opacity=60);
-  margin-top: 12px;
-  margin-top: 0.75rem;
 }
 @media (max-width: 768px) {
   .hero-unit-featured {

@@ -11,8 +11,8 @@
  * Features Section
  */
 .features {
-  padding: 72px 0px 48px;
-  padding: 4.5rem 0rem 3rem;
+  padding: 72px 0px 18px;
+  padding: 4.5rem 0rem 1.125rem;
 }
 @media only screen and (min-width: 768px) {
   .features {
@@ -23,59 +23,37 @@
 /**
  * Layers Section
  */
-.layer-global {
-  background-color: #edf1f2;
-  padding: 72px 0px 0px;
-  padding: 4.5rem 0rem 0rem;
+.layers .slide {
+  padding: 72px 0px;
+  padding: 4.5rem 0rem;
 }
-.layer-global .media-heading {
+.layers .slide .lead,
+.layers .slide .lead .alpha,
+.layers .slide .lead .beta,
+.layers .slide .lead .gamma,
+.layers .slide .lead .delta,
+.layers .slide .lead .epsilon,
+.layers .slide .lead .zeta {
+  color: #8d9ea6;
+}
+.layers .slide .media-heading {
   margin-bottom: 18px;
   margin-bottom: 1.125rem;
 }
-.layer-global .media-heading,
-.layer-global .media-text {
+.layers .slide .media-heading,
+.layers .slide .media-text {
   color: #8d9ea6;
   max-width: 220px;
+}
+.layer-global {
+  background: #edf1f2 url("../img/@2x/global-w-bg.jpg") no-repeat bottom left;
 }
 .layer-core {
-  background-color: #c8cbcc;
-  padding: 72px 0px 0px;
-  padding: 4.5rem 0rem 0rem;
-}
-.layer-core .media-heading {
-  margin-bottom: 18px;
-  margin-bottom: 1.125rem;
-}
-.layer-core .media-heading,
-.layer-core .media-text {
-  color: #8d9ea6;
-  max-width: 220px;
+  background-color: #b8c6cc;
 }
 .layer-sugar {
-  background-color: #9da3a6;
-  padding: 72px 0px 0px;
-  padding: 4.5rem 0rem 0rem;
-}
-.layer-sugar .media-heading {
-  margin-bottom: 18px;
-  margin-bottom: 1.125rem;
-}
-.layer-sugar .media-heading,
-.layer-sugar .media-text {
-  color: #8d9ea6;
-  max-width: 220px;
+  background-color: #ffffff;
 }
 .layer-theme {
-  background-color: #edf1f2;
-  padding: 72px 0px 0px;
-  padding: 4.5rem 0rem 0rem;
-}
-.layer-theme .media-heading {
-  margin-bottom: 18px;
-  margin-bottom: 1.125rem;
-}
-.layer-theme .media-heading,
-.layer-theme .media-text {
-  color: #8d9ea6;
-  max-width: 220px;
+  background-color: #c8cbcc;
 }
