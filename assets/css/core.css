@@ -880,7 +880,7 @@
 /**
  * Horizontal Center Utility
  */
-.center-block {
+.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -999,40 +999,88 @@
 .white {
   background-color: #ffffff;
 }
-.teal {
-  background-color: #1abc9c;
+.silver-light {
+  background-color: #edf1f2;
 }
-.teal-dark {
-  background-color: #16a085;
+.silver {
+  background-color: #c8cbcc;
 }
-.green {
-  background-color: #2ecc71;
+.silver-dark {
+  background-color: #9da3a6;
 }
-.green-dark {
-  background-color: #27ae60;
+.bluegray-light {
+  background-color: #b8c6cc;
 }
-.blue-bright {
-  background-color: #5fccff;
+.bluegray {
+  background-color: #8d9ea6;
 }
-.blue {
-  background-color: #3498db;
+.bluegray-dark {
+  background-color: #667880;
 }
-.blue-dark {
-  background-color: #2980b9;
+.pink-light {
+  background-color: #ff6699;
+}
+.pink {
+  background-color: #d94c7b;
+}
+.pink-dark {
+  background-color: #b3365f;
+}
+.purple-light {
+  background-color: #b762d9;
 }
 .purple {
-  background-color: #9b59b6;
+  background-color: #9959b3;
 }
 .purple-dark {
-  background-color: #8e44ad;
+  background-color: #753f8c;
 }
-.darkblue {
-  background-color: #34495e;
+.blue-bright {
+  background-color: #33beff;
 }
-.darkblue-dark {
-  background-color: #2c3e50;
+.blue {
+  background-color: #3698d9;
 }
-.yellow-bright {
+.blue-dark {
+  background-color: #2479b3;
+}
+.navy-light {
+  background-color: #46698c;
+}
+.navy {
+  background-color: #384f66;
+}
+.navy-dark {
+  background-color: #203040;
+}
+.blue-alt-bright {
+  background-color: #3381ff;
+}
+.blue-alt {
+  background-color: #3675d9;
+}
+.blue-alt-dark {
+  background-color: #245ab3;
+}
+.teal-light {
+  background-color: #17e6b9;
+}
+.teal {
+  background-color: #1dbf9f;
+}
+.teal-dark {
+  background-color: #0f997d;
+}
+.green-light {
+  background-color: #30f281;
+}
+.green {
+  background-color: #33cc73;
+}
+.green-dark {
+  background-color: #21a658;
+}
+.yellow-light {
   background-color: #fff55b;
 }
 .yellow {
@@ -1041,40 +1089,29 @@
 .yellow-dark {
   background-color: #f39c12;
 }
+.orange-light {
+  background-color: #f39c12;
+}
 .orange {
   background-color: #e67e22;
 }
 .orange-dark {
   background-color: #d35400;
 }
+.red-light {
+  background-color: #ff4733;
+}
 .red {
-  background-color: #e74c3c;
+  background-color: #d94636;
 }
 .red-dark {
-  background-color: #c0392b;
-}
-.silver {
-  background-color: #ecf0f1;
-}
-.silver-dark {
-  background-color: #bdc3c7;
-}
-.bluegray {
-  background-color: #95a5a6;
-}
-.bluegray-dark {
-  background-color: #7f8c8d;
-}
-.pink {
-  background-color: #e05281;
-}
-.pink-dark {
-  background-color: #db346b;
+  background-color: #b33224;
 }
 .white,
 .white-dark,
 .white-darker,
 .white-darkest,
+.silver-light,
 .silver,
 .silver-dark {
   color: #333333 !important;
@@ -1287,8 +1324,8 @@
  *  .cf();
  */
 .grid-row {
-  margin: 0px -12px;
-  margin: 0rem -0.75rem;
+  margin: 0px;
+  margin: 0rem;
 }
 .grid-row:before,
 .grid-row:after {
@@ -1352,6 +1389,9 @@
 .grid-s-11 {
   width: 91.66666666666666%;
 }
+.grid-s-12 {
+  width: 100%;
+}
 .grid-s-pull-1 {
   right: 8.333333333333332%;
 }
@@ -1384,6 +1424,9 @@
 }
 .grid-s-pull-11 {
   right: 91.66666666666666%;
+}
+.grid-s-pull-12 {
+  right: 100%;
 }
 .grid-s-push-1 {
   left: 8.333333333333332%;
@@ -1418,6 +1461,9 @@
 .grid-s-push-11 {
   left: 91.66666666666666%;
 }
+.grid-s-push-12 {
+  left: 100%;
+}
 .grid-s-offset-1 {
   margin-left: 8.333333333333332%;
 }
@@ -1450,6 +1496,9 @@
 }
 .grid-s-offset-11 {
   margin-left: 91.66666666666666%;
+}
+.grid-s-offset-12 {
+  margin-left: 100%;
 }
 /**
  *  Medium grid
@@ -1491,6 +1540,9 @@
   .grid-m-11 {
     width: 91.66666666666666%;
   }
+  .grid-m-12 {
+    width: 100%;
+  }
   .grid-m-pull-1 {
     right: 8.333333333333332%;
   }
@@ -1523,6 +1575,9 @@
   }
   .grid-m-pull-11 {
     right: 91.66666666666666%;
+  }
+  .grid-m-pull-12 {
+    right: 100%;
   }
   .grid-m-push-1 {
     left: 8.333333333333332%;
@@ -1557,6 +1612,9 @@
   .grid-m-push-11 {
     left: 91.66666666666666%;
   }
+  .grid-m-push-12 {
+    left: 100%;
+  }
   .grid-m-offset-1 {
     margin-left: 8.333333333333332%;
   }
@@ -1589,6 +1647,9 @@
   }
   .grid-m-offset-11 {
     margin-left: 91.66666666666666%;
+  }
+  .grid-m-offset-12 {
+    margin-left: 100%;
   }
 }
 /**
@@ -1630,6 +1691,9 @@
   .grid-l-11 {
     width: 91.66666666666666%;
   }
+  .grid-l-12 {
+    width: 100%;
+  }
   .grid-l-pull-1 {
     right: 8.333333333333332%;
   }
@@ -1662,6 +1726,9 @@
   }
   .grid-l-pull-11 {
     right: 91.66666666666666%;
+  }
+  .grid-l-pull-12 {
+    right: 100%;
   }
   .grid-l-push-1 {
     left: 8.333333333333332%;
@@ -1696,6 +1763,9 @@
   .grid-l-push-11 {
     left: 91.66666666666666%;
   }
+  .grid-l-push-12 {
+    left: 100%;
+  }
   .grid-l-offset-1 {
     margin-left: 8.333333333333332%;
   }
@@ -1728,6 +1798,9 @@
   }
   .grid-l-offset-11 {
     margin-left: 91.66666666666666%;
+  }
+  .grid-l-offset-12 {
+    margin-left: 100%;
   }
 }
 /**
@@ -1769,6 +1842,9 @@
   .grid-w-11 {
     width: 91.66666666666666%;
   }
+  .grid-w-12 {
+    width: 100%;
+  }
   .grid-w-pull-1 {
     right: 8.333333333333332%;
   }
@@ -1801,6 +1877,9 @@
   }
   .grid-w-pull-11 {
     right: 91.66666666666666%;
+  }
+  .grid-w-pull-12 {
+    right: 100%;
   }
   .grid-w-push-1 {
     left: 8.333333333333332%;
@@ -1835,6 +1914,9 @@
   .grid-w-push-11 {
     left: 91.66666666666666%;
   }
+  .grid-w-push-12 {
+    left: 100%;
+  }
   .grid-w-offset-1 {
     margin-left: 8.333333333333332%;
   }
@@ -1867,6 +1949,9 @@
   }
   .grid-w-offset-11 {
     margin-left: 91.66666666666666%;
+  }
+  .grid-w-offset-12 {
+    margin-left: 100%;
   }
 }
 /*------------------------------------*\
@@ -2065,11 +2150,11 @@ code.prettyprint {
 }
 @media screen {
   .str {
-    color: #e74c3c;
+    color: #d94636;
   }
   /* string content */
   .kwd {
-    color: #2980b9;
+    color: #2479b3;
   }
   /* a keyword */
   .com {
@@ -2081,12 +2166,12 @@ code.prettyprint {
   }
   /* a type name */
   .lit {
-    color: #e74c3c;
+    color: #d94636;
   }
   /* a literal value */
   /* punctuation, lisp open bracket, lisp close bracket */
   .pun {
-    color: #3498db;
+    color: #3698d9;
   }
   .opn {
     color: #ffffff;
@@ -2095,24 +2180,24 @@ code.prettyprint {
     color: #ffffff;
   }
   .tag {
-    color: #2980b9;
+    color: #2479b3;
   }
   /* a markup tag name */
   .atn {
-    color: #3498db;
+    color: #3698d9;
   }
   /* a markup attribute name */
   .atv {
-    color: #e74c3c;
+    color: #d94636;
   }
   /* a markup attribute value */
   .dec,
   .var {
-    color: #2980b9;
+    color: #2479b3;
   }
   /* a declaration; a variable name */
   .fun {
-    color: #e74c3c;
+    color: #d94636;
   }
   /* a function name */
 }
