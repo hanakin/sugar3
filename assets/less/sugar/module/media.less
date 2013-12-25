@@ -1,20 +1,6 @@
 /*------------------------------------*\
-    $COMPONENT-MEDIA
+    $MODULE-MEDIA
 \*------------------------------------*/
-
-/**
- * Media Grid wrapper
- * Displays a grid of individual itemized topics with media elements.
- * Based on bootstraps media component
- */
-.media-grid {
-    background-color: @item-grid-bg;
-    
-    .margin(@double-spacing-unit + @half-spacing-unit, 0, 0);
-    overflow: hidden;
-    
-    @media only screen and (min-width: @screen-l-min) { .margin(@quadruple-spacing-unit, 0, 0); }
-}
 
 /**
  * Media list
@@ -22,10 +8,8 @@
  */
 .media-list { 
     list-style: none;
+    
     margin: 0;
-    @media only screen and (min-width: @screen-l-min) { .margin(0, 0, 0, 0); }
-    @media only screen and (min-width: @screen-w-min) { .margin(0, 0, 0, -@base-spacing-unit - @half-spacing-unit); }
-    overflow: hidden;
 
     .cf();
 }
@@ -38,13 +22,8 @@
     vertical-align: top;
 
     display: inline-block;
-    width: 100%;
-    .margin(0, 0, @double-spacing-unit, 0);
-    @media only screen and (min-width: @screen-l-min) { 
-        .margin(0, 0, @triple-spacing-unit, @double-spacing-unit); 
-        width: 41.666%;
-    }
-    @media only screen and (min-width: @screen-w-min) { .margin(0, 0, @triple-spacing-unit, @triple-spacing-unit); }
+    .margin-bottom(@base-spacing-unit);
+    @media only screen and (min-width: @screen-m-min) { .margin-bottom(@triple-spacing-unit); }
 }
 
 /**
@@ -53,21 +32,22 @@
  */
 .media-object {
     display: block;
+    .margin-bottom(@base-spacing-unit);
     
-    &.pull-left { .margin-right(@half-spacing-unit); }
-    &.pull-right { .margin-left(@half-spacing-unit); }
+    &.pull-left { .margin(0, @half-spacing-unit, 0, 0); }
+    &.pull-right { .margin(0, 0, 0, @half-spacing-unit); }
 
     img { width: unit(@item-object-size, px); }
 
     @media only screen and (min-width: @screen-m-min) {
-        &.pull-left { .margin-right(@base-spacing-unit); }
-        &.pull-right { .margin-left(@base-spacing-unit); } 
+        &.pull-left { .margin(0, @base-spacing-unit, 0, 0); }
+        &.pull-right { .margin(0, 0, 0, @base-spacing-unit); } 
         img { width: unit(@item-object-size*2, px); } 
     }
 
      @media only screen and (min-width: @screen-w-min) {
-        &.pull-left { .margin-right(@double-spacing-unit); }
-        &.pull-right { .margin-left(@double-spacing-unit); }
+        &.pull-left { .margin(0, @double-spacing-unit, 0, 0); }
+        &.pull-right { .margin(0, 0, 0, @double-spacing-unit); }
     }
 }
 
@@ -97,5 +77,9 @@
  * Media Body Text
  * Sometimes e ned to change or modify the text to compensate the heading
  */
-.media-text { color: @item-text-color; }
+.media-text { 
+    color: @item-text-color; 
+
+    margin: 0;
+}
 
