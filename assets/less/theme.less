@@ -27,55 +27,27 @@
 /**
  * Layers Section
  */
-.layer-global {
-    background-color: @silver-light;
-
-    .padding(@triple-spacing-unit, 0, @half-spacing-unit+@quarter-spacing-unit);
+ .layers .slide {
+    .padding(@triple-spacing-unit, 0);
     
+    .lead,
+    .lead .alpha,
+    .lead .beta,
+    .lead .gamma, 
+    .lead .delta,
+    .lead .epsilon,
+    .lead .zeta { color: @bluegray; }
+
     .media-heading { .margin-bottom(@half-spacing-unit+@quarter-spacing-unit); }
     .media-heading,
     .media-text { 
         color: @bluegray; 
         max-width: 220px;
     }
-}
+ }
 
-.layer-core {
-    background-color: @bluegray-light;
-
-    .padding(@triple-spacing-unit, 0, @half-spacing-unit+@quarter-spacing-unit);
-    
-    .media-heading { .margin-bottom(@half-spacing-unit+@quarter-spacing-unit); }
-    .media-heading,
-    .media-text { 
-        color: @bluegray; 
-        max-width: 220px;
-    }
-}
-
-.layer-sugar {
-    background-color: @white;
-
-    .padding(@triple-spacing-unit, 0, @half-spacing-unit+@quarter-spacing-unit);
-    
-    .media-heading { .margin-bottom(@half-spacing-unit+@quarter-spacing-unit); }
-    .media-heading,
-    .media-text { 
-        color: @bluegray; 
-        max-width: 220px;
-    }
-}
-
-.layer-theme {
-    background-color: @silver;
-
-    .padding(@triple-spacing-unit, 0, @half-spacing-unit+@quarter-spacing-unit);
-    
-    .media-heading { .margin-bottom(@half-spacing-unit+@quarter-spacing-unit); }
-    .media-heading,
-    .media-text { 
-        color: @bluegray; 
-        max-width: 220px;
-    }
-}
+.layer-global   { background: @silver-light url("../img/@2x/global-w-bg.jpg") no-repeat bottom left; }
+.layer-core     { background-color: @bluegray-light; }
+.layer-sugar    { background-color: @white; }
+.layer-theme    { background-color: @silver; }
 
