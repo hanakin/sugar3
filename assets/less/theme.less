@@ -20,7 +20,7 @@
  * Features Section
  */
 .features {
-    .padding(@triple-spacing-unit, 0, @double-spacing-unit);
+    .padding(@triple-spacing-unit, 0, @half-spacing-unit+@quarter-spacing-unit);
     @media only screen and (min-width: @screen-m-min) { .padding(@quadruple-spacing-unit, 0, @double-spacing-unit); }
 }
 
@@ -30,7 +30,7 @@
 .layer-global {
     background-color: @silver-light;
 
-    .padding(@triple-spacing-unit, 0, 0);
+    .padding(@triple-spacing-unit, 0, @half-spacing-unit+@quarter-spacing-unit);
     
     .media-heading { .margin-bottom(@half-spacing-unit+@quarter-spacing-unit); }
     .media-heading,
@@ -41,9 +41,9 @@
 }
 
 .layer-core {
-    background-color: @silver;
+    background-color: @bluegray-light;
 
-    .padding(@triple-spacing-unit, 0, 0);
+    .padding(@triple-spacing-unit, 0, @half-spacing-unit+@quarter-spacing-unit);
     
     .media-heading { .margin-bottom(@half-spacing-unit+@quarter-spacing-unit); }
     .media-heading,
@@ -54,9 +54,9 @@
 }
 
 .layer-sugar {
-    background-color: @silver-dark;
+    background-color: @white;
 
-    .padding(@triple-spacing-unit, 0, 0);
+    .padding(@triple-spacing-unit, 0, @half-spacing-unit+@quarter-spacing-unit);
     
     .media-heading { .margin-bottom(@half-spacing-unit+@quarter-spacing-unit); }
     .media-heading,
@@ -67,9 +67,9 @@
 }
 
 .layer-theme {
-    background-color: @silver-light;
+    background-color: @silver;
 
-    .padding(@triple-spacing-unit, 0, 0);
+    .padding(@triple-spacing-unit, 0, @half-spacing-unit+@quarter-spacing-unit);
     
     .media-heading { .margin-bottom(@half-spacing-unit+@quarter-spacing-unit); }
     .media-heading,
