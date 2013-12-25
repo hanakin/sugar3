@@ -20,10 +20,10 @@
 }
 
 /**
- * Footbar Logo
+ * Footbar Brand
  * Just like with the navbar we may want to include a brad in the footer
  */
-.footbar-logo {
+.footbar-brand {
     .font-size(24);
     .line-height(@base-line-height);
 
@@ -31,6 +31,7 @@
         color: @footbar-link-color; 
         &:hover { color: @footbar-link-hover-color; }
     }
+    @media (max-width: @screen-s-max) { .margin-bottom(@base-spacing-unit); }
 
 }
 
@@ -49,6 +50,12 @@
         padding: 0;
         .margin-left(@half-spacing-unit);
     }
+    
+    @media (max-width: @screen-s-max) { 
+        > li:first-child { margin: 0; }
+        .margin(0, 0, @base-spacing-unit); 
+    }
+
     .icon { .font-size(20); }
 }
 
@@ -56,4 +63,6 @@
  * Footbar Copyright
  * Common place to place copyright information is in the footer
  */
-.footbar-copyright {  }
+.footbar-copyright { 
+    @media (max-width: @screen-s-max) { .margin-bottom(@base-spacing-unit); } 
+}
