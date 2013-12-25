@@ -365,7 +365,7 @@
 
 // Creates a wrapper for a series of columns
 .make-row(@gutter: @grid-gutter-width) {
-    .margin(0, (@gutter / -2));
+    .margin(0);
     .cf();
 }
 
@@ -421,7 +421,7 @@
 }
 
 // Basic looping in LESS
-.grid-build(@cols, @class, @type, @i: 1) when (@i < @cols) {
+.grid-build(@cols, @class, @type, @i: 1) when (@i <= @cols) {
     .grid-make(@i, @class, @type);
     // next iteration
     .grid-build(@cols, @class, @type, @i + 1);
