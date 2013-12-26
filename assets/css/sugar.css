@@ -1844,8 +1844,8 @@
   background: none;
   border: 2px solid #21b5e4;
   color: #21b5e4;
-  padding: 12px 24px;
-  padding: 0.75rem 1.5rem;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
 }
 .btn.btn-clear:hover,
 .btn.btn-clear:focus {
@@ -2985,13 +2985,13 @@
  * A section at the bottom of the page that replaces the footer similar to a navbar
  */
 .footbar {
-  background-color: #b8c6cc;
-  color: #9da3a6;
+  background-color: #cfdadd;
+  color: #a9bac1;
   padding: 36px;
   padding: 2.25rem;
 }
 .footbar a {
-  color: #667880;
+  color: #8d9ea6;
 }
 .footbar a:hover {
   color: #21b5e4;
@@ -3007,7 +3007,7 @@
   line-height: 1.6875rem;
 }
 .footbar-brand .brand {
-  color: #667880;
+  color: #8d9ea6;
 }
 .footbar-brand .brand:hover {
   color: #21b5e4;

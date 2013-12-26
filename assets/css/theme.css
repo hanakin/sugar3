@@ -24,8 +24,14 @@
  * Layers Section
  */
 .layers .slide {
+  height: auto;
   padding: 72px 0px;
   padding: 4.5rem 0rem;
+}
+@media only screen and (min-width: 768px) {
+  .layers .slide {
+    height: 768px;
+  }
 }
 .layers .slide .lead,
 .layers .slide .lead .alpha,
@@ -49,11 +55,11 @@
   background: #edf1f2 url("../img/@2x/global-w-bg.jpg") no-repeat bottom left;
 }
 .layer-core {
-  background-color: #b8c6cc;
+  background: #cfdadd url("../img/@2x/core-w-bg2.jpg") no-repeat bottom left;
 }
 .layer-sugar {
-  background-color: #ffffff;
+  background: #edf1f2 url("../img/@2x/sugar-w-bg.jpg") no-repeat bottom left;
 }
 .layer-theme {
-  background-color: #c8cbcc;
+  background-color: #cfdadd;
 }
