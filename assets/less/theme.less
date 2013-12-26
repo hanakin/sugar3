@@ -28,6 +28,8 @@
  * Layers Section
  */
  .layers .slide {
+    height: auto;
+    @media only screen and (min-width: @screen-m-min) { height: 768px; }
     .padding(@triple-spacing-unit, 0);
     
     .lead,
@@ -47,7 +49,7 @@
  }
 
 .layer-global   { background: @silver-light url("../img/@2x/global-w-bg.jpg") no-repeat bottom left; }
-.layer-core     { background-color: @bluegray-light; }
-.layer-sugar    { background-color: @white; }
-.layer-theme    { background-color: @silver; }
+.layer-core     { background: darken(@silver-light, 10%) url("../img/@2x/core-w-bg2.jpg") no-repeat bottom left; }
+.layer-sugar    { background: @silver-light url("../img/@2x/sugar-w-bg.jpg") no-repeat bottom left; }
+.layer-theme    { background-color: darken(@silver-light, 10%) }
 
