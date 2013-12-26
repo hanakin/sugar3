@@ -15,4 +15,7 @@ addLoadEvent(function() {
     prettyPrint();
 });
 
-$('.slider').carousel()
+$('.slider').bxSlider({
+    nextText: '<i class="icon icon-chevron-right"></i>',
+    prevText: '<i class="icon icon-chevron-left"></i>'
+});

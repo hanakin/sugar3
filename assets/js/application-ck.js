@@ -10,4 +10,6 @@ addLoadEvent(function() {
     prettyPrint();
 });
 
-$(".slider").carousel();
+$(".slider").bxSlider({
+    infiniteLoop: !1
+});
