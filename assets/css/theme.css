@@ -58,8 +58,11 @@
   background: #cfdadd url("../img/@2x/core-w-bg2.jpg") no-repeat bottom left;
 }
 .layer-sugar {
-  background: #edf1f2 url("../img/@2x/sugar-w-bg.jpg") no-repeat bottom left;
+  background: #edf1f2 url("../img/@2x/sugar-w-bg2.jpg") no-repeat bottom left;
 }
 .layer-theme {
-  background-color: #cfdadd;
+  background: #cfdadd url("../img/@2x/theme-w-bg.jpg") no-repeat bottom left;
+}
+.grid-preview {
+  background-color: #edf1f2;
 }
