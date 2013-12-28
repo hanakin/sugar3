@@ -427,6 +427,18 @@
     .grid-build(@cols, @class, @type, @i + 1);
 }
 
+// Rem Grid Mixins
+.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = width) and (@index > 0) {
+    @width: (@width - ((@columns - 1) * @gutter)) / @columns;
+    .grid-@{class}-@{index} { width: (((@index * @width)/@base-rem-multiplier)*1rem); }
+}
+
+.grid-rem-build(@cols, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width, @i: 1) when (@i <= @cols) {
+    .grid-rem-make(@i, @class, @type, @width, @columns, @gutter);
+    // next iteration
+    .grid-rem-build(@cols, @class, @type, @width, @columns, @gutter, @i + 1);
+}
+
 
 // Form control focus state
 //
@@ -483,100 +495,100 @@
 // Rem Size Mixins
 // generates both px and rem font sizes
 .font-size(@size) {
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     font-size: @px-size; 
     font-size: @rem-size;
 }
 
 .line-height(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     line-height: @px-size;
     line-height: @rem-size;
 }
 
 .margin(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin: @px-size;
     margin: @rem-size;
 }
 
 .margin(@vertiacl, @horizontal){
-    @v-px-size: @vertiacl*1px;
-    @h-px-size: @horizontal*1px;
-    @v-rem-size: (@vertiacl/@base-rem-multiplier)*1rem;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @v-px-size: (@vertiacl*1px);
+    @h-px-size: (@horizontal*1px);
+    @v-rem-size: ((@vertiacl/@base-rem-multiplier)*1rem);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
 
     margin: @v-px-size @h-px-size;
     margin: @v-rem-size @h-rem-size;
 }
 
 .margin(@top, @horizontal, @bottom){
-    @t-px-size: @top*1px;
-    @h-px-size: @horizontal*1px;
-    @b-px-size: @bottom*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @h-px-size: (@horizontal*1px);
+    @b-px-size: (@bottom*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
 
     margin: @t-px-size @h-px-size @b-px-size;
     margin: @t-rem-size @h-rem-size @b-rem-size;
 }
 
 .margin(@top, @right, @bottom, @left){
-    @t-px-size: @top*1px;
-    @r-px-size: @right*1px;
-    @b-px-size: @bottom*1px;
-    @l-px-size: @left*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
-    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
-    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @r-px-size: (@right*1px);
+    @b-px-size: (@bottom*1px);
+    @l-px-size: (@left*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
+    @r-rem-size: ((@right/@base-rem-multiplier)*1rem);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
+    @l-rem-size: ((@left/@base-rem-multiplier)*1rem);
 
     margin: @t-px-size @r-px-size @b-px-size @l-px-size;
     margin: @t-rem-size @r-rem-size @b-rem-size @l-rem-size;
 }
 
 .margin-top(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin-top: @px-size;
     margin-top: @rem-size;
 }
 
 .margin-right(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin-right: @px-size;
     margin-right: @rem-size;
 }
 
 .margin-bottom(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin-bottom: @px-size;
     margin-bottom: @rem-size;
 }
 
 .margin-left(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     margin-left: @px-size;
     margin-left: @rem-size;
 }
 
 .margin-horizontal(@horizontal){
-    @h-px-size: @horizontal*1px;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @h-px-size: (@horizontal*1px);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
 
     margin-left: @h-px-size;
     margin-right: @h-px-size;
@@ -585,11 +597,11 @@
 }
 
 .margin-horizontal(@left,@right){
-    @l-px-size: @left*1px;
-    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
+    @l-px-size: (@left*1px);
+    @l-rem-size: ((@left/@base-rem-multiplier)*1rem);
 
-    @r-px-size: @right*1px;
-    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
+    @r-px-size: (@right*1px);
+    @r-rem-size: ((@right/@base-rem-multiplier)*1rem);
 
     margin-left: @l-px-size;
     margin-left: @l-rem-size;
@@ -599,8 +611,8 @@
 }
 
 .margin-vertical(@vertical){
-    @v-px-size: @vertical*1px;
-    @v-rem-size: (@vertical/@base-rem-multiplier)*1rem;
+    @v-px-size: (@vertical*1px);
+    @v-rem-size: ((@vertical/@base-rem-multiplier)*1rem);
 
     margin-top: @v-px-size;
     margin-bottom: @v-px-size;
@@ -609,11 +621,11 @@
 }
 
 .margin-vertical(@top,@bottom){
-    @t-px-size: @top*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
 
-    @b-px-size: @bottom*1px;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @b-px-size: (@bottom*1px);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
 
     margin-top: @t-px-size;
     margin-top: @t-rem-size;
@@ -623,84 +635,84 @@
 }
 
 .padding(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding: @px-size;
     padding: @rem-size;
 }
 
 .padding(@vertiacl, @horizontal){
-    @v-px-size: @vertiacl*1px;
-    @h-px-size: @horizontal*1px;
-    @v-rem-size: (@vertiacl/@base-rem-multiplier)*1rem;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @v-px-size: (@vertiacl*1px);
+    @h-px-size: (@horizontal*1px);
+    @v-rem-size: ((@vertiacl/@base-rem-multiplier)*1rem);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
 
     padding: @v-px-size @h-px-size;
     padding: @v-rem-size @h-rem-size;
 }
 
 .padding(@top, @horizontal, @bottom){
-    @t-px-size: @top*1px;
-    @h-px-size: @horizontal*1px;
-    @b-px-size: @bottom*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @h-px-size: (@horizontal*1px);
+    @b-px-size: (@bottom*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
 
     padding: @t-px-size @h-px-size @b-px-size;
     padding: @t-rem-size @h-rem-size @b-rem-size;
 }
 
 .padding(@top, @right, @bottom, @left){
-    @t-px-size: @top*1px;
-    @r-px-size: @right*1px;
-    @b-px-size: @bottom*1px;
-    @l-px-size: @left*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
-    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
-    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @r-px-size: (@right*1px);
+    @b-px-size: (@bottom*1px);
+    @l-px-size: (@left*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
+    @r-rem-size: ((@right/@base-rem-multiplier)*1rem);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
+    @l-rem-size: ((@left/@base-rem-multiplier)*1rem);
 
     padding: @t-px-size @r-px-size @b-px-size @l-px-size;
     padding: @t-rem-size @r-rem-size @b-rem-size @l-rem-size;
 }
 
 .padding-top(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding-top: @px-size;
     padding-top: @rem-size;
 }
 
 .padding-right(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding-right: @px-size;
     padding-right: @rem-size;
 }
 
 .padding-bottom(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding-bottom: @px-size;
     padding-bottom: @rem-size;
 }
 
 .padding-left(@size){
-    @px-size: @size*1px;
-    @rem-size: (@size/@base-rem-multiplier)*1rem;
+    @px-size: (@size*1px);
+    @rem-size: ((@size/@base-rem-multiplier)*1rem);
 
     padding-left: @px-size;
     padding-left: @rem-size;
 }
 
 .padding-horizontal(@horizontal){
-    @h-px-size: @horizontal*1px;
-    @h-rem-size: (@horizontal/@base-rem-multiplier)*1rem;
+    @h-px-size: (@horizontal*1px);
+    @h-rem-size: ((@horizontal/@base-rem-multiplier)*1rem);
 
     padding-left: @h-px-size;
     padding-right: @h-px-size;
@@ -709,11 +721,11 @@
 }
 
 .padding-horizontal(@left,@right){
-    @l-px-size: @left*1px;
-    @l-rem-size: (@left/@base-rem-multiplier)*1rem;
+    @l-px-size: (@left*1px);
+    @l-rem-size: ((@left/@base-rem-multiplier)*1rem);
 
-    @r-px-size: @right*1px;
-    @r-rem-size: (@right/@base-rem-multiplier)*1rem;
+    @r-px-size: (@right*1px);
+    @r-rem-size: ((@right/@base-rem-multiplier)*1rem);
 
     padding-left: @l-px-size;
     padding-left: @l-rem-size;
@@ -723,8 +735,8 @@
 }
 
 .padding-vertical(@vertical){
-    @v-px-size: @vertical*1px;
-    @v-rem-size: (@vertical/@base-rem-multiplier)*1rem;
+    @v-px-size: (@vertical*1px);
+    @v-rem-size: ((@vertical/@base-rem-multiplier)*1rem);
 
     padding-top: @v-px-size;
     padding-bottom: @v-px-size;
@@ -733,11 +745,11 @@
 }
 
 .padding-horizontal(@top,@bottom){
-    @t-px-size: @top*1px;
-    @t-rem-size: (@top/@base-rem-multiplier)*1rem;
+    @t-px-size: (@top*1px);
+    @t-rem-size: ((@top/@base-rem-multiplier)*1rem);
 
-    @b-px-size: @bottom*1px;
-    @b-rem-size: (@bottom/@base-rem-multiplier)*1rem;
+    @b-px-size: (@bottom*1px);
+    @b-rem-size: ((@bottom/@base-rem-multiplier)*1rem);
 
     padding-top: @t-px-size;
     padding-top: @t-rem-size;
