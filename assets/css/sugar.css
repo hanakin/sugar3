@@ -2810,7 +2810,7 @@
   color: #21b5e4;
   background-color: transparent;
 }
-@media (min-width: 992px) {
+@media (min-width: 984px) {
   .navbar-nav > li > a {
     padding: 24px;
     padding: 1.5rem;

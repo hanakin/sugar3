@@ -359,7 +359,8 @@
 // Centered container element
 .container-fixed() {
     margin: 0 auto;
-    .padding(0, @half-spacing-unit);
+    .padding(0, @quarter-spacing-unit);
+    @media (min-width: @screen-m-min) { .padding(0, @half-spacing-unit); }
     .cf();
 }
 
@@ -390,7 +391,8 @@
             // Prevent columns from collapsing when empty
             min-height: 1px;
             // Inner gutter via padding
-            .padding(0, (@grid-gutter-width / 2));
+            .padding(0, (@grid-gutter-width / 4));
+            @media (min-width: @screen-m-min) { .padding(0, (@grid-gutter-width / 2)); }
         }
     }
     .grid(1); // kickstart it
@@ -429,8 +431,23 @@
 
 // Rem Grid Mixins
 .grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = width) and (@index > 0) {
-    @width: (@width - ((@columns - 1) * @gutter)) / @columns;
-    .grid-@{class}-@{index} { width: (((@index * @width)/@base-rem-multiplier)*1rem); }
+    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
+    .grid-@{class}-@{index} { width: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
+}
+
+.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = push) and (@index > 0) {
+    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
+    .grid-@{class}-@{index} { left: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
+}
+
+.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = pull) and (@index > 0) {
+    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
+    .grid-@{class}-@{index} { right: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
+}
+
+.grid-rem-make(@index, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width) when (@type = offset) and (@index > 0) {
+    @max-width: (@width - ((@columns - 1) * @gutter)) / @columns;
+    .grid-@{class}-@{index} { margin-left: (((@index * @max-width)/@base-rem-multiplier)*1rem); }
 }
 
 .grid-rem-build(@cols, @class, @type, @width, @columns: @grid-columns, @gutter: @grid-gutter-width, @i: 1) when (@i <= @cols) {
