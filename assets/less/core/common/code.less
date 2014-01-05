@@ -42,20 +42,27 @@ pre.prettyprint, code.prettyprint {
     .margin-left(@base-spacing-unit);
 }
 
-.pln { color: @white; }
 @media screen {
-    .str { color: @red; }  /* string content */
-    .kwd { color: @blue-dark;}  /* a keyword */
-    .com { color: @gray-light; }  /* a comment */
-    .typ { color: @white; }  /* a type name */
-    .lit { color: @red; }  /* a literal value */
-    /* punctuation, lisp open bracket, lisp close bracket */
-    .pun { color: @blue; }
-    .opn { color: @white; }
-    .clo { color: @white; }
-    .tag { color: @blue-dark; }  /* a markup tag name */
-    .atn { color: @blue; }  /* a markup attribute name */
-    .atv { color: @red; }  /* a markup attribute value */
-    .dec, .var { color: @blue-dark; }  /* a declaration; a variable name */
-    .fun { color: @red; }  /* a function name */
-}
+    pre {
+        // ALL
+        .comment            { color: #7d8c93; }
+
+        // HTML
+        .support            { color: #f75972; }
+        .attribute, 
+        .operator           { color: #91a6fa; }
+        .string             { color: #42c8ff; }
+
+        // CSS
+        .hex-color,
+        .unit,
+        .entity.name.tag,
+        .direct-descendant  { color: #f75972; }
+        .css-property,
+        .css-value,
+        .entity.name.pseudo,
+        .vendor-prefix      { color: #91a6fa; }
+        .entity.name.class,
+        .constant.numeric   { color: #42c8ff; }
+    }
+}   

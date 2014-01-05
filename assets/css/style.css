@@ -3258,61 +3258,36 @@ code.prettyprint {
   margin-left: 24px;
   margin-left: 1.5rem;
 }
-.pln {
-  color: #ffffff;
-}
 @media screen {
-  .str {
-    color: #d94636;
+  pre .comment {
+    color: #7d8c93;
   }
-  /* string content */
-  .kwd {
-    color: #2479b3;
+  pre .support {
+    color: #f75972;
   }
-  /* a keyword */
-  .com {
-    color: #b3b3b3;
+  pre .attribute,
+  pre .operator {
+    color: #91a6fa;
   }
-  /* a comment */
-  .typ {
-    color: #ffffff;
+  pre .string {
+    color: #42c8ff;
   }
-  /* a type name */
-  .lit {
-    color: #d94636;
+  pre .hex-color,
+  pre .unit,
+  pre .entity.name.tag,
+  pre .direct-descendant {
+    color: #f75972;
   }
-  /* a literal value */
-  /* punctuation, lisp open bracket, lisp close bracket */
-  .pun {
-    color: #3698d9;
+  pre .css-property,
+  pre .css-value,
+  pre .entity.name.pseudo,
+  pre .vendor-prefix {
+    color: #91a6fa;
   }
-  .opn {
-    color: #ffffff;
+  pre .entity.name.class,
+  pre .constant.numeric {
+    color: #42c8ff;
   }
-  .clo {
-    color: #ffffff;
-  }
-  .tag {
-    color: #2479b3;
-  }
-  /* a markup tag name */
-  .atn {
-    color: #3698d9;
-  }
-  /* a markup attribute name */
-  .atv {
-    color: #d94636;
-  }
-  /* a markup attribute value */
-  .dec,
-  .var {
-    color: #2479b3;
-  }
-  /* a declaration; a variable name */
-  .fun {
-    color: #d94636;
-  }
-  /* a function name */
 }
 /*------------------------------------*\
     $CORE--TABLES
@@ -5901,169 +5876,6 @@ fieldset[disabled] .checkbox-inline {
     margin-top: 48px;
     margin-top: 3rem;
   }
-}
-/**
- * Slider Class
- * Wrapper for the slide container and indicators
- */
-.slider {
-  position: relative;
-}
-.slider-inner {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-.slider-inner > .item {
-  display: none;
-  position: relative;
-  -webkit-transition: 0.6s ease-in-out left;
-  transition: 0.6s ease-in-out left;
-}
-.slider-inner > .item > img,
-.slider-inner > .item > a > img {
-  display: block;
-  height: auto;
-  max-width: 100%;
-  line-height: 1;
-}
-.slider-inner > .active,
-.slider-inner > .next,
-.slider-inner > .prev {
-  display: block;
-}
-.slider-inner > .active {
-  left: 0;
-}
-.slider-inner > .next,
-.slider-inner > .prev {
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-.slider-inner > .next {
-  left: 100%;
-}
-.slider-inner > .prev {
-  left: -100%;
-}
-.slider-inner > .next.left,
-.slider-inner > .prev.right {
-  left: 0;
-}
-.slider-inner > .active.left {
-  left: -100%;
-}
-.slider-inner > .active.right {
-  left: 100%;
-}
-/**
- * Left/right controls for nav
- */
-.slider-control {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: %);
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-}
-.slider-control.left {
-  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
-  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
-}
-.slider-control.right {
-  left: auto;
-  right: 0;
-  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
-  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
-}
-.slider-control:hover,
-.slider-control:focus {
-  outline: none;
-  color: #ffffff;
-  text-decoration: none;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
-.slider-control .icon-prev,
-.slider-control .icon-next,
-.slider-control .icon-chevron-left,
-.slider-control .icon-chevron-right {
-  position: absolute;
-  top: 50%;
-  z-index: 5;
-  display: inline-block;
-}
-.slider-control .icon-prev,
-.slider-control .icon-chevron-left {
-  left: 50%;
-}
-.slider-control .icon-next,
-.slider-control .icon-chevron-right {
-  right: 50%;
-}
-.slider-control .icon-prev,
-.slider-control .icon-next {
-  width: 20px;
-  height: 20px;
-  margin-top: -10px;
-  margin-left: -10px;
-  font-family: serif;
-}
-.slider-control .icon-prev:before {
-  content: '\2039';
-}
-.slider-control .icon-next:before {
-  content: '\203a';
-}
-/**
- * Optional indicator pips
- *
- * Add an unordered list with the following class and add a list item for each
- * slide your slider holds.
- */
-.slider-indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  z-index: 15;
-  width: 60%;
-  margin-left: -30%;
-  padding-left: 0;
-  list-style: none;
-  text-align: center;
-}
-.slider-indicators li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 1px;
-  text-indent: -999px;
-  border: 1px solid #ffffff;
-  border-radius: 10px;
-  cursor: pointer;
-  background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);
-}
-.slider-indicators .active {
-  margin: 0;
-  width: 12px;
-  height: 12px;
-  background-color: #ffffff;
 }
 /*------------------------------------*\
     $COMPONENTS

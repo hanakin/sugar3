@@ -2163,61 +2163,36 @@ code.prettyprint {
   margin-left: 24px;
   margin-left: 1.5rem;
 }
-.pln {
-  color: #ffffff;
-}
 @media screen {
-  .str {
-    color: #d94636;
+  pre .comment {
+    color: #7d8c93;
   }
-  /* string content */
-  .kwd {
-    color: #2479b3;
+  pre .support {
+    color: #f75972;
   }
-  /* a keyword */
-  .com {
-    color: #b3b3b3;
+  pre .attribute,
+  pre .operator {
+    color: #91a6fa;
   }
-  /* a comment */
-  .typ {
-    color: #ffffff;
+  pre .string {
+    color: #42c8ff;
   }
-  /* a type name */
-  .lit {
-    color: #d94636;
+  pre .hex-color,
+  pre .unit,
+  pre .entity.name.tag,
+  pre .direct-descendant {
+    color: #f75972;
   }
-  /* a literal value */
-  /* punctuation, lisp open bracket, lisp close bracket */
-  .pun {
-    color: #3698d9;
+  pre .css-property,
+  pre .css-value,
+  pre .entity.name.pseudo,
+  pre .vendor-prefix {
+    color: #91a6fa;
   }
-  .opn {
-    color: #ffffff;
+  pre .entity.name.class,
+  pre .constant.numeric {
+    color: #42c8ff;
   }
-  .clo {
-    color: #ffffff;
-  }
-  .tag {
-    color: #2479b3;
-  }
-  /* a markup tag name */
-  .atn {
-    color: #3698d9;
-  }
-  /* a markup attribute name */
-  .atv {
-    color: #d94636;
-  }
-  /* a markup attribute value */
-  .dec,
-  .var {
-    color: #2479b3;
-  }
-  /* a declaration; a variable name */
-  .fun {
-    color: #d94636;
-  }
-  /* a function name */
 }
 /*------------------------------------*\
     $CORE--TABLES
