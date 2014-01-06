@@ -141,4 +141,20 @@
         color: @white !important;
         background-color: mix(@social-reddit, @black, 70%) !important; 
     }
+    &.btn-clear {
+        background: none !important;
+        border: 2px solid @social-reddit !important;
+        color: @social-reddit !important;
+
+        &:hover, &:focus { 
+            background: @social-reddit !important;  
+            color: @white !important;
+        }
+        &:active, &.active {
+            border-color: mix(@social-reddit, black, 85%) !important;
+            background: mix(@social-reddit, black, 85%) !important;
+            color: rgba(255, 255, 255, 0.75);
+            .box-shadow(none);
+        }
+    }
 }
