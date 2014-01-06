@@ -2222,11 +2222,51 @@
 .btn-delicious:hover {
   background-color: #337ac2 !important;
 }
+.btn-delicious.btn-clear {
+  background: none !important;
+  border: 2px solid #3399ff !important;
+  color: #3399ff !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-delicious.btn-clear:hover,
+.btn-delicious.btn-clear:focus {
+  background: #3399ff !important;
+  color: #ffffff !important;
+}
+.btn-delicious.btn-clear:active,
+.btn-delicious.btn-clear.active {
+  border-color: #2b82d9 !important;
+  background: #2b82d9 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-digg {
   background-color: #070707 !important;
 }
 .btn-digg:hover {
   background-color: #515151 !important;
+}
+.btn-digg.btn-clear {
+  background: none !important;
+  border: 2px solid #070707 !important;
+  color: #070707 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-digg.btn-clear:hover,
+.btn-digg.btn-clear:focus {
+  background: #070707 !important;
+  color: #ffffff !important;
+}
+.btn-digg.btn-clear:active,
+.btn-digg.btn-clear.active {
+  border-color: #060606 !important;
+  background: #060606 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-evernote {
   background-color: #7fce2c !important;
@@ -2234,11 +2274,51 @@
 .btn-evernote:hover {
   background-color: #68a02e !important;
 }
+.btn-evernote.btn-clear {
+  background: none !important;
+  border: 2px solid #7fce2c !important;
+  color: #7fce2c !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-evernote.btn-clear:hover,
+.btn-evernote.btn-clear:focus {
+  background: #7fce2c !important;
+  color: #ffffff !important;
+}
+.btn-evernote.btn-clear:active,
+.btn-evernote.btn-clear.active {
+  border-color: #6caf25 !important;
+  background: #6caf25 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-facebook {
   background-color: #2f5890 !important;
 }
 .btn-facebook:hover {
   background-color: #6d8ab1 !important;
+}
+.btn-facebook.btn-clear {
+  background: none !important;
+  border: 2px solid #2f5890 !important;
+  color: #2f5890 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-facebook.btn-clear:hover,
+.btn-facebook.btn-clear:focus {
+  background: #2f5890 !important;
+  color: #ffffff !important;
+}
+.btn-facebook.btn-clear:active,
+.btn-facebook.btn-clear.active {
+  border-color: #284b7a !important;
+  background: #284b7a !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-github {
   background-color: #333333 !important;
@@ -2246,11 +2326,51 @@
 .btn-github:hover {
   background-color: #7aa8d6 !important;
 }
+.btn-github.btn-clear {
+  background: none !important;
+  border: 2px solid #4183c4 !important;
+  color: #4183c4 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-github.btn-clear:hover,
+.btn-github.btn-clear:focus {
+  background: #4183c4 !important;
+  color: #ffffff !important;
+}
+.btn-github.btn-clear:active,
+.btn-github.btn-clear.active {
+  border-color: #376fa7 !important;
+  background: #376fa7 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-gmail {
   background-color: #c92527 !important;
 }
 .btn-gmail:hover {
   background-color: #d96668 !important;
+}
+.btn-gmail.btn-clear {
+  background: none !important;
+  border: 2px solid #c92527 !important;
+  color: #c92527 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-gmail.btn-clear:hover,
+.btn-gmail.btn-clear:focus {
+  background: #c92527 !important;
+  color: #ffffff !important;
+}
+.btn-gmail.btn-clear:active,
+.btn-gmail.btn-clear.active {
+  border-color: #ab1f21 !important;
+  background: #ab1f21 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-gplus {
   background-color: #cf4b33 !important;
@@ -2258,11 +2378,51 @@
 .btn-gplus:hover {
   background-color: #dd8170 !important;
 }
+.btn-gplus.btn-clear {
+  background: none !important;
+  border: 2px solid #cf4b33 !important;
+  color: #cf4b33 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-gplus.btn-clear:hover,
+.btn-gplus.btn-clear:focus {
+  background: #cf4b33 !important;
+  color: #ffffff !important;
+}
+.btn-gplus.btn-clear:active,
+.btn-gplus.btn-clear.active {
+  border-color: #b0402b !important;
+  background: #b0402b !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-linkedin {
   background-color: #4897c9 !important;
 }
 .btn-linkedin:hover {
   background-color: #42799c !important;
+}
+.btn-linkedin.btn-clear {
+  background: none !important;
+  border: 2px solid #4897c9 !important;
+  color: #4897c9 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-linkedin.btn-clear:hover,
+.btn-linkedin.btn-clear:focus {
+  background: #4897c9 !important;
+  color: #ffffff !important;
+}
+.btn-linkedin.btn-clear:active,
+.btn-linkedin.btn-clear.active {
+  border-color: #3d80ab !important;
+  background: #3d80ab !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-pinterest {
   background-color: #c92527 !important;
@@ -2270,11 +2430,51 @@
 .btn-pinterest:hover {
   background-color: #d96668 !important;
 }
+.btn-pinterest.btn-clear {
+  background: none !important;
+  border: 2px solid #c92527 !important;
+  color: #c92527 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-pinterest.btn-clear:hover,
+.btn-pinterest.btn-clear:focus {
+  background: #c92527 !important;
+  color: #ffffff !important;
+}
+.btn-pinterest.btn-clear:active,
+.btn-pinterest.btn-clear.active {
+  border-color: #ab1f21 !important;
+  background: #ab1f21 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-tumblr {
   background-color: #2f5070 !important;
 }
 .btn-tumblr:hover {
   background-color: #6d859b !important;
+}
+.btn-tumblr.btn-clear {
+  background: none !important;
+  border: 2px solid #2f5070 !important;
+  color: #2f5070 !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-tumblr.btn-clear:hover,
+.btn-tumblr.btn-clear:focus {
+  background: #2f5070 !important;
+  color: #ffffff !important;
+}
+.btn-tumblr.btn-clear:active,
+.btn-tumblr.btn-clear.active {
+  border-color: #28445f !important;
+  background: #28445f !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .btn-twitter {
   background-color: #00bdef !important;
@@ -2282,13 +2482,51 @@
 .btn-twitter:hover {
   background-color: #0f94b7 !important;
 }
+.btn-twitter.btn-clear {
+  background: none !important;
+  border: 2px solid #00bdef !important;
+  color: #00bdef !important;
+  padding: 12px 18px;
+  padding: 0.75rem 1.125rem;
+}
+.btn-twitter.btn-clear:hover,
+.btn-twitter.btn-clear:focus {
+  background: #00bdef !important;
+  color: #ffffff !important;
+}
+.btn-twitter.btn-clear:active,
+.btn-twitter.btn-clear.active {
+  border-color: #00a1cb !important;
+  background: #00a1cb !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .btn-reddit {
   color: #333333 !important;
-  background-color: #cee3f8 !important;
+  background-color: #ff4500 !important;
 }
 .btn-reddit:hover {
   color: #ffffff !important;
-  background-color: #a0aebd !important;
+  background-color: #c2400f !important;
+}
+.btn-reddit.btn-clear {
+  background: none !important;
+  border: 2px solid #ff4500 !important;
+  color: #ff4500 !important;
+}
+.btn-reddit.btn-clear:hover,
+.btn-reddit.btn-clear:focus {
+  background: #ff4500 !important;
+  color: #ffffff !important;
+}
+.btn-reddit.btn-clear:active,
+.btn-reddit.btn-clear.active {
+  border-color: #d93b00 !important;
+  background: #d93b00 !important;
+  color: rgba(255, 255, 255, 0.75);
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .brand {
   font-family: "Hobo Std";
