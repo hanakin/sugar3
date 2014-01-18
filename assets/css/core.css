@@ -685,6 +685,18 @@
   border: 0;
   color: transparent;
 }
+/**
+ *  Help text
+ *
+ * Apply to any element you wish to create light text for placement immediately
+ * below a form control. Use for general help, formatting, or instructional text.
+ */
+.text-help {
+  color: #737373;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
 /*------------------------------------*\
     $ATOM-IMAGES
 \*------------------------------------*/
@@ -2503,16 +2515,4 @@ fieldset[disabled] .radio-inline,
 fieldset[disabled] .checkbox,
 fieldset[disabled] .checkbox-inline {
   cursor: not-allowed;
-}
-/**
- *  Help text
- *
- * Apply to any element you wish to create light text for placement immediately
- * below a form control. Use for general help, formatting, or instructional text.
- */
-.help-block {
-  color: #737373;
-  display: block;
-  margin-top: 5px;
-  margin-bottom: 10px;
 }
