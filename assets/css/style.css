@@ -2229,6 +2229,7 @@ input[type="checkbox"] {
 .red-dark {
   background-color: #b33224;
 }
+.text-black,
 .white,
 .white-dark,
 .white-darker,
@@ -2237,9 +2238,6 @@ input[type="checkbox"] {
 .silver,
 .silver-dark {
   color: #333333 !important;
-}
-.text-black {
-  color: #333333;
 }
 /*------------------------------------*\
     $ATOM-LISTS

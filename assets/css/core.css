@@ -1134,6 +1134,7 @@
 .red-dark {
   background-color: #b33224;
 }
+.text-black,
 .white,
 .white-dark,
 .white-darker,
@@ -1142,9 +1143,6 @@
 .silver,
 .silver-dark {
   color: #333333 !important;
-}
-.text-black {
-  color: #333333;
 }
 /*------------------------------------*\
     $ATOM-LISTS
