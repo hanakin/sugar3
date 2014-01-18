@@ -1606,6 +1606,18 @@ input[type="checkbox"] {
 .text-bold {
   font-weight: 700;
 }
+/**
+ * Hide Text
+ *
+ * CSS Image Replaement Class
+ */
+.text-hide {
+  font: 0/0 a;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+  color: transparent;
+}
 /*------------------------------------*\
     $ATOM-IMAGES
 \*------------------------------------*/
@@ -3110,43 +3122,43 @@ input[type="checkbox"] {
 \*------------------------------------*/
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato/lato-black-webfont.eot');
-  src: url('../fonts/Lato/lato-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/lato-black-webfont.woff') format('woff'), url('../fonts/Lato/lato-black-webfont.ttf') format('truetype'), url('../fonts/Lato/lato-black-webfont.svg#latoblack') format('svg');
+  src: url('../fonts/Lato/Lato-black-webfont.eot');
+  src: url('../fonts/Lato/Lato-black-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/Lato-black-webfont.woff') format('woff'), url('../fonts/Lato/Lato-black-webfont.ttf') format('truetype'), url('../fonts/Lato/Lato-black-webfont.svg#latoblack') format('svg');
   font-weight: 900;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato/lato-bold-webfont.eot');
-  src: url('../fonts/Lato/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/lato-bold-webfont.woff') format('woff'), url('../fonts/Lato/lato-bold-webfont.ttf') format('truetype'), url('../fonts/Lato/lato-bold-webfont.svg#latobold') format('svg');
+  src: url('../fonts/Lato/Lato-bold-webfont.eot');
+  src: url('../fonts/Lato/Lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/Lato-bold-webfont.woff') format('woff'), url('../fonts/Lato/Lato-bold-webfont.ttf') format('truetype'), url('../fonts/Lato/Lato-bold-webfont.svg#latobold') format('svg');
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato/lato-bolditalic-webfont.eot');
-  src: url('../fonts/Lato/lato-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/lato-bolditalic-webfont.woff') format('woff'), url('../fonts/Lato/lato-bolditalic-webfont.ttf') format('truetype'), url('../fonts/Lato/lato-bolditalic-webfont.svg#latobold_italic') format('svg');
+  src: url('../fonts/Lato/Lato-bolditalic-webfont.eot');
+  src: url('../fonts/Lato/Lato-bolditalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/Lato-bolditalic-webfont.woff') format('woff'), url('../fonts/Lato/Lato-bolditalic-webfont.ttf') format('truetype'), url('../fonts/Lato/Lato-bolditalic-webfont.svg#latobold_italic') format('svg');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato/lato-italic-webfont.eot');
-  src: url('../fonts/Lato/lato-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/lato-italic-webfont.woff') format('woff'), url('../fonts/Lato/lato-italic-webfont.ttf') format('truetype'), url('../fonts/Lato/lato-italic-webfont.svg#latoitalic') format('svg');
+  src: url('../fonts/Lato/Lato-italic-webfont.eot');
+  src: url('../fonts/Lato/Lato-italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/Lato-italic-webfont.woff') format('woff'), url('../fonts/Lato/Lato-italic-webfont.ttf') format('truetype'), url('../fonts/Lato/Lato-italic-webfont.svg#latoitalic') format('svg');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato/lato-light-webfont.eot');
-  src: url('../fonts/Lato/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/lato-light-webfont.woff') format('woff'), url('../fonts/Lato/lato-light-webfont.ttf') format('truetype'), url('../fonts/Lato/lato-light-webfont.svg#latolight') format('svg');
+  src: url('../fonts/Lato/Lato-light-webfont.eot');
+  src: url('../fonts/Lato/Lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/Lato-light-webfont.woff') format('woff'), url('../fonts/Lato/Lato-light-webfont.ttf') format('truetype'), url('../fonts/Lato/Lato-light-webfont.svg#latolight') format('svg');
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: 'Lato';
-  src: url('../fonts/Lato/lato-regular-webfont.eot');
-  src: url('../fonts/Lato/lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/lato-regular-webfont.woff') format('woff'), url('../fonts/Lato/lato-regular-webfont.ttf') format('truetype'), url('../fonts/Lato/lato-regular-webfont.svg#latoregular') format('svg');
+  src: url('../fonts/Lato/Lato-regular-webfont.eot');
+  src: url('../fonts/Lato/Lato-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/Lato/Lato-regular-webfont.woff') format('woff'), url('../fonts/Lato/Lato-regular-webfont.ttf') format('truetype'), url('../fonts/Lato/Lato-regular-webfont.svg#latoregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -3455,8 +3467,7 @@ fieldset[disabled] .checkbox-inline {
  * Icon Main Class
  * This sets all the common properties to avoid large css class strings for all icon classes
  */
-.icon,
-.octicons {
+.icon:before {
   font-family: 'font-awsome';
   font-style: inherit;
   font-weight: inherit;
@@ -3467,7 +3478,6 @@ fieldset[disabled] .checkbox-inline {
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
   margin: 0 1px;
-  position: relative;
   top: 1px;
   speak: none;
 }
@@ -3475,7 +3485,7 @@ fieldset[disabled] .checkbox-inline {
  * Octicon Class
  * Same as Icon class just swaps out the font-family
  */
-.octicons {
+.octicons:before {
   font-family: 'octicons';
 }
 /**
@@ -5989,6 +5999,41 @@ fieldset[disabled] .checkbox-inline {
 }
 .brand-logo:before {
   content: "\73";
+}
+/*------------------------------------*\
+    $MODULE-BADGES
+\*------------------------------------*/
+/**
+ * Basic badge
+ */
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 6px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #d94636;
+  border-radius: 10px;
+}
+.badge:empty {
+  display: none;
+}
+a.badge:hover,
+a.badge:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn .badge {
+  position: relative;
+  top: -1px;
 }
 /*------------------------------------*\
     $MODULE-MEDIA

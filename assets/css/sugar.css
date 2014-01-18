@@ -11,8 +11,7 @@
  * Icon Main Class
  * This sets all the common properties to avoid large css class strings for all icon classes
  */
-.icon,
-.octicons {
+.icon:before {
   font-family: 'font-awsome';
   font-style: inherit;
   font-weight: inherit;
@@ -23,7 +22,6 @@
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
   margin: 0 1px;
-  position: relative;
   top: 1px;
   speak: none;
 }
@@ -31,7 +29,7 @@
  * Octicon Class
  * Same as Icon class just swaps out the font-family
  */
-.octicons {
+.octicons:before {
   font-family: 'octicons';
 }
 /**
@@ -2545,6 +2543,41 @@
 }
 .brand-logo:before {
   content: "\73";
+}
+/*------------------------------------*\
+    $MODULE-BADGES
+\*------------------------------------*/
+/**
+ * Basic badge
+ */
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 6px;
+  padding: 0.1875rem 0.375rem;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  background-color: #d94636;
+  border-radius: 10px;
+}
+.badge:empty {
+  display: none;
+}
+a.badge:hover,
+a.badge:focus {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn .badge {
+  position: relative;
+  top: -1px;
 }
 /*------------------------------------*\
     $MODULE-MEDIA
