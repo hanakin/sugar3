@@ -1,0 +1,171 @@
+/*------------------------------------*\
+    $MODULE-BREADCRUMBS
+\*------------------------------------*/
+
+/**
+ * Breadcrumbs master Class
+ *
+ * This is where we style the main class
+ */
+.breadcrumbs {
+    line-height: 0;
+
+    background-color: @breadcrumb-bg;
+    color: @breadcrumb-color;
+    
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    li {
+        padding: 0;
+        width: 100%;
+        > span { color: @breadcrumb-color; }
+        a { 
+            .padding(@quarter-spacing-unit);
+            color: @breadcrumb-link-color; 
+            &:hover { color: @breadcrumb-link-hover-color; }  
+        }
+    }
+
+    .icon { .font-size(24); }
+
+    @media only screen and (min-width: @screen-m-min) {
+        display: inline-block;
+        .padding-left(@half-spacing-unit);
+        li { 
+            width: auto; 
+            a { .padding-right(@half-spacing-unit+@eighth-spacing-unit); }
+        }
+    }
+}
+
+/**
+ * Breadcrumbs Wrap
+ *
+ * We need a wrapper to span page length and apply a grid
+ */
+.breadcrumbs-wrap { 
+    background-color: @breadcrumb-bg; 
+    border-top: 1px solid @breadcrumb-border-color;
+    border-bottom: 1px solid @breadcrumb-border-color;   
+    @media (max-width: @screen-s-max) { .grid {.padding(0); } } 
+    @media (min-width: @screen-m-min) { 
+        border-top: 3px solid @breadcrumb-border-color;
+        border-bottom: 0;
+
+        .padding-vertical(@eighth-spacing-unit, @quarter-spacing-unit); 
+    } 
+}
+
+/**
+ * Breadcrumbs Index
+ *
+ * The index link or home link needs its own treatment
+ */
+.breadcrumbs-index {
+    display: inline-block;
+    float: none;
+    .pull-left { border-right: 1px solid @breadcrumb-border-color; }
+
+    
+    @media only screen and (min-width: @screen-m-min) {
+        float: left;
+        margin: 0;
+        margin-bottom: -2px;
+        
+        .pull-left { border-right: 0; } 
+    }
+}
+
+/**
+ * Breadcrumbs Toggle
+ *
+ * for expanding menu on mobile we need a link to expand the menu
+ */
+.breadcrumbs-toggle {
+    display: block;
+    @media only screen and (min-width: @screen-m-min) { display: none; }
+    .icon { 
+        .font-size(@half-spacing-unit); 
+        
+        .padding-right(@quarter-spacing-unit);
+        position: relative;
+        top: unit(@quarter-spacing-unit - 1, px);
+    }
+}
+
+/**
+ * Breadcrumbs Crumbs
+ *
+ * This is the indidual links in the breadbrumbs menu
+ */
+.breadcrumbs-crumbs {
+    display: none;
+    margin: 0;
+    > ul {
+        margin: 0;
+
+        > li {
+            line-height: 1;
+            border-top: 1px solid @breadcrumb-border-color;
+            .padding(@half-spacing-unit);
+            
+            &:before { 
+                content: ""; 
+                padding: 0;
+            }
+            a { 
+                display: block;
+                padding: 0;
+                width: 100%; 
+            }
+        }
+    }
+
+    @media only screen and (min-width: @screen-m-min) {
+        display: inline-block;
+        margin-top: 0;
+        //.margin-left(@double-spacing-unit - @quarter-spacing-unit);
+        
+        > ul {
+            // enables momentum scrolling in iOS overflow elements
+            -webkit-overflow-scrolling: touch; 
+            // improves performance issues on mobile
+            -webkit-backface-visibility: hidden;
+            -webkit-perspective: 1000;
+    
+            > li {
+                padding: 0;
+                border: 0;
+                &:before {
+                    .font-size(18);
+                    font-family: 'octicons';
+                    vertical-align: middle;
+    
+                    content: "\f078"; // Unicode space added since inline-block means non-collapsing white-space
+                    .padding(0, 9, 0, 0);
+                }
+                &:last-of-type:before { .padding-right(@half-spacing-unit+@eighth-spacing-unit); }
+
+                a { 
+                    display: inline-block;
+                    .padding(9, @half-spacing-unit+@eighth-spacing-unit, @quarter-spacing-unit, @quarter-spacing-unit);
+                    width: auto; 
+                }
+            }
+        }
+    }
+}
+
+/**
+ * Breadcrumbs is-active
+ *
+ * simple dymnamic state change
+ */
+.is-active-breadcrumbs .breadcrumbs-crumbs { display: inline-block; }
+
+    
