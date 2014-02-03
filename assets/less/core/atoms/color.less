@@ -5,10 +5,10 @@
  * Used for comon clour changes to text
  */
 
-.black-pure         { .color(@black-pure, @white, @bg-hover-color: mix(@black-pure, white, 70%), @black); }
-.black-dark         { .color(@black-dark, @white, @bg-hover-color: mix(@black-dark, white, 70%), @black-pure); }
-.black              { .color(@black, @white, @bg-hover-color: mix(@black, white, 70%), @black-dark); }
-.black-light        { .color(@black-light, @white, @bg-hover-color: mix(@black-light, white, 70%), @black); }
+.black-pure         { .color(@black-pure, @white, mix(@black-pure, white, 70%), @black); }
+.black-dark         { .color(@black-dark, @white, mix(@black-dark, white, 70%), @black-pure); }
+.black              { .color(@black, @white, mix(@black, white, 70%), @black-dark); }
+.black-light        { .color(@black-light, @white, mix(@black-light, white, 70%), @black); }
 
 .gray-darker        { .color(@gray-darker); }
 .gray-dark          { .color(@gray-dark); }
@@ -23,7 +23,7 @@
 .white              { .color(@white, @black); }
 
 .silver-dark        { .color(@silver-dark, @black); }
-.silver             { .color(@silver, @black); }
+.silver             { .color(@silver); }
 .silver-light       { .color(@silver-light, @black); }
 
 .bluegray-dark      { .color(@bluegray-dark); }
@@ -74,8 +74,35 @@
 .red                { .color(@red); }
 .red-light          { .color(@red-light); }
 
+
+.turquuoise         { .color(@turquuoise); }
+.green-sea          { .color(@green-sea); }
+
+.emerald            { .color(@emerald); }
+.nephritis          { .color(@nephritis); }
+
+.peter-river        { .color(@peter-river); }
+.belize-hole        { .color(@belize-hole); }
+
+.sun-flower         { .color(@sun-flower); }
+.orange             { .color(@orange); }
+
+.carrot             { .color(@carrot); }
+.pumpkin            { .color(@pumpkin); }
+
+.alizarin           { .color(@alizarin); }
+.pomegranate        { .color(@pomegranate); }
+
+.amethyst           { .color(@amethyst); }
+.wisteria           { .color(@wisteria); }
+
+.clouds             { .color(@clouds, @black); }
+
+.wet-asphalt        { .color(@wet-asphalt); }
+.midnight-blue      { .color(@midnight-blue); }
+
+.concrete           { .color(@concrete); }
+.asbestos           { .color(@asbestos); }
+
 .text-black         { color: @black !important; }
-
-.user               { .color(@navy-light, @white, @teal); }
-
 

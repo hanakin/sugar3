@@ -56,6 +56,7 @@
 
     /**
     * Button Clear
+    *
     * Inverts the button effect where it is outlined instead at first and on hover is filled in as in IOS7
     */
     &.clear {
@@ -63,7 +64,7 @@
         border: @button-clear-border;
         color: @button-default-bg;
 
-        .padding(@half-spacing-unit, @half-spacing-unit+@quarter-spacing-unit);
+        .padding(@half-spacing-unit - 2, @half-spacing-unit+@quarter-spacing-unit - 2);
 
         &:hover, &:focus { 
             background: @button-default-bg;  
@@ -76,6 +77,8 @@
             .box-shadow(none);
         }
     }
+
+    span { .margin-left(@quarter-spacing-unit); }
 }
 
 /**
@@ -87,11 +90,6 @@
 .btn-delta      { .font-size(@delta); }
 .btn-epsilon    { .font-size(@epsilon); }
 .btn-zeta       { .font-size(@zeta); }
-
-/**
- * Button Icon spacings
- */
-.btn span      { .margin-left(@quarter-spacing-unit); }
 
 /**
  * Button Wide
@@ -123,20 +121,5 @@
         color: @white !important;
         background-color: mix(@social-reddit, @black, 70%) !important; 
     }
-    &.btn-clear {
-        background: none !important;
-        border: 2px solid @social-reddit !important;
-        color: @social-reddit !important;
-
-        &:hover, &:focus { 
-            background: @social-reddit !important;  
-            color: @white !important;
-        }
-        &:active, &.active {
-            border-color: mix(@social-reddit, black, 85%) !important;
-            background: mix(@social-reddit, black, 85%) !important;
-            color: rgba(255, 255, 255, 0.75);
-            .box-shadow(none);
-        }
-    }
 }
+
