@@ -8,11 +8,12 @@
     $MODULES
 \*------------------------------------*/
 /**
- * Icon Main Class
+ * Icons Main Class
+ *
  * This sets all the common properties to avoid large css class strings for all icon classes
  */
-.icon:before {
-  font-family: 'font-awsome';
+.icon,
+.octicons {
   font-style: inherit;
   font-weight: inherit;
   font-variant: normal;
@@ -26,14 +27,24 @@
   speak: none;
 }
 /**
+ * Icon Class
+ *
+ * sets font-family
+ */
+.icon:before {
+  font-family: 'font-awsome';
+}
+/**
  * Octicon Class
- * Same as Icon class just swaps out the font-family
+ *
+ * sets font-family
  */
 .octicons:before {
   font-family: 'octicons';
 }
 /**
  * Github Octicon Classes
+ *
  * per disscussion Github Octicons are released as is free to use (https://github.com/octokit/octokit.objc/issues/108#issuecomment-24928525)
  */
 .octicons-alert:before {
@@ -599,7 +610,8 @@
 }
 /**
  * Font-Awsome Classes
- * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome)
+ *
+ * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome) Licensed under MIT.
  */
 .icon-IE:before {
   content: "\e76c";
@@ -1820,6 +1832,7 @@
   /* [8] */
   /**
     * Button Clear
+    *
     * Inverts the button effect where it is outlined instead at first and on hover is filled in as in IOS7
     */
 }
@@ -1842,8 +1855,8 @@
   background: none;
   border: 2px solid #21b5e4;
   color: #21b5e4;
-  padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
+  padding: 10px 16px;
+  padding: 0.625rem 1rem;
 }
 .btn.clear:hover,
 .btn.clear:focus {
@@ -1857,6 +1870,10 @@
   color: rgba(255, 255, 255, 0.75);
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+.btn span {
+  margin-left: 6px;
+  margin-left: 0.375rem;
 }
 /**
  * Button font-size modifiers.
@@ -1884,13 +1901,6 @@
 .btn-zeta {
   font-size: 18px;
   font-size: 1.125rem;
-}
-/**
- * Button Icon spacings
- */
-.btn span {
-  margin-left: 6px;
-  margin-left: 0.375rem;
 }
 /**
  * Button Wide
@@ -2197,24 +2207,6 @@
   color: #ffffff !important;
   background-color: #c2400f !important;
 }
-.btn-reddit.btn-clear {
-  background: none !important;
-  border: 2px solid #ff4500 !important;
-  color: #ff4500 !important;
-}
-.btn-reddit.btn-clear:hover,
-.btn-reddit.btn-clear:focus {
-  background: #ff4500 !important;
-  color: #ffffff !important;
-}
-.btn-reddit.btn-clear:active,
-.btn-reddit.btn-clear.active {
-  border-color: #d93b00 !important;
-  background: #d93b00 !important;
-  color: rgba(255, 255, 255, 0.75);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
 .brand {
   font-family: "Hobo Std";
   color: #333333;
@@ -2237,35 +2229,44 @@
     $MODULE-BADGES
 \*------------------------------------*/
 /**
- * Basic badge
+ * Badge main class
+ * 
+ * applying the styles for badges
  */
 .badge {
-  display: inline-block;
-  min-width: 10px;
-  padding: 3px 6px;
-  padding: 0.1875rem 0.375rem;
   font-size: 12px;
   font-size: 0.75rem;
   font-weight: bold;
-  color: #ffffff;
   line-height: 1;
+  text-align: center;
   vertical-align: middle;
   white-space: nowrap;
-  text-align: center;
+  -webkit-font-smoothing: auto;
   background-color: #d94636;
   border-radius: 10px;
+  color: #ffffff;
+  display: inline-block;
+  min-width: 20px;
+  padding: 0px 2px;
+  padding: 0rem 0.125rem;
 }
 .badge:empty {
   display: none;
 }
-a.badge:hover,
-a.badge:focus {
-  color: #ffffff;
+[href] .badge {
+  float: left;
+  position: absolute;
+  left: 24px;
+  top: 6px;
+  z-index: 1050;
+}
+.badge [href]:hover,
+.badge [href]:focus {
   text-decoration: none;
+  color: #ffffff;
   cursor: pointer;
 }
 .btn .badge {
-  position: relative;
   top: -1px;
 }
 /*------------------------------------*\
