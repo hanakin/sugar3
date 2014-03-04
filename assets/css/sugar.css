@@ -7,6 +7,9 @@
 /*------------------------------------*\
     $MODULES
 \*------------------------------------*/
+/*------------------------------------*\
+    $MODULE-ICONS
+\*------------------------------------*/
 /**
  * Icons Main Class
  *
@@ -17,7 +20,6 @@
   font-style: inherit;
   font-weight: inherit;
   font-variant: normal;
-  line-height: 1;
   text-transform: none;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -45,7 +47,8 @@
 /**
  * Github Octicon Classes
  *
- * per disscussion Github Octicons are released as is free to use (https://github.com/octokit/octokit.objc/issues/108#issuecomment-24928525)
+ * per disscussion Github Octicons are released as is free to use
+ * (https://github.com/octokit/octokit.objc/issues/108#issuecomment-24928525)
  */
 .octicons-alert:before {
   content: "\f02d";
@@ -611,7 +614,8 @@
 /**
  * Font-Awsome Classes
  *
- * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome) Licensed under MIT.
+ * obtained through icomoon (https://github.com/FortAwesome/Font-Awesome)
+ * Licensed under MIT.
  */
 .icon-IE:before {
   content: "\e76c";
@@ -1791,54 +1795,28 @@
 .btn {
   /* Text */
   font-size: 100%;
-  /* [1] */
   font-family: inherit;
-  /* [1] */
   font-weight: normal;
-  /* [1] */
   line-height: normal;
-  /* [1] */
   letter-spacing: 1px;
-  /* [1] */
   vertical-align: middle;
-  /* [2] */
   white-space: nowrap;
-  /* [3] */
   -webkit-font-smoothing: subpixel-antialiased;
-  /* [7] */
   /* Decoration */
   background-color: #21b5e4;
-  /* [4] */
   background-image: none;
-  /* [5] */
   border: 0;
-  /* [4] */
   border-radius: 5px;
-  /* [4] */
   color: #ffffff;
-  /* [4] */
   cursor: pointer;
-  /* [6] */
   -webkit-transition: 0.25s linear;
   transition: 0.25s linear;
   /* Layout */
   display: inline-block;
-  /* [7] */
-  margin: 6px;
-  margin: 0.375rem;
-  /* [8] */
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
-  /* [8] */
-  /**
-    * Button Clear
-    *
-    * Inverts the button effect where it is outlined instead at first and on hover is filled in as in IOS7
-    */
 }
 .btn:hover {
   text-decoration: none;
-  /* [9] */
   background-color: #189bc4;
   color: #ffffff;
 }
@@ -1851,12 +1829,20 @@
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
+.btn span {
+  margin-left: 6px;
+}
+/**
+ * Button Clear
+ *
+ * Inverts the button effect where it is outlined instead at first and on hover
+ * is filled in as in IOS7
+ */
 .btn.clear {
   background: none;
   border: 2px solid #21b5e4;
   color: #21b5e4;
   padding: 10px 16px;
-  padding: 0.625rem 1rem;
 }
 .btn.clear:hover,
 .btn.clear:focus {
@@ -1871,36 +1857,32 @@
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.btn span {
-  margin-left: 6px;
-  margin-left: 0.375rem;
-}
 /**
  * Button font-size modifiers.
  */
 .btn-alpha {
   font-size: 54px;
-  font-size: 3.375rem;
+  font-size: 3.375em;
 }
 .btn-beta {
   font-size: 42px;
-  font-size: 2.625rem;
+  font-size: 2.625em;
 }
 .btn-gamma {
   font-size: 36px;
-  font-size: 2.25rem;
+  font-size: 2.25em;
 }
 .btn-delta {
   font-size: 24px;
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 .btn-epsilon {
   font-size: 21px;
-  font-size: 1.3125rem;
+  font-size: 1.3125em;
 }
 .btn-zeta {
   font-size: 18px;
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 /**
  * Button Wide
@@ -1924,7 +1906,6 @@
   border: 2px solid #3399ff !important;
   color: #3399ff !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-delicious.btn-clear:hover,
 .btn-delicious.btn-clear:focus {
@@ -1950,7 +1931,6 @@
   border: 2px solid #070707 !important;
   color: #070707 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-digg.btn-clear:hover,
 .btn-digg.btn-clear:focus {
@@ -1976,7 +1956,6 @@
   border: 2px solid #7fce2c !important;
   color: #7fce2c !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-evernote.btn-clear:hover,
 .btn-evernote.btn-clear:focus {
@@ -2002,7 +1981,6 @@
   border: 2px solid #2f5890 !important;
   color: #2f5890 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-facebook.btn-clear:hover,
 .btn-facebook.btn-clear:focus {
@@ -2028,7 +2006,6 @@
   border: 2px solid #4183c4 !important;
   color: #4183c4 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-github.btn-clear:hover,
 .btn-github.btn-clear:focus {
@@ -2054,7 +2031,6 @@
   border: 2px solid #c92527 !important;
   color: #c92527 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-gmail.btn-clear:hover,
 .btn-gmail.btn-clear:focus {
@@ -2080,7 +2056,6 @@
   border: 2px solid #cf4b33 !important;
   color: #cf4b33 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-gplus.btn-clear:hover,
 .btn-gplus.btn-clear:focus {
@@ -2106,7 +2081,6 @@
   border: 2px solid #4897c9 !important;
   color: #4897c9 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-linkedin.btn-clear:hover,
 .btn-linkedin.btn-clear:focus {
@@ -2132,7 +2106,6 @@
   border: 2px solid #c92527 !important;
   color: #c92527 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-pinterest.btn-clear:hover,
 .btn-pinterest.btn-clear:focus {
@@ -2158,7 +2131,6 @@
   border: 2px solid #2f5070 !important;
   color: #2f5070 !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-tumblr.btn-clear:hover,
 .btn-tumblr.btn-clear:focus {
@@ -2184,7 +2156,6 @@
   border: 2px solid #00bdef !important;
   color: #00bdef !important;
   padding: 12px 18px;
-  padding: 0.75rem 1.125rem;
 }
 .btn-twitter.btn-clear:hover,
 .btn-twitter.btn-clear:focus {
@@ -2220,7 +2191,6 @@
   /* Layout */
   float: left;
   margin: -15px 24px 0px 0px;
-  margin: -0.9375rem 1.5rem 0rem 0rem;
 }
 .brand-logo:before {
   content: "\73";
@@ -2230,14 +2200,13 @@
 \*------------------------------------*/
 /**
  * Badge main class
- * 
+ *
  * applying the styles for badges
  */
 .badge {
   font-size: 12px;
-  font-size: 0.75rem;
+  font-size: 0.75em;
   font-weight: bold;
-  line-height: 1;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
@@ -2247,8 +2216,7 @@
   color: #ffffff;
   display: inline-block;
   min-width: 20px;
-  padding: 0px 2px;
-  padding: 0rem 0.125rem;
+  padding: 2px;
 }
 .badge:empty {
   display: none;
@@ -2257,7 +2225,7 @@
   float: left;
   position: absolute;
   left: 24px;
-  top: 6px;
+  top: 10px;
   z-index: 1050;
 }
 .badge [href]:hover,
@@ -2296,12 +2264,10 @@
   vertical-align: top;
   display: inline-block;
   margin-bottom: 48px;
-  margin-bottom: 3rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 45em) {
   .media {
     margin-bottom: 72px;
-    margin-bottom: 4.5rem;
   }
 }
 /**
@@ -2311,40 +2277,33 @@
 .media-object {
   display: block;
   margin-bottom: 24px;
-  margin-bottom: 1.5rem;
 }
 .media-object.pull-left {
   margin: 0px 12px 0px 0px;
-  margin: 0rem 0.75rem 0rem 0rem;
 }
 .media-object.pull-right {
   margin: 0px 0px 0px 12px;
-  margin: 0rem 0rem 0rem 0.75rem;
 }
 .media-object img {
   width: 50px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 45em) {
   .media-object.pull-left {
     margin: 0px 24px 0px 0px;
-    margin: 0rem 1.5rem 0rem 0rem;
   }
   .media-object.pull-right {
     margin: 0px 0px 0px 24px;
-    margin: 0rem 0rem 0rem 1.5rem;
   }
   .media-object img {
     width: 100px;
   }
 }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 71.25em) {
   .media-object.pull-left {
     margin: 0px 48px 0px 0px;
-    margin: 0rem 3rem 0rem 0rem;
   }
   .media-object.pull-right {
     margin: 0px 0px 0px 48px;
-    margin: 0rem 0rem 0rem 3rem;
   }
 }
 /**
@@ -2362,7 +2321,6 @@
 .media-heading {
   color: #d94636;
   margin: 0px 0px 6px;
-  margin: 0rem 0rem 0.375rem;
 }
 /**
  * Media Body Text
@@ -2374,12 +2332,10 @@
 }
 .lead {
   margin-bottom: 24px;
-  margin-bottom: 1.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .lead {
     margin-bottom: 48px;
-    margin-bottom: 3rem;
   }
 }
 .lead > p,
@@ -2389,25 +2345,7 @@
 .lead .delta small,
 .lead .epsilon small,
 .lead .zeta small {
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-weight: 300;
-  line-height: 40.5px;
-  line-height: 2.53125rem;
   margin-top: 24px;
-  margin-top: 1.5rem;
-}
-@media (min-width: 768px) {
-  .lead > p,
-  .lead .alpha small,
-  .lead .beta small,
-  .lead .gamma small,
-  .lead .delta small,
-  .lead .epsilon small,
-  .lead .zeta small {
-    margin-top: 48px;
-    margin-top: 3rem;
-  }
 }
 /*------------------------------------*\
     $COMPONENTS
@@ -2423,8 +2361,6 @@
 .navbar {
   margin-top: 24px;
   margin-bottom: 24px;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
   min-height: 50px;
   position: relative;
 }
@@ -2436,7 +2372,7 @@
 .navbar:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar {
     border-radius: 4px;
   }
@@ -2454,18 +2390,18 @@
 .navbar-header:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-header {
     float: left;
   }
 }
 /**
  *  Navbar collapse (body)
- * 
+ *
  * Group your navbar content into this for easy collapsing and expanding across
  * various device sizes. By default, this content is collapsed when <768px, but
  * will expand past that for a horizontal display.
- * 
+ *
  * To start (on mobile devices) the navbar links, forms, and buttons are stacked
  * vertically and include a `max-height` to overflow in case you have too much
  * content for the user's viewport.
@@ -2476,8 +2412,6 @@
   -webkit-overflow-scrolling: touch;
   padding-left: 24px;
   padding-right: 24px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 .navbar-collapse:before,
 .navbar-collapse:after {
@@ -2487,7 +2421,7 @@
 .navbar-collapse:after {
   clear: both;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-collapse {
     width: auto;
   }
@@ -2499,11 +2433,9 @@
   }
   .navbar-collapse .navbar-nav.navbar-left:first-child {
     margin-left: -24px;
-    margin-left: -1.5rem;
   }
   .navbar-collapse .navbar-nav.navbar-right:last-child {
     margin-right: 24px;
-    margin-right: 1.5rem;
   }
   .navbar-collapse .navbar-text:last-child {
     margin-right: 0;
@@ -2518,7 +2450,7 @@
   position: fixed;
   right: 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -2536,28 +2468,26 @@
  */
 .navbar-brand {
   font-size: 36px;
-  font-size: 2.25rem;
-  line-height: 27px;
-  line-height: 1.6875rem;
+  font-size: 2.25em;
+  line-height: 20px;
+  line-height: 1.25em;
   color: #203040;
   float: left;
   padding: 24px 12px 0px;
-  padding: 1.5rem 0.75rem 0rem;
 }
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
   backgroun-color: transparent;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar > .container .navbar-brand {
     margin-left: -12px;
-    margin-left: -0.75rem;
   }
 }
 /**
  *  Navbar toggle
- * 
+ *
  *  Custom button for toggling the `.navbar-collapse`, powered by the collapse
  *  JavaScript plugin.
  */
@@ -2567,11 +2497,8 @@
   border-radius: 4px;
   float: right;
   margin-right: 12px;
-  margin-right: 0.75rem;
   margin-top: 36px;
   margin-bottom: 36px;
-  margin-top: 2.25rem;
-  margin-bottom: 2.25rem;
   padding: 9px 10px;
   position: relative;
 }
@@ -2584,37 +2511,34 @@
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-toggle {
     display: none;
   }
 }
 /**
  *  Navbar nav links
- * 
+ *
  *  Builds on top of the `.nav` components with it's own modifier class to make
  *  the nav the full height of the horizontal nav (above 768px).
  */
 .navbar-nav {
   margin: 24px 12px 12px;
-  margin: 1.5rem 0.75rem 0.75rem;
 }
 .navbar-nav > li > a {
   color: #8d9ea6;
   padding: 12px;
-  padding: 0.75rem;
 }
 .navbar-nav > li > a:hover {
   color: #21b5e4;
   background-color: transparent;
 }
-@media (min-width: 984px) {
+@media (min-width: 61.25em) {
   .navbar-nav > li > a {
     padding: 24px;
-    padding: 1.5rem;
   }
 }
-@media (min-width: 480px) {
+@media (min-width: 30em) {
   .navbar-nav .open .dropdown-menu {
     background-color: transparent;
     border: 0;
@@ -2627,18 +2551,17 @@
   .navbar-nav .open .dropdown-menu > li > a,
   .navbar-nav .open .dropdown-menu .dropdown-header {
     padding: 6px 12px 6px 24px;
-    padding: 0.375rem 0.75rem 0.375rem 1.5rem;
   }
   .navbar-nav .open .dropdown-menu > li > a {
-    line-height: 27px;
-    line-height: 1.6875rem;
+    line-height: 20px;
+    line-height: 1.25em;
   }
   .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-nav .open .dropdown-menu > li > a:focus {
     background-image: none;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-nav {
     float: left;
   }
@@ -2648,18 +2571,16 @@
   .navbar-nav > li > a {
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
   }
 }
 /**
  *  Component alignment
- * 
+ *
  *  Repurpose the pull utilities as their own navbar utilities to avoid specifity
  *  issues with parents and chaining. Only do this when the navbar is uncollapsed
  *  though so that navbar contents properly stack and align in mobile.
  */
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-left {
     float: left !important;
   }
@@ -2669,17 +2590,15 @@
 }
 /**
  *  Navbar form
- * 
+ *
  *  Extension of the `.form-inline` with some extra flavor for optimum display in
  *  our navbars.
  */
 .navbar-form {
   margin: 12px -12px;
-  margin: 0.75rem -0.75rem;
   padding: 12px 12px;
-  padding: 0.75rem 0.75rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-form .form-group {
     vertical-align: middle;
     display: inline-block;
@@ -2692,7 +2611,6 @@
   .navbar-form .checkbox {
     display: inline-block;
     margin: 0px 3px;
-    margin: 0rem 0.1875rem;
     padding-left: 0;
   }
   .navbar-form .radio input[type="radio"],
@@ -2702,13 +2620,15 @@
     top: 0;
   }
 }
-@media (max-width: 767px) {
+.navbar-form .form-group {
+  margin-bottom: 6px;
+}
+@media (min-width: 45em) {
   .navbar-form .form-group {
-    margin-bottom: 6px;
-    margin-bottom: 0.375rem;
+    margin-bottom: 0px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-form {
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -2746,33 +2666,28 @@
 }
 /**
  *  Buttons in navbars
- * 
+ *
  *  Vertically center a button within a navbar (when *not* in a form).
  */
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-btn {
     margin-top: -11px;
-    margin-top: -0.6875rem;
   }
 }
 /**
  *  Text in navbars
- * 
+ *
  *  Add a class to make any element properly align itself vertically within the navbars.
  */
 .navbar-text {
   float: left;
   margin-top: 12px;
   margin-bottom: 12px;
-  margin-top: 0.75rem;
-  margin-bottom: 0.75rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 45em) {
   .navbar-text {
     margin-left: 12px;
     margin-right: 12px;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
   }
 }
 /*------------------------------------*\
@@ -2786,7 +2701,6 @@
   background-color: #cfdadd;
   color: #a9bac1;
   padding: 36px;
-  padding: 2.25rem;
 }
 .footbar a {
   color: #8d9ea6;
@@ -2800,9 +2714,10 @@
  */
 .footbar-brand {
   font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 27px;
-  line-height: 1.6875rem;
+  font-size: 1.5em;
+  line-height: 20px;
+  line-height: 1.25em;
+  margin-bottom: 24px;
 }
 .footbar-brand .brand {
   color: #8d9ea6;
@@ -2810,10 +2725,9 @@
 .footbar-brand .brand:hover {
   color: #21b5e4;
 }
-@media (max-width: 767px) {
+@media (min-width: 45em) {
   .footbar-brand {
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0px;
   }
 }
 /**
@@ -2824,32 +2738,32 @@
  * Footbar Icons
  * Common to see icons in footes IE Social icons, Logos, Compliance
  */
-.footbar-icons li {
+.footbar-icons > li {
   padding: 0;
-  margin-left: 12px;
-  margin-left: 0.75rem;
+  margin: 0px 0px 24px;
 }
-@media (max-width: 767px) {
-  .footbar-icons {
-    margin: 0px 0px 24px;
-    margin: 0rem 0rem 1.5rem;
-  }
-  .footbar-icons > li:first-child {
-    margin: 0;
+.footbar-icons > li:first-child {
+  margin: 0;
+}
+@media (min-width: 45em) {
+  .footbar-icons > li {
+    margin-left: 12px;
   }
 }
 .footbar-icons .icon {
   font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 /**
  * Footbar Copyright
  * Common place to place copyright information is in the footer
  */
-@media (max-width: 767px) {
+.footbar-copyright {
+  margin-bottom: 24px;
+}
+@media (min-width: 45em) {
   .footbar-copyright {
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0px;
   }
 }
 /*------------------------------------*\
@@ -2864,7 +2778,6 @@
   background-color: #f2f2f2;
   /* Layout */
   padding: 6px 0px 24px;
-  padding: 0.375rem 0rem 1.5rem;
 }
 /*------------------------------------*\
     $COMPONENT-HERO UNIT
@@ -2876,7 +2789,6 @@
 .hero-unit {
   background-color: #203040;
   padding: 96px 0px;
-  padding: 6rem 0rem;
 }
 .hero-unit .lead .alpha,
 .hero-unit .lead .beta,
@@ -2905,9 +2817,8 @@
   opacity: 0.6;
   filter: alpha(opacity=60);
 }
-@media (max-width: 768px) {
+@media (max-width: 45em) {
   .hero-unit-featured {
     margin-top: 48px;
-    margin-top: 3rem;
   }
 }

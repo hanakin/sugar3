@@ -1,13 +1,4 @@
 /*------------------------------------*\
-    TEST.LESS
-\*------------------------------------*/
-/*------------------------------------*\
-    $IMPORTS
-\*------------------------------------*/
-/*------------------------------------*\
-    $TEST IMPORT
-\*------------------------------------*/
-/*------------------------------------*\
     $ATOM-TEXT
 \*------------------------------------*/
 /**
@@ -53,7 +44,8 @@
 /**
  * Bold Text
  *
- * Sometimes you need make blocks of text bold but wrapping in strong tags breaks semantics
+ * Sometimes you need make blocks of text bold but wrapping in strong tags
+ * breaks semantics
  */
 .text-bold {
   font-weight: 700;
@@ -69,4 +61,16 @@
   background-color: transparent;
   border: 0;
   color: transparent;
+}
+/**
+ *  Help text
+ *
+ * Apply to any element you wish to create light text for placement immediately
+ * below a form control. Use for general help, formatting, or instructional text.
+ */
+.text-help {
+  color: #737373;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
 }

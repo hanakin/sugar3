@@ -1,12 +1,14 @@
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $DEFAULTS
-//------------------------------------//
+//--------------------------------------------------------------------------//
+//--------------------------------------------------------------------------//
 //  Redefine these in your own `vars.less` to override them.
+//--------------------------------------------------------------------------//
 
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $COLORS
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 // Blacks
 @black-pure:                                #000;
@@ -112,6 +114,27 @@
 @concrete:                                  #95a5a6;
 @asbestos:                                  #7f8c8d;
 
+@apple-red: #fd7d7f;
+@apple-red-dark: desaturate(darken(@apple-red, 15%), 40%);//#d35a5d;
+
+@apple-orange: #fdbd43;
+@apple-orange-dark: desaturate(darken(@apple-orange, 15%), 40%);//#e9962f;
+
+@apple-green: #b5df3a;
+@apple-green-dark: desaturate(darken(@apple-green, 15%), 40%);//#a4bc56;
+
+@apple-blue: #83c9fd;
+@apple-blue-dark: desaturate(darken(@apple-blue, 15%), 40%);//#6ea0be;
+
+@apple-purple: #e3a7fd;
+@apple-purple-dark: desaturate(darken(@apple-purple, 15%), 40%);//#d672fc;
+
+@apple-yellow: #c8c8c8;
+@apple-yellow-dark: desaturate(darken(@apple-yellow, 15%), 40%);//#a5a5a6;
+
+@apple-grey: #f4e447;
+@apple-grey-dark: desaturate(darken(@apple-grey, 15%), 40%);//#d3c535;
+
 
 // Social colors
 @social-delicious:                          #3399ff;
@@ -128,9 +151,9 @@
 @social-twitter:                            #00bdef;
 
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $BASE
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 // Base font
 @base-font-size:                            16;
@@ -139,31 +162,31 @@
 @base-bg-color:                             @white;
 
 // Base line height
-@base-line-height-ratio:                    1.722; 
+@base-line-height-ratio:                    1.25;
 @base-line-height:                          floor((@base-font-size * @base-line-height-ratio));
 
 // Base Heading Values
 @giga:                                      110;
 @mega:                                      87;
-@kilo:                                      68; 
-            
-@h1-size:                                   54; 
-@h2-size:                                   42; 
-@h3-size:                                   36; 
-@h4-size:                                   24; 
-@h5-size:                                   21; 
-@h6-size:                                   18; 
-                    
-@milli:                                     12; 
-@micro:                                     10; 
-                    
+@kilo:                                      68;
+
+@h1-size:                                   54;
+@h2-size:                                   42;
+@h3-size:                                   36;
+@h4-size:                                   24;
+@h5-size:                                   21;
+@h6-size:                                   18;
+
+@milli:                                     12;
+@micro:                                     10;
+
 @alpha:                                     @h1-size;
 @beta:                                      @h2-size;
 @gamma:                                     @h3-size;
 @delta:                                     @h4-size;
 @epsilon:                                   @h5-size;
 @zeta:                                      @h6-size;
-    
+
 @base-heading-family:                       @base-font-family;
 @base-heading-weight:                       700;
 @base-heading-color:                        @black;
@@ -210,47 +233,47 @@
 @base-quote-border-color:                   @white-dark;
 @base-quote-small-color:                    @base-ui-color;
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $UNITS
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 //Large units
 @nonuple-spacing-unit:                      (@base-spacing-unit * 8);       // 192
 @octuple-spacing-unit:                      (@base-spacing-unit * 7);       // 168
 @sextuple-spacing-unit:                     (@base-spacing-unit * 6);       // 144
-@quintuple-spacing-unit:                    (@base-spacing-unit * 5);       // 120 
-@quadruple-spacing-unit:                    (@base-spacing-unit * 4);       // 96 
-@triple-spacing-unit:                       (@base-spacing-unit * 3);       // 72 
+@quintuple-spacing-unit:                    (@base-spacing-unit * 5);       // 120
+@quadruple-spacing-unit:                    (@base-spacing-unit * 4);       // 96
+@triple-spacing-unit:                       (@base-spacing-unit * 3);       // 72
 @double-spacing-unit:                       (@base-spacing-unit * 2);       // 48
 
 // Small units
 @half-spacing-unit:                         (@base-spacing-unit / 2);       // 12
 @quarter-spacing-unit:                      (@base-spacing-unit / 4);       // 6
-@eighth-spacing-unit:                       ceil((@base-spacing-unit / 8)); // 3   
+@eighth-spacing-unit:                       ceil((@base-spacing-unit / 8)); // 3
 
-//------------------------------------//
+//--------------------------------------------------------------------------//
 //  $CORE & ATOMS
-//------------------------------------//
+//--------------------------------------------------------------------------//
 
 // Code
 @code-font-family:                          Monaco, Menlo, Consolas, "Courier New", monospace;
 @code-border-radius:                        @base-radius;
 @code-color:                                #c7254e;
 @code-bg:                                   #f9f2f4;
-    
+
 // Pre
 @pre-bg:                                    #f5f5f5;
 @pre-color:                                 @black;
 @pre-border-radius:                         @base-radius;
 @pre-border-size:                           2;
 @pre-border-color:                          @base-ui-color;
-    
+
 @pre-prettyprint-color:                     @white;
 @pre-prettyprint-bg:                        @black;
 @pre-prettyprint-border-size:               1;
 @pre-prettyprint-border-color:              darken(@white, 15%);
 @pre-prettyprint-border-radius:             @base-radius-medium;
-    
+
 // Table
 @table-heading-bg:                          @white-dark;
 @table-heading-color:                       @black;
@@ -258,7 +281,7 @@
 @table-accent-bg:                           #f9f9f9;
 @table-border-color:                        @white-darkest;
 @table-border-size:                         2;
-    
+
 // Form
 @form-color:                                @base-ui-color;
 @form-bg:                                   @white;
@@ -266,7 +289,7 @@
 @form-border-size:                          2;
 @form-disabled-color:                       @gray-light;
 @form-border-focus:                         #66afe9;
-    
+
 // Image
 @img-bg:                                    @white;
 @img-border-color:                          @white-darkest;
@@ -278,16 +301,16 @@
 //  $BREAKPOINTS
 //------------------------------------//
 
-// Different breakpoints for the project.
-@screen-s-min:                                 480px;   // Small screen / phone
-@screen-m-min:                                 768px;   // Medium screen / tablet
-@screen-l-min:                                 984px;   // Large screen / desktop
-@screen-w-min:                                 1200px;  // Wide screen / wide desktop
+@small:                                     480;  // Small screen | Phone
+@medium:                                    720;  // Medium screen | tablet
+@large:                                     980;  // Large screen | desktop
+@wide:                                      1140; // Wide screen | wide desktop
 
-// So media queries don't overlap when required, provide a maximum
-@screen-s-max:                                 (@screen-m-min - 1);
-@screen-m-max:                                 (@screen-l-min - 1);
-@screen-l-max:                                 (@screen-w-min - 1);
+// Different breakpoints for the project.
+@screen-s-min:                              unit((@small/@base-font-size), em);  // Small screen | phone
+@screen-m-min:                              unit((@medium/@base-font-size), em); // Medium screen | tablet
+@screen-l-min:                              unit((@large/@base-font-size), em);  // Large screen | desktop
+@screen-w-min:                              unit((@wide/@base-font-size), em);   // Wide screen | wide desktop
 
 
 //------------------------------------//
@@ -295,13 +318,13 @@
 //------------------------------------//
 
 // Number of columns in the grid system
-@grid-columns:                                 12;
+@grid-columns:                              12;
 // Padding, to be divided by two and applied to the left and right of all columns
-@grid-gutter-width:                            @base-spacing-unit;
+@grid-gutter-width:                         @base-spacing-unit;
 
 // Different Grid sizes for the project.
-@container-s:                                   100%;                         // Small screen / Phone
-@container-m:                                   (720 + @grid-gutter-width);   // Medium screen / tablet
-@container-l:                                   (936 + @grid-gutter-width);   // Large screen / desktop
-@container-w:                                   (1140 + @grid-gutter-width);  // Wide screen / wide desktop
+@container-s:                               100%;                                // Small screen | Phone
+@container-m:                               unit(((@medium+@grid-gutter-width)/@base-font-size), em); // Medium screen | tablet
+@container-l:                               unit(((@large+@grid-gutter-width)/@base-font-size), em);  // Large screen | desktop
+@container-w:                               unit(((@wide+@grid-gutter-width)/@base-font-size), em);   // Wide screen | wide desktop
 

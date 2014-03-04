@@ -4,13 +4,12 @@
 
 /**
  * Badge main class
- * 
+ *
  * applying the styles for badges
  */
 .badge {
-    .font-size(12);
+    .font-size(@half-spacing-unit);
     font-weight: @badge-font-weight;
-    line-height: @badge-line-height;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
@@ -22,17 +21,16 @@
 
     display: inline-block;
     min-width: 20px;
-    .padding(0, 2);
-    //    .padding(@eighth-spacing-unit, @quarter-spacing-unit);
+    .padding(2);
 
     // Empty badges collapse automatically (not available in IE8)
     &:empty { display: none; }
-    
+
     [href] & {
         float: left;
         position: absolute;
         left: unit(@base-spacing-unit, px);
-        top: unit(@quarter-spacing-unit, px);
+        top: 10px;
         z-index: 1050;
     }
 
@@ -42,7 +40,7 @@
             text-decoration: none;
 
             color: @badge-link-hover-color;
-        
+
             cursor: pointer;
         }
     }

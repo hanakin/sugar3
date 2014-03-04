@@ -2,11 +2,24 @@
     $HELPERS
 \*------------------------------------*/
 /**
- * common classes that can be usesed to control the positioning of content
+ * common classes that can be usesed to control the positioning
+ * of content.
  */
 
 /**
- * grid-paint Class
+ * Wrapper class
+ * 
+ * use on multiwrapps to avoid unwanted scollbars for mobile off canvas
+ * menusalso provide more flexability and control for any other hidden 
+ * elements.
+ */
+.outer-wrap, .inner-wrap {
+    position: relative;
+    width: 100%;
+}
+
+/**
+ * Grid Paint class
  * 
  * use on grid unit to color it
  */

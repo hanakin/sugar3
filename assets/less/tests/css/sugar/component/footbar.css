@@ -1,13 +1,4 @@
 /*------------------------------------*\
-    TEST.LESS
-\*------------------------------------*/
-/*------------------------------------*\
-    $IMPORTS
-\*------------------------------------*/
-/*------------------------------------*\
-    $TEST IMPORT
-\*------------------------------------*/
-/*------------------------------------*\
     $COMPONENT-FOOTBAR
 \*------------------------------------*/
 /**
@@ -18,7 +9,6 @@
   background-color: #cfdadd;
   color: #a9bac1;
   padding: 36px;
-  padding: 2.25rem;
 }
 .footbar a {
   color: #8d9ea6;
@@ -32,9 +22,10 @@
  */
 .footbar-brand {
   font-size: 24px;
-  font-size: 1.5rem;
-  line-height: 27px;
-  line-height: 1.6875rem;
+  font-size: 1.5em;
+  line-height: 20px;
+  line-height: 1.25em;
+  margin-bottom: 24px;
 }
 .footbar-brand .brand {
   color: #8d9ea6;
@@ -42,10 +33,9 @@
 .footbar-brand .brand:hover {
   color: #21b5e4;
 }
-@media (max-width: 767px) {
+@media (min-width: 45em) {
   .footbar-brand {
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0px;
   }
 }
 /**
@@ -56,31 +46,31 @@
  * Footbar Icons
  * Common to see icons in footes IE Social icons, Logos, Compliance
  */
-.footbar-icons li {
+.footbar-icons > li {
   padding: 0;
-  margin-left: 12px;
-  margin-left: 0.75rem;
+  margin: 0px 0px 24px;
 }
-@media (max-width: 767px) {
-  .footbar-icons {
-    margin: 0px 0px 24px;
-    margin: 0rem 0rem 1.5rem;
-  }
-  .footbar-icons > li:first-child {
-    margin: 0;
+.footbar-icons > li:first-child {
+  margin: 0;
+}
+@media (min-width: 45em) {
+  .footbar-icons > li {
+    margin-left: 12px;
   }
 }
 .footbar-icons .icon {
   font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 1.25em;
 }
 /**
  * Footbar Copyright
  * Common place to place copyright information is in the footer
  */
-@media (max-width: 767px) {
+.footbar-copyright {
+  margin-bottom: 24px;
+}
+@media (min-width: 45em) {
   .footbar-copyright {
-    margin-bottom: 24px;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0px;
   }
 }

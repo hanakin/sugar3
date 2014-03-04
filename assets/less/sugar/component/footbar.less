@@ -12,9 +12,9 @@
 
     .padding(@base-spacing-unit+@half-spacing-unit);
 
-    a { 
-        color: @footbar-link-color; 
-        
+    a {
+        color: @footbar-link-color;
+
         &:hover { color: @footbar-link-hover-color; }
     }
 }
@@ -27,11 +27,13 @@
     .font-size(24);
     .line-height(@base-line-height);
 
-    .brand { 
-        color: @footbar-link-color; 
+    .margin-bottom(@base-spacing-unit);
+
+    .brand {
+        color: @footbar-link-color;
         &:hover { color: @footbar-link-hover-color; }
     }
-    @media (max-width: @screen-s-max) { .margin-bottom(@base-spacing-unit); }
+    @media (min-width: @screen-m-min) { .margin-bottom(0); }
 
 }
 
@@ -45,16 +47,15 @@
  * Footbar Icons
  * Common to see icons in footes IE Social icons, Logos, Compliance
  */
-.footbar-icons { 
-    li {
+.footbar-icons {
+    > li {
         padding: 0;
-        .margin-left(@half-spacing-unit);
+        .margin(0, 0, @base-spacing-unit);
+
+        &:first-child { margin: 0; }
     }
-    
-    @media (max-width: @screen-s-max) { 
-        > li:first-child { margin: 0; }
-        .margin(0, 0, @base-spacing-unit); 
-    }
+
+    @media (min-width: @screen-m-min) { > li { .margin-left(@half-spacing-unit); } }
 
     .icon { .font-size(20); }
 }
@@ -63,6 +64,7 @@
  * Footbar Copyright
  * Common place to place copyright information is in the footer
  */
-.footbar-copyright { 
-    @media (max-width: @screen-s-max) { .margin-bottom(@base-spacing-unit); } 
+.footbar-copyright {
+    .margin-bottom(@base-spacing-unit);
+    @media (min-width: @screen-m-min) { .margin-bottom(0); }
 }

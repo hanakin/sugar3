@@ -12,12 +12,10 @@
  */
 .features {
   padding: 72px 0px 18px;
-  padding: 4.5rem 0rem 1.125rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 45em) {
   .features {
     padding: 96px 0px 48px;
-    padding: 6rem 0rem 3rem;
   }
 }
 /**
@@ -26,9 +24,8 @@
 .layers .slide {
   height: auto;
   padding: 72px 0px;
-  padding: 4.5rem 0rem;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 45em) {
   .layers .slide {
     height: 768px;
   }
@@ -44,7 +41,6 @@
 }
 .layers .slide .media-heading {
   margin-bottom: 18px;
-  margin-bottom: 1.125rem;
 }
 .layers .slide .media-heading,
 .layers .slide .media-text {

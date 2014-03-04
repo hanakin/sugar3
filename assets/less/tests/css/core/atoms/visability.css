@@ -1,13 +1,4 @@
 /*------------------------------------*\
-    TEST.LESS
-\*------------------------------------*/
-/*------------------------------------*\
-    $IMPORTS
-\*------------------------------------*/
-/*------------------------------------*\
-    $TEST IMPORT
-\*------------------------------------*/
-/*------------------------------------*\
     $ATOM-VISABILITY
 \*------------------------------------*/
 /**
@@ -83,25 +74,25 @@
   display: none !important;
   visibility: hidden !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 45em) {
   .visible-s {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 768px) and (max-width: 983px) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .visible-s.visible-m {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 984px) and (max-width: 1199px) {
+@media (min-width: 61.25em) and (max-width: 71.25em) {
   .visible-s.visible-l {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 71.25em) {
   .visible-s.visible-w {
     display: block !important;
     visibility: visible !important;
@@ -111,25 +102,25 @@
   display: none !important;
   visibility: hidden !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 45em) {
   .visible-m.visible-s {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 768px) and (max-width: 983px) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .visible-m {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 984px) and (max-width: 1199px) {
+@media (min-width: 61.25em) and (max-width: 71.25em) {
   .visible-m.visible-l {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 71.25em) {
   .visible-m.visible-w {
     display: block !important;
     visibility: visible !important;
@@ -139,25 +130,25 @@
   display: none !important;
   visibility: hidden !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 45em) {
   .visible-l.visible-s {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 768px) and (max-width: 983px) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .visible-l.visible-m {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 984px) and (max-width: 1199px) {
+@media (min-width: 61.25em) and (max-width: 71.25em) {
   .visible-l {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 71.25em) {
   .visible-l.visible-w {
     display: block !important;
     visibility: visible !important;
@@ -167,25 +158,25 @@
   display: none !important;
   visibility: hidden !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 45em) {
   .visible-w.visible-s {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 768px) and (max-width: 983px) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .visible-w.visible-m {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 984px) and (max-width: 1199px) {
+@media (min-width: 61.25em) and (max-width: 71.25em) {
   .visible-w.visible-l {
     display: block !important;
     visibility: visible !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 71.25em) {
   .visible-w {
     display: block !important;
     visibility: visible !important;
@@ -195,25 +186,25 @@
   display: block !important;
   visibility: visible !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 45em) {
   .hidden-s {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 768px) and (max-width: 983px) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .hidden-s.hidden-m {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 984px) and (max-width: 1199px) {
+@media (min-width: 61.25em) and (max-width: 71.25em) {
   .hidden-s.hidden-l {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 71.25em) {
   .hidden-s.hidden-w {
     display: none !important;
     visibility: hidden !important;
@@ -223,25 +214,25 @@
   display: block !important;
   visibility: visible !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 45em) {
   .hidden-m.hidden-s {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 768px) and (max-width: 983px) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .hidden-m {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 984px) and (max-width: 1199px) {
+@media (min-width: 61.25em) and (max-width: 71.25em) {
   .hidden-m.hidden-l {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 71.25em) {
   .hidden-m.hidden-w {
     display: none !important;
     visibility: hidden !important;
@@ -251,25 +242,25 @@
   display: block !important;
   visibility: visible !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 45em) {
   .hidden-l.hidden-s {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 768px) and (max-width: 983px) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .hidden-l.hidden-m {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 984px) and (max-width: 1199px) {
+@media (min-width: 61.25em) and (max-width: 71.25em) {
   .hidden-l {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 71.25em) {
   .hidden-l.hidden-w {
     display: none !important;
     visibility: hidden !important;
@@ -279,25 +270,25 @@
   display: block !important;
   visibility: visible !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 45em) {
   .hidden-w.hidden-s {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 768px) and (max-width: 983px) {
+@media (min-width: 45em) and (max-width: 61.25em) {
   .hidden-w.hidden-m {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 984px) and (max-width: 1199px) {
+@media (min-width: 61.25em) and (max-width: 71.25em) {
   .hidden-w.hidden-l {
     display: none !important;
     visibility: hidden !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 71.25em) {
   .hidden-w {
     display: none !important;
     visibility: hidden !important;
